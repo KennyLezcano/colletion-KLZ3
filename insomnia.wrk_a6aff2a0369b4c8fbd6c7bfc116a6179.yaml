@@ -1,0 +1,694 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: Upgrade Hub
+meta:
+  id: wrk_a6aff2a0369b4c8fbd6c7bfc116a6179
+  created: 1727977765194
+  modified: 1727977765194
+  description: ""
+collection:
+  - url: https://api-uat.copaair.com/mytrips/triphub/upgrade-hub/eligible
+    name: Eligible - eligible
+    meta:
+      id: req_e3f2fc31d0a747bbafb9359785cb83be
+      created: 1715814932799
+      modified: 1718900712920
+      isPrivate: false
+      description: ""
+      sortKey: -1715815222625
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"pnr": "BTQSD5",
+        	"lastName": "AGUILARTOLEDO",
+        	"classOfService": "Z"
+        }
+    headers:
+      - name: accept
+        value: "*/*"
+      - name: accept-language
+        value: es-PA
+      - name: consumer
+        value: eligible
+      - name: content-type
+        value: application/json
+      - name: origin
+        value: https://mytrips-uat.copaair.com
+      - name: user-agent
+        value: CM/Performance/02.10.23
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: https://api-uat.copaair.com/mytrips/triphub/load-trip
+    name: load-trip
+    meta:
+      id: req_8ee8c284e7444dafbca9361397801a08
+      created: 1715815050413
+      modified: 1719009399503
+      isPrivate: false
+      description: ""
+      sortKey: -1715815050413
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"pnrOrTicket": "AKFJRT",
+        	"surname": "bar",
+        	"getAdditionalInfo": true
+        }
+    headers:
+      - name: accept
+        value: "*/*"
+      - name: accept-language
+        value: es-PA
+      - name: content-type
+        value: application/json
+      - name: origin
+        value: https://mytrips-uat.copaair.com
+      - name: priority
+        value: u=1, i
+      - name: sec-ch-ua
+        value: '"Chromium";v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"'
+      - name: sec-ch-ua-mobile
+        value: ?0
+      - name: sec-ch-ua-platform
+        value: '"Windows"'
+      - name: sec-fetch-dest
+        value: empty
+      - name: sec-fetch-mode
+        value: cors
+      - name: sec-fetch-site
+        value: same-site
+      - name: user-agent
+        value: CM/Performance/02.10.23
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: https://api-uat.copaair.com/mytrips/loyalty/passenger/260024732/profile/extended
+    name: profile/extended
+    meta:
+      id: req_ec31bbc70dfb4d6db8764973eda7c65c
+      created: 1715815394837
+      modified: 1715815761069
+      isPrivate: false
+      description: ""
+      sortKey: -1715814937284.25
+    method: GET
+    body:
+      mimeType: application/json
+    headers:
+      - name: accept
+        value: "*/*"
+      - name: accept-language
+        value: es-PA
+      - name: content-type
+        value: application/json
+      - name: error-handler
+        value: "false"
+      - name: new-version
+        value: "true"
+      - name: origin
+        value: https://mytrips-uat.copaair.com
+      - name: priority
+        value: u=1, i
+      - name: sec-ch-ua
+        value: '"Chromium";v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"'
+      - name: sec-ch-ua-mobile
+        value: ?0
+      - name: sec-ch-ua-platform
+        value: '"Windows"'
+      - name: sec-fetch-dest
+        value: empty
+      - name: sec-fetch-mode
+        value: cors
+      - name: sec-fetch-site
+        value: same-site
+      - name: token
+        value: eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InJtM3Z4VDkyZUdlSnFDRHBULXBaXyJ9.eyJodHRwczovL2FwaS11YXQuY29wYS5jb20vQ3VzdG9tZXJJRCI6IjMyNzM1MzkiLCJodHRwczovL2FwaS11YXQuY29wYS5jb20vQWNjb3VudElEIjoiMzI3MjQ4OSIsImh0dHBzOi8vYXBpLXVhdC5jb3BhLmNvbS9mZm4iOiIyNjAwMjQ3MzIiLCJpc3MiOiJodHRwczovL2xvZ2luLXVhdC5jb3BhYWlyLmNvbS8iLCJzdWIiOiJhdXRoMHwyNjAwMjQ3MzIiLCJhdWQiOlsiaHR0cHM6Ly9hcGktdWF0LmNvcGEuY29tIiwiaHR0cHM6Ly9jbS11YXQtY2lhbS51cy5hdXRoMC5jb20vdXNlcmluZm8iXSwiaWF0IjoxNzE1ODE0MjAwLCJleHAiOjE3MTU4MTYwMDAsInNjb3BlIjoib3BlbmlkIHByb2ZpbGUgZW1haWwiLCJhenAiOiJXNEhJOEJUQ1NNUVhuRllydWZBdXlCa2ZNMG5MRVRGeSJ9.cHe6kzeOajME7xzGvF3MCF85kqCUrwVSScw3XnQCTT_CbBo9RnCyLPvC0y1eTOFp7n8wv4HbSHsREAyVlr1EERb-GydRzQ1PE8-R_cF1w5-AQk7F9CvvLAdZ1RSXlHUn3S-C9jOz4VK7sXEN8IaSwhI7W1dLpWcvHWPWLBS5bLT9jeRHVPZdnJk8R-37CLW8NoefRZaaNjaCZL5gHlQSqNXCUL4tiOt8YUWoKCmAy93Nvzn2PTb41tyf4rq2SJOGFGTW4QTIgzKLhZZ6T5FW220AVpQzwjeQfZnFNTqqtKTe5-1IfiiTCa8fXEpibxV4cTPTFtHlShrQYqcfhr5wwA
+      - name: user-agent
+        value: CM/Performance/02.10.23
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: ""
+    name: New Request
+    meta:
+      id: req_5db60857349e449baef853c4d36a5e6e
+      created: 1715815468952
+      modified: 1715815468952
+      isPrivate: false
+      description: ""
+      sortKey: -1715815468952
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/2023.5.8
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: https://login-uat.copaair.com/oauth/token
+    name: LOGIN UAT
+    meta:
+      id: req_c6643b778cce4e4e86c5b4fcf4b977dd
+      created: 1715815473166
+      modified: 1715815585722
+      isPrivate: false
+      description: ""
+      sortKey: -1715814991606
+    method: POST
+    body:
+      mimeType: application/x-www-form-urlencoded
+      params:
+        - name: grant_type
+          value: http://auth0.com/oauth/grant-type/password-realm
+        - name: username
+          value: "121234413"
+        - name: realm
+          value: LoyaltyDB
+        - name: audience
+          value: https://api-uat.copa.com
+        - name: scope
+          value: email
+        - name: password
+          value: Cop@202404
+          description: ""
+    headers:
+      - name: Authorization
+        value: Basic
+          M1g4Qmp0UWRlVHhhTkM3OGQweFhXSDhDeVQxZ2tOdGo6SGI3Q2NnbkNsblMxd0d3eDFYYTRuZnd6Ylg4ZThJSE1iQmh6LWN2TFA1bXh4UXYwYTYxX01SOG16emlCUkNSMw==
+      - name: Content-Type
+        value: application/x-www-form-urlencoded
+      - name: Cookie
+        value: visid_incap_2842481=KcTC7AbfT8ewbnHOud0nEfEtxGQAAAAAQUIPAAAAAADtmMo5aTHYBHmPEb3HeudT;
+          nlbi_2842481=WwQafKcYWQJsXqdtC2ZXnAAAAAAOvXtglML2oW3A5BmKRoo%2B;
+          nlbi_2819721=jgqkYGmOBGtYXYWcEbD4pAAAAAAT62bJyMJnq74LbmyYeiqi;
+          visid_incap_2819721=BYfVZUcFSFO%2Bq1DTAs3YAJchx2MAAAAAQUIPAAAAAADq5kIJj5ndEOceTmLzPV9o;
+          did=s%253Av0%253A49ab5910-11f5-11ee-96f0-4fbbb29445e1.0FqprjMNhA4%252FkIiC6rlU%252FGlLBIgdFmGNTP1%252Fxx%252BLVDA;
+          did_compat=s%253Av0%253A49ab5910-11f5-11ee-96f0-4fbbb29445e1.0FqprjMNhA4%252FkIiC6rlU%252FGlLBIgdFmGNTP1%252Fxx%252BLVDA;
+          visid_incap_2894058=bVqqmHfHRK%2BYW%2F3vSFBdreDmlWQAAAAAQUIPAAAAAACw2IC9y%2Fzbqc%2B7lNM293sK;
+          nlbi_2894058=BCEARFbWohP875L7yv1i1QAAAADWcGG80B9Fpf2avgqoi8rv;
+          incap_ses_1310_2894058=K27jW8VdG0K1KLyewg8uEoI5FGUAAAAAxr17IOLyVNLgsVz8gZ5imw%3D%3D;
+          incap_ses_1603_2894058=dyP8TkJdoxOCyrVDdgA%2FFvY6HGUAAAAA6M%2FLdLrtTGAWP7guXL%2B2gQ%3D%3D;
+          did=s%253Av0%253A0c2be480-a0d7-11ee-89db-63711164ea96.xU5dBFAMCkIliUzqANAzlxVZOokpzYOlCypbQdTOxCs;
+          did_compat=s%253Av0%253A0c2be480-a0d7-11ee-89db-63711164ea96.xU5dBFAMCkIliUzqANAzlxVZOokpzYOlCypbQdTOxCs;
+          visid_incap_2894058=mUYTdnpbTNqHZkKrOdESmqJVHWYAAAAAQUIPAAAAAACSsCX2s%2FPHFv3psXZ9yRmZ;
+          nlbi_2842481=dJYqS55OWw0FezOwC2ZXnAAAAACTAu6ByAuWfsgkbkfJU8GD;
+          nlbi_2894058=X%2FicDznyI0dwfUH5yv1i1QAAAAAJ6k6wfV%2Bjj5bQXxW0KF4X;
+          incap_ses_1430_2894058=2W5zQyu2yg8mLBsbcWHYExE9KWYAAAAAyj3Ysu3omx1GysGrI%2FF%2FiA%3D%3D;
+          incap_ses_1431_2894058=3UIlKWmxBmajOOkQ8u7bEwhbMWYAAAAAjZ3NaWfMgw5wra9V1%2FlAoQ%3D%3D
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: https://api-uat.copaair.com/mytrips/triphub/upgrade-hub/eligible
+    name: Eligible - segment
+    meta:
+      id: req_f2cbb79196b24a53a9569cadf0c5c4d4
+      created: 1715815616496
+      modified: 1718900734621
+      isPrivate: false
+      description: ""
+      sortKey: -1715814882962.5
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"pnr": "BTQSD5",
+        	"lastName": "AGUILARTOLEDO",
+        	"classOfService": "Z",
+        	"sizePassengers": 1
+        }
+    headers:
+      - name: accept
+        value: "*/*"
+      - name: accept-language
+        value: es-PA
+      - name: consumer
+        value: segment
+      - name: content-type
+        value: application/json
+      - name: origin
+        value: https://mytrips-uat.copaair.com
+      - name: priority
+        value: u=1, i
+      - name: sec-ch-ua
+        value: '"Chromium";v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"'
+      - name: sec-ch-ua-mobile
+        value: ?0
+      - name: sec-ch-ua-platform
+        value: '"Windows"'
+      - name: sec-fetch-dest
+        value: empty
+      - name: sec-fetch-mode
+        value: cors
+      - name: sec-fetch-site
+        value: same-site
+      - name: user-agent
+        value: CM/Performance/02.10.23
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: https://qa-apis.copa.s4n.co/mytrips/loyalty/customer/6563742/vouchers
+    name: Voucher
+    meta:
+      id: req_89225fee72974effaa7018c5c945ebad
+      created: 1717707065111
+      modified: 1717707153514
+      isPrivate: false
+      description: ""
+      sortKey: -1715814910123.375
+    method: GET
+    body:
+      mimeType: application/json
+    headers:
+      - name: accept
+        value: "*/*"
+      - name: accept-language
+        value: es-PA
+      - name: channel
+        value: WEB
+      - name: content-type
+        value: application/json
+      - name: origin
+        value: https://mytrips-qa.copa.s4n.co
+      - name: priority
+        value: u=1, i
+      - name: sec-ch-ua
+        value: '"Google Chrome";v="125", "Chromium";v="125", "Not.A/Brand";v="24"'
+      - name: sec-ch-ua-mobile
+        value: ?0
+      - name: sec-ch-ua-platform
+        value: '"Windows"'
+      - name: sec-fetch-dest
+        value: empty
+      - name: sec-fetch-mode
+        value: cors
+      - name: sec-fetch-site
+        value: same-site
+      - name: token
+        value: eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InJtM3Z4VDkyZUdlSnFDRHBULXBaXyJ9.eyJodHRwczovL2FwaS11YXQuY29wYS5jb20vQ3VzdG9tZXJJRCI6IjY1NjM3NDIiLCJodHRwczovL2FwaS11YXQuY29wYS5jb20vQWNjb3VudElEIjoiNjU0ODIzMyIsImh0dHBzOi8vYXBpLXVhdC5jb3BhLmNvbS9mZm4iOiIxMjEyNTc4MjYiLCJpc3MiOiJodHRwczovL2xvZ2luLXVhdC5jb3BhYWlyLmNvbS8iLCJzdWIiOiJhdXRoMHwxMjEyNTc4MjYiLCJhdWQiOlsiaHR0cHM6Ly9hcGktdWF0LmNvcGEuY29tIiwiaHR0cHM6Ly9jbS11YXQtY2lhbS51cy5hdXRoMC5jb20vdXNlcmluZm8iXSwiaWF0IjoxNzE3NzA1OTc5LCJleHAiOjE3MTc3MDc3NzksInNjb3BlIjoib3BlbmlkIHByb2ZpbGUgZW1haWwiLCJhenAiOiJXNEhJOEJUQ1NNUVhuRllydWZBdXlCa2ZNMG5MRVRGeSJ9.wEMLtWFaFs9C6ripxPkPL0ElnMNOvTTOB0zx-if2M47YzUNeUwsQ9VQVGWWTReX1JfGyEzyGMSSHS1moWFt3v1l2Lt3PsXRUobIkSY9S_bcXlIkfRzahv57LLMhDfGZn-3NZj7eKAcTy9iiKPeadE2Q8yRYcvYcmnsJsA-LXgxwzgxtAM1k7z76ovqwI-CDHNkOyykR_LNWttT27JuXg4wwplXMosGLdXsYLvYvYFijkUYnzjfKwm7rW2caEGYUBjhBVQyy9RiUvjXfxEqAANiTHrL2_CQfnogptTAzGtwPnmyUmMJbOcHS1zJ2n1-Q73gXd1jlyBRd0AETKt1GSfQ
+      - name: user-agent
+        value: CM/Performance/02.10.23
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: ""
+    name: New Request
+    meta:
+      id: req_962d87a1436246ec952d4d6df0ca346a
+      created: 1717787191570
+      modified: 1717787191570
+      isPrivate: false
+      description: ""
+      sortKey: -1717787191570
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/2023.5.8
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: https://api-uat.copaair.com/mytrips/triphub/upgrade-hub/confirmation
+    name: New Request
+    meta:
+      id: req_e45b214112cc43efa37b02e0fc946460
+      created: 1717787247826
+      modified: 1717787250696
+      isPrivate: false
+      description: ""
+      sortKey: -1717787247826
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"pnr": "AO4W4S",
+        	"fop": "VOUCHER",
+        	"totalMiles": null,
+        	"totalVouchers": 8,
+        	"airlineCode": "CM",
+        	"classOfService": "Z",
+        	"customers": [
+        		{
+        			"key": "1",
+        			"typeCode": "ADT",
+        			"firstName": "CARLOS",
+        			"surname": "LOPEZ"
+        		},
+        		{
+        			"key": "2",
+        			"typeCode": "ADT",
+        			"firstName": "JUAN",
+        			"surname": "LOPEZ"
+        		},
+        		{
+        			"key": "3",
+        			"typeCode": "ADT",
+        			"firstName": "CAMILO",
+        			"surname": "PEREZ"
+        		},
+        		{
+        			"key": "4",
+        			"typeCode": "ADT",
+        			"firstName": "CARLA",
+        			"surname": "SOTO"
+        		}
+        	],
+        	"flights": [
+        		{
+        			"key": "1",
+        			"vouchers": [
+        				{
+        					"type": "GLOVOUCHER",
+        					"amount": 1,
+        					"currency": "REG"
+        				},
+        				{
+        					"type": "REGVOUCHER",
+        					"amount": 1,
+        					"currency": "REG"
+        				}
+        			],
+        			"miles": []
+        		},
+        		{
+        			"key": "2",
+        			"vouchers": [
+        				{
+        					"type": "GLOVOUCHER",
+        					"amount": 1,
+        					"currency": "REG"
+        				},
+        				{
+        					"type": "REGVOUCHER",
+        					"amount": 1,
+        					"currency": "REG"
+        				}
+        			],
+        			"miles": []
+        		}
+        	],
+        	"loyaltyPrograms": [
+        		{
+        			"ffn": "121260195",
+        			"code": "CM"
+        		}
+        	]
+        }
+    headers:
+      - name: accept
+        value: "*/*"
+      - name: accept-language
+        value: es-PA
+      - name: authorization
+        value: Bearer
+          eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InJtM3Z4VDkyZUdlSnFDRHBULXBaXyJ9.eyJodHRwczovL2FwaS11YXQuY29wYS5jb20vQ3VzdG9tZXJJRCI6IjY1NjQwMDIiLCJodHRwczovL2FwaS11YXQuY29wYS5jb20vQWNjb3VudElEIjoiNjU0ODM3OCIsImh0dHBzOi8vYXBpLXVhdC5jb3BhLmNvbS9mZm4iOiIxMjEyNjAxOTUiLCJpc3MiOiJodHRwczovL2xvZ2luLXVhdC5jb3BhYWlyLmNvbS8iLCJzdWIiOiJhdXRoMHwxMjEyNjAxOTUiLCJhdWQiOlsiaHR0cHM6Ly9hcGktdWF0LmNvcGEuY29tIiwiaHR0cHM6Ly9jbS11YXQtY2lhbS51cy5hdXRoMC5jb20vdXNlcmluZm8iXSwiaWF0IjoxNzE3Nzg2ODM2LCJleHAiOjE3MTc3ODg2MzYsInNjb3BlIjoib3BlbmlkIHByb2ZpbGUgZW1haWwiLCJhenAiOiJXNEhJOEJUQ1NNUVhuRllydWZBdXlCa2ZNMG5MRVRGeSJ9.Gzwf0almuWeipwFeYmwrx1PDC6Qu6qcclg_VpdPO6g3Z3Df2-g2YCyv8-i7jjtPjKbIGUOxl_EibjLD-DJNnwSLyl6TDPLYeidp0qP4pE4EhNm3gMs6Ubx7KZwO73qOkiT9yyPK4oCJn0HL-NzUHVtcXg82t-DIKELqQWZMrMF1u_awCyRdGeKDcyA4_tDoJepUgCP5c9mmIYQNi3p4sJoi4-zlNUm_cHeWRK1O4MI3-9Ynjx_TMMXnGvBYEwXkA7nv1URM2Jqoj_zcwT5IAXWv9ze1J2yQcAvO2yO5Pvi7w7Zvst45N_FcxQUnIY3z0Tqk6blisJgnheN6M96l_7A
+      - name: content-type
+        value: application/json
+      - name: origin
+        value: https://mytrips-uat.copaair.com
+      - name: priority
+        value: u=1, i
+      - name: sec-ch-ua
+        value: '"Google Chrome";v="125", "Chromium";v="125", "Not.A/Brand";v="24"'
+      - name: sec-ch-ua-mobile
+        value: ?0
+      - name: sec-ch-ua-platform
+        value: '"Windows"'
+      - name: sec-fetch-dest
+        value: empty
+      - name: sec-fetch-mode
+        value: cors
+      - name: sec-fetch-site
+        value: same-site
+      - name: user-agent
+        value: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like
+          Gecko) Chrome/125.0.0.0 Safari/537.36
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: ""
+    name: New Request
+    meta:
+      id: req_dbba2dd7059641aa88894509e45b25ef
+      created: 1718917266297
+      modified: 1718917266297
+      isPrivate: false
+      description: ""
+      sortKey: -1718917266298
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/2023.5.8
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: https://api-uat.copaair.com/mytrips/triphub/upgrade-hub/eligible
+    name: New Request
+    meta:
+      id: req_bf1e3f63fe5244b583777d54486806e0
+      created: 1718917274118
+      modified: 1718924544601
+      isPrivate: false
+      description: ""
+      sortKey: -1718917274118
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"pnr": "BFEHGW",
+        	"lastName": "ACOSTAINSAURRALDE",
+        	"classOfService": "Z",
+        	"sizePassengers": 1
+        }
+    headers:
+      - name: accept
+        value: "*/*"
+      - name: accept-language
+        value: es-PA
+      - name: consumer
+        value: segment
+      - name: content-type
+        value: application/json
+      - name: origin
+        value: https://mytrips-uat.copaair.com
+      - name: priority
+        value: u=1, i
+      - name: sec-ch-ua
+        value: '"Google Chrome";v="125", "Chromium";v="125", "Not.A/Brand";v="24"'
+      - name: sec-ch-ua-mobile
+        value: ?0
+      - name: sec-ch-ua-platform
+        value: '"Windows"'
+      - name: sec-fetch-dest
+        value: empty
+      - name: sec-fetch-mode
+        value: cors
+      - name: sec-fetch-site
+        value: same-site
+      - name: user-agent
+        value: CM/Performance/02.10.23
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_9ccfafca484d4c01898722809d23899b
+    created: 1715814829223
+    modified: 1719009391407
+  cookies:
+    - id: "9059373259474344"
+      key: visid_incap_2842481
+      value: BUuStaLNQRqF4hUW6gYxyOBBRWYAAAAAQUIPAAAAAACMCe6A0jXJKyaxaxlK9AJ6
+      domain: copaair.com
+      path: /
+      secure: false
+      httpOnly: true
+      hostOnly: false
+    - id: "8228091618465685"
+      key: nlbi_2842481
+      value: o3jYcyeczBVoyG4WC2ZXnAAAAADdfbAHacd+OsjWpQoMni0l
+      domain: copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: false
+    - id: "16338588139421661"
+      key: incap_ses_1596_2842481
+      value: a
+      domain: copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: false
+    - id: "8182605700745627"
+      key: did
+      value: s%3Av0%3A5649f040-1312-11ef-b906-c7bb094c382c.wPpc0dpqnKGA7eon9z1clukJC8vYuY5ChFPhe4obPLo
+      domain: login-uat.copaair.com
+      path: /
+      secure: true
+      httpOnly: true
+      hostOnly: true
+    - id: "7005578633353522"
+      key: did_compat
+      value: s%3Av0%3A5649f040-1312-11ef-b906-c7bb094c382c.wPpc0dpqnKGA7eon9z1clukJC8vYuY5ChFPhe4obPLo
+      domain: login-uat.copaair.com
+      path: /
+      secure: true
+      httpOnly: true
+      hostOnly: true
+    - id: "5692014636467355"
+      key: incap_ses_1431_2894058
+      value: a
+      domain: copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: false
+    - id: "09365239231810762"
+      key: incap_ses_1430_2894058
+      value: a
+      domain: copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: false
+    - id: "685189385502589"
+      key: incap_ses_1310_2894058
+      value: a
+      domain: copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: false
+    - id: "6690175517721768"
+      key: visid_incap_2894058
+      value: YwVC4044RwqNgbWvNgeyLUZERWYAAAAAQUIPAAAAAAACKPyA/b0dYFzHPinZyL24
+      domain: copaair.com
+      path: /
+      secure: false
+      httpOnly: true
+      hostOnly: false
+    - id: "34371430732347674"
+      key: nlbi_2894058
+      value: YXQXJuiZUUqarRtMyv1i1QAAAAAc0urSQ0qUXlI6tdiRV9PD
+      domain: copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: false
+    - id: "3706770699316013"
+      key: incap_ses_1596_2894058
+      value: a
+      domain: copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: false
+    - id: "38002746194324377"
+      key: incap_ses_469_2842481
+      value: a
+      domain: copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: false
+    - id: "08737697170637682"
+      key: incap_ses_1702_2842481
+      value: a
+      domain: copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: false
+    - id: "16510741288116781"
+      key: incap_ses_222_2842481
+      value: n9WCL5oUqXmnM83i57MUA24AdmYAAAAAdEKB0HYuJ4sjI9i47CK+KA==
+      domain: copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: false
+    - id: "9013506000134963"
+      key: incap_ses_996_2842481
+      value: a
+      domain: copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: false
+    - id: "8877494557409098"
+      key: incap_ses_76_2842481
+      value: c+Hza09r7wOCldbirQEOATD6dWYAAAAAp5ncRnJG3/h9bkxZSZpP7A==
+      domain: copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: false
+environments:
+  name: Base Environment
+  meta:
+    id: env_390d40336c194c99a34fcf41114974c7
+    created: 1715814829221
+    modified: 1715814829221
+    isPrivate: false

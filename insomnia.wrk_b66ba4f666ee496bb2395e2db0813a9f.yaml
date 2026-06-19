@@ -1,0 +1,21 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: Perf - MiServicio
+meta:
+  id: wrk_b66ba4f666ee496bb2395e2db0813a9f
+  created: 1758729009542
+  modified: 1758729009542
+  description: ""
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_3b945dfd7eb73605acd4c4ff70a89c34117ca11d
+    created: 1758729009633
+    modified: 1758729009633
+environments:
+  name: Base Environment
+  meta:
+    id: env_3b945dfd7eb73605acd4c4ff70a89c34117ca11d
+    created: 1758729009625
+    modified: 1758729009625
+    isPrivate: false

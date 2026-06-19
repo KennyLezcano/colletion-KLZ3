@@ -1,0 +1,1409 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: SRF
+meta:
+  id: wrk_fea7f76dfef64b10ab8ec98c0eec975f
+  created: 1727977751197
+  modified: 1727977751197
+  description: ""
+collection:
+  - url: https://api-uat.copaair.com/srf/refund/validateRefund
+    name: New Request
+    meta:
+      id: req_72c5a099e1b14936b25db7f2223f191f
+      created: 1692217314819
+      modified: 1724836339801
+      isPrivate: false
+      description: ""
+      sortKey: -1692217314819
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"pnr": "AYOE1F",
+        	"lastName": "lopez"
+        }
+    headers:
+      - name: authority
+        value: api-uat.copaair.com
+      - name: accept
+        value: application/json, text/plain, */*
+      - name: accept-language
+        value: en-US
+      - name: content-type
+        value: application/json
+      - name: cookie
+        value: nlbi_2842487=BZqSD0AmIl3nz/9fkOdCTQAAAACsiHCieX2mJMtO0nAGy2eF;
+          visid_incap_2842481=QksePaGnQK2wSWrwmA/3z/RRfmQAAAAAQUIPAAAAAABixqmlTmwvKDJw767YNdwC;
+          nlbi_2842471=7y3ncpRzUzFhXiZ50MKWPQAAAADPcHQoI/ZynvqSue5i0eY2;
+          nlbi_2844274=rk9JajeQLm5jbMakt60qCgAAAAC9QrMrz4vgFhZg5pn/99RK;
+          visid_incap_2844268=/8rN+cuqToOPF8HUrLavYMFTfmQAAAAAQUIPAAAAAAA+3QQDpwuwJB3nrFwK7qVx;
+          nlbi_2844268=+pKeazmAcxxrpjJJfGe8BAAAAABmDhLfCsK5j9sCEpPPFueY;
+          nlbi_2844261=6IlnDKmZV3Ykj3M7OpaxYAAAAAA9vqoSPjCC+sbQYhOMZ8QH;
+          visid_incap_2847270=1Tv8ZnNWRomrd1vmRjETlUyrf2QAAAAAQUIPAAAAAABuHVJ/DmKYwu2RIRIPQUVU;
+          visid_incap_2847273=TEdznuHNTLyGURglm3rfuxStgGQAAAAAQUIPAAAAAADheSt2hJ0fvUrc+6EcEbFH;
+          nlbi_2847273=OxTTBN0v3AhNDa2HaZRltgAAAACxkgDVqcTaDtN6EqSZFwxw;
+          visid_incap_2802554=+mrudi7ZQTaHbNpHG2Lf8p2tgGQAAAAAQUIPAAAAAACzpQztHhut1TljBz7pceYU;
+          visid_incap_2847192=dHU2qk0wR/Gh4OMPifE6ogywgGQAAAAAQUIPAAAAAABo5667Do2itgnrgeaakeJi;
+          nlbi_2847192=pkebHLzgxg0GDTQqMLXFwwAAAAAZBY6JTLIzDkNjxmshZ/VW;
+          visid_incap_2858083=XeNv7uLwSEKVLGjfevOJhRSygGQAAAAAQUIPAAAAAAC7zjfq0Vmg2sbIGori0goM;
+          nlbi_2858083=w3ReIvBm2ziP/vMD960vUwAAAACrKqYoT3KUTfhOKTVC5BtF;
+          visid_incap_2854162=Aenklc9DQTW6g/H1zCB9riuygGQAAAAAQUIPAAAAAAAcgFg7Aw4gg4txV2Bgopj/;
+          nlbi_2854162=zFdxfqfb9EH+3rvhNVK3EQAAAACQBOD+2zjcn9YrK6fMXFyb;
+          visid_incap_2819721=60O5M4duSTmPMZ8yeWY3hS2ygGQAAAAAQUIPAAAAAAAboSpW3V++HXwJfKjewB3S;
+          visid_incap_2854165=Lpiwd2xURTaCVwW3JKNbha+ygGQAAAAAQUIPAAAAAAABPgr6vWq2xc6OM6lFWX6Q;
+          nlbi_2854165=vpS+PGcJU20+R8wqtclpQwAAAADvD4pomccqk4aAW3naZxjY;
+          visid_incap_2810706=N8Jo7QSjSTWWnvDDzsu4BQk+g2QAAAAAQUIPAAAAAABwecSPpK/jYiGlajvNuukX;
+          visid_incap_2847189=1mCgsNiuRbekb3qThA1SMAo+g2QAAAAAQUIPAAAAAADCmWgcadSeShhaC1nyhPEB;
+          nlbi_2847189=cnTNf6khfhn9NA189rQCUwAAAADNniW0a4GouQ7Q4swyrWeU;
+          visid_incap_2847188=myQ9mN2tQgKxr0m/AL4oWQo+g2QAAAAAQUIPAAAAAAAmo/ezI75BLSd3ffsw75Wp;
+          nlbi_2847188=p0d0fMSXpFPFqggN27treAAAAAAB1d3O14PGpdDHHu84fxkt;
+          visid_incap_2844278=fBBooj6tSWm80622JxlYwVhTg2QAAAAAQUIPAAAAAACRtMlVGCZwHcbV8q94BN3d;
+          nlbi_2819725=onbsVyW1/jWsbiDy1+vilAAAAACYfoakrkuEZ+wKHrD+/Xb8;
+          visid_incap_2819725=ZKg4CTSOS0mcjr/0DgUy4+naiWQAAAAAQUIPAAAAAAC904J8YNCYfTNpKapapOqo;
+          visid_incap_2854160=Xq2Q1KfRT7+fpPbzma34WOraiWQAAAAAQUIPAAAAAAA30DlFU3GliZO06y1vRfqB;
+          visid_incap_2854161=8vdfoAy9SYeYs71+6UXC7eraiWQAAAAAQUIPAAAAAABeDCtqpnF9wJWGYzu0pA+B;
+          nlbi_2854161=oA6oHBEhGmVeEhE+UYplAAAAAABmbxjDFC3zz6WyxpkQdYuH;
+          nlbi_2851261=sK5DUbwDhUSbtvaT1kjgdQAAAAD9UDRTfOaAgxgnOybrjU/v;
+          visid_incap_2851261=lCRZU0V9TnCFvtoWCRUhMxCWmWQAAAAAQUIPAAAAAACfxxLR5ek1wBTQhX+1nwAw;
+          nlbi_2847270=A8qWPDXut1aKmJYzOKP74QAAAAACbNOZL7ucXXoClb3uNldf;
+          nlbi_2854160=2CKhNKII33TbkGlPLlYrFQAAAABRnglzMsbnlROeoIQPlwJH;
+          nlbi_2854165_2147483392=vTm7b2KjShs2sTOAtclpQwAAAACDghHXIFcOmlrS1yjdRxhR;
+          nlbi_2819725_2147483392=ZzHCP5WX3QI+C7JZ1+vilAAAAACpwBRV2vahYJmkeqyoPfvI;
+          nlbi_2854161_2147483392=zT3nbc93nRgRHkcFUYplAAAAAAB+Hu71blfCihwMpgYj+5k9;
+          nlbi_2854160_2147483392=zbdoaLF+6COz5QeLLlYrFQAAAACegSM+31dRxM6mDGk9vLqV;
+          visid_incap_2842471=44KhVOK3Qq+00mR5EM+5tr9TfmQAAAAAQ0IPAAAAAACAKmOtAcna1ChrjY62UyZ88JYF/SV2DXjm;
+          visid_incap_2849399=br5H7x1NQT+dJMx0qiWiZAkcp2QAAAAAQUIPAAAAAACtHIo2J8kL/juI7HmTH7LT;
+          nlbi_2849399=IS1CDkob6AM4LYv+coVh1AAAAABbWB3okhKu/l4tpUkLpw3i;
+          nlbi_2849399_2147483392=dHLQevMiumsNpk5ZcoVh1AAAAAD1jCY0SSyXkOP0KMZV9E99;
+          visid_incap_2842487=uZ2ZEDoVRdqlZL9r2tgnfvFRfmQAAAAAQkIPAAAAAACAdbGtAcna1CggBHpwcadXs8xhRhCvoo3x;
+          nlbi_2802554=OfWQdyd60XoLVd7edu1mUgAAAADLPA19hX1utbl+57Nxe+Bz;
+          nlbi_2819721=jma5ftLFNRbbex+9KqYZMAAAAADVLT+4AQZj5zzfYtjVqNXC;
+          nlbi_2847192_2147483392=YZ49A8s+clvRwNW8MLXFwwAAAADdX31hOAgNqNRQGgcM9VDo;
+          visid_incap_2861533=QZ6mIVluSpW1AHTJeeciTtX2t2QAAAAAQUIPAAAAAADaYyvgNFiYL6E1sXskJczN;
+          nlbi_2861533=1YVSKdHhcUtrsG/XIJevxwAAAAAyP++0eLGE2ce5gUkIBXAc;
+          visid_incap_2858084=IB23XB/URX+U7budUiR4qyX3t2QAAAAAQUIPAAAAAAB36OP2EtcNbcomfPHsUQwS;
+          nlbi_2858084=oglcIuOEKSuRKPJal8FlnAAAAAAvVrYJBg1Tu2tgXZ6IBxGL;
+          nlbi_2858084_2147483392=MnHYMCZ6q27ge2Xvl8FlnAAAAAAquzy4nLpLjxXQvoCXr9M8;
+          visid_incap_2819718=mW+4ai0ITfK2upeivc1od7GiuWQAAAAAQUIPAAAAAACMjLFS5pxeUX4u1nHC0uiD;
+          nlbi_2819718=aeoCNqGlfAaWdWg2CyN3bQAAAABCrKaLleEc7eb4aL86bbQy;
+          gdprcm=true;
+          nlbi_2819718_2147483392=L4iVdeqIjQ0NUVUMCyN3bQAAAAB5UnjhSo4+C4LuRxRCt+QX;
+          nlbi_2802552=dsL5b9w/5H8+wuP87zWE1wAAAADr4SZupNEr3MzoxGYEDuIv;
+          visid_incap_2802552=F9ygFYl+R0WpjDR4VQ7JPHu1uWQAAAAAQUIPAAAAAACozFa5q2xTdXh3z76jLCYr;
+          nlbi_2802552_2147483392=pad4KdfHGX5dq9zY7zWE1wAAAABBCYxUGgdITEoLy2eIOBXX;
+          nlbi_2810706=37vyGf7mqSQKuXS7HCLTtQAAAAAKpX6eWUsc/ry+lRZ92oTI;
+          nlbi_2847188_2147483392=6BAJCaf3V2dHsK8Y27treAAAAAAZ2wOZOebNj1Sqw2x/QDuN;
+          nlbi_2847189_2147483392=KaO9Z0WS1X3iRQGQ9rQCUwAAAABcekPBjUKggk8HnRH0kIge;
+          nlbi_2810706_2147483392=q+1Meri6LFhSviP2HCLTtQAAAACxHSM/GbW4p8WE3oB7Q84R;
+          lang=es; connecMilesId=231108417; logged=true;
+          visid_incap_2844282=Kvpev1WgQXGrhy62tXE1j0p7ymQAAAAAQUIPAAAAAACxefThMKK4BQ7Tmzj6xc7r;
+          nlbi_2844282=gCRUIrFLlFSddch09LiRDAAAAAAPnU1ATfwK5pNBpDLLCISK;
+          nlbi_2844282_2147483392=v0dvJGWl8EqphiVa9LiRDAAAAAAVw45skv4pZ38e7O3aj73b;
+          visid_incap_2844274=eJCh8SprR2KNXBkgNNaIN8FTfmQAAAAAQkIPAAAAAACAyA+uAcna1CgMMW1TUPLs/ED6RwHLbJzb;
+          nlbi_2842471_2147483392=tuFpOdMlAQOtB/nq0MKWPQAAAAA0aXfCVl6RW7zeX6+iRY/1;
+          visid_incap_2844261=WAkGf8e3Qbu5YZ5G4BONJohbfmQAAAAAQkIPAAAAAACANBCuAcna1Cg5ExW0Lhi8pI2BrBw2X7pv;
+          incap_ses_168_2844268=Or0SZSFQmmsFvddj5NtUAjbn02QAAAAAybI+83pYGX9rX8Uqg3v8nw==;
+          incap_ses_168_2842481=TsspQCUQon945ONj5NtUAj/y02QAAAAAV36CeqUxViLQkfxq9bEmEA==;
+          incap_ses_168_2844261=5YPCJCbEl2NkFu9j5NtUAvn802QAAAAA6TJ4ZWFqA3rB4yzkhRWu6Q==;
+          incap_ses_168_2842487=+a/OMq9RSx6DxvFj5NtUAkEA1GQAAAAAGJOKQxZDabKVQEL6VL1X1w==;
+          incap_ses_7222_2844261=2O+jB+34KTJjgIyzi7M5ZEkD1WQAAAAAn0exhUvEE2U5jqVGUbXLqg==;
+          incap_ses_1705_2854162=OQ4HFInUAwY51pFMtmCpF2Q+1WQAAAAAC8i67pvDioRjE/z7WElaRw==;
+          incap_ses_1705_2819721=aNxKB8vVJz9L15hMtmCpF3lH1WQAAAAAbKOMnqibE1gzTuF4DIM+xg==;
+          incap_ses_989_2842487=Sa7fUPDUrl+MTyUGTKO5DQtb1mQAAAAAy6Vj+rwKnXNVxfbyIlV2Hg==;
+          visid_incap_2891441=4ci6hSRJT2eEQ6eYBxTRLk5i1mQAAAAAQUIPAAAAAACwsYCy59XQ1zTpPdGmQYUR;
+          nlbi_2891441=KWXuONL6ElDk0LBjJ/WmtAAAAACR5ezLvU0P0c2/ztMOcuRM;
+          incap_ses_989_2891441=DcDvbU7a41p9oyoGTKO5DU9i1mQAAAAAYFKjz2vNgW2vG0UAb41AOg==;
+          visid_incap_2849400=wcO1sMacQnOHK++VdgbYhVBi1mQAAAAAQUIPAAAAAADhQfb99nTej9XRGJ3uIGuP;
+          incap_ses_989_2849400=jh5ZIrnYBDnppCoGTKO5DVFi1mQAAAAAVA3j7ryxmJJUZ0b14H0OnA==;
+          nlbi_2891441_2147483392=wG41BKmdsRSl3EIhJ/WmtAAAAADCK5WWENPHLIcuwHx6x+FG;
+          incap_ses_989_2844261=bR4idLUXJTfc/DMGTKO5DWxu1mQAAAAAWzDLuKs1fwOOknDWdNFVHw==;
+          incap_ses_989_2842481=M/wodhHXtGqU/TMGTKO5DXNu1mQAAAAAzkpMCw5SoBsM7GXW+SBrCA==;
+          incap_ses_469_2851261=IjuKBmFW/wgj7+D7CjqCBvYw2mQAAAAAOVenMQ15m1ECekwsCJR+TA==;
+          nlbi_2851261_2147483392=d7j6HYHj9gNekUyB1kjgdQAAAACFz8c3ZEDEJODWtfm6jp6c;
+          incap_ses_989_2819721=JaoLWqkA91GRGwYITKO5Dc5O2mQAAAAAZx8oWh7eHf9NUUZg6c+7zg==;
+          nlbi_2854162_2147483392=ncs4OhfF3WVAkMR8NVK3EQAAAADt6AoryBpA069mOddiJmPb;
+          incap_ses_989_2854162=B33TIBAsLGhKRA0ITKO5DQJY2mQAAAAAqKFzctJ9HXs4RDQnSNhphg==;
+          incap_ses_989_2847273=R+DzKLZQjXhRYUoITKO5DfWl2mQAAAAAYVxzPZDOoTTMYrlnvEkW4A==;
+          nlbi_2842481=teAgFwA200wNhlRsC2ZXnAAAAAA8IZ2qT2nrx4z4F7Pb23B5;
+          nlbi_2847273_2147483392=fuM9E8zTyWCHPJgWaZRltgAAAADhN2OIL3xX6h4RwSKnfqi+;
+          incap_ses_1705_2847273=T7o4eFZ/V0XfvexPtmCpF5a922QAAAAABj6KP8C06kgmU8nRl0RcGw==;
+          incap_ses_1705_2844261=/a+SLyvIunjGJARQtmCpF2Da22QAAAAAYaGFINKOZPE3gxvPwFexDg==;
+          currentLang=es; currentPos=CMgs;
+          nlbi_2844261_2147483392=2wmWHbPlXS0HZ+y2OpaxYAAAAABQ6S6O+d2tb5cJgpMIRlUR;
+          nlbi_2844278=bUvKcwmAX3+Nz2TQzJbmoQAAAAAzXQnl9xB8sVvHpKxvoKzq;
+          origin=ibe; containerApp=false;
+          incap_ses_7222_2842481=v/+tf0AuQ2BuktK5i7M5ZOra3GQAAAAAlqUXN00U+Qhh0JoCwJgjSw==;
+          incap_ses_1705_2844268=ZhsGMgcSkkbfDoxQtmCpFz7b3GQAAAAAxCHRJSc7lD1j+ym/18AGjA==;
+          c_passenger=[{"name":"carlos","surname":"lopez","gender":"Masculino","birthDate":"05/07/1988","mail":"kenlezcano@copaair.com","areaCode":"+507","phone":"60212031","populatedPhone":false,"typeCode":"ADT","complete":true,"open":false,"populated":false,"populatedMail":false,"KTN":"","redressNumber":"","FFInfo":{"number":"","programID":""},"FFPnumberError":false,"loyaltyErrorMsg":"","seats":[],"key":0,"state":"","stateCode":"","notResident":false}];
+          nlbi_2844268_2147483392=f8kRBmh7LjVAxjtOfGe8BAAAAACKTC72l2ZrEI0efMaab5DV;
+          incap_ses_1705_2844274=24/UOPgKf1pmRIxQtmCpF4jb3GQAAAAA0xvWeRhqJAFMbBxTBll1oA==;
+          s_f=false;
+          c_v=U2FsdGVkX1+//NdcBtILhjOk58nviFjUlq5S7lIqMXpcnytap1rjtw==;
+          c_t=U2FsdGVkX1/R81O7UAWwRWG5;
+          c_aet=U2FsdGVkX1+4+kvhVzEPJqljSl8Rq8ICRCzmSOHJyEopFjDeAK6ZLtaTFCDHe9gY/26jWSsDWGNJ9HxsaGNb0udPGgX+qkrd;
+          nlbi_2844274_2147483392=9XjJDlyVjl/lnPDit60qCgAAAABAzZCRGRao5ILQGRv5kpQ4;
+          cp_v=U2FsdGVkX1/v6FtHDBOqUMosBOgl9wcMx9nL1vq4aUyclyZ5YUHYWQ==;
+          cp_s=U2FsdGVkX19nl0uyRPec6+4e;
+          cp_c=U2FsdGVkX19/fFGex62TM+aZYzYARpNC6T5sUGdKcwyiHgwPUCjrl6Bsgj2BtHDnb+9V4HqRZZ4abFs=;
+          cp_t=U2FsdGVkX19f157oMK+p5LDz;
+          c_pr=U2FsdGVkX18qzu/ePCfmmjQx8vwgoYqx/FZbQvaH/Clpy8AaJfhKN/L/rRSCAAH6XDB5d4rtdLw8qZTKYaZ1JDMSSPtopQBBR/SFk2igJmY8bt4=;
+          c_n=U2FsdGVkX1+h/Qjqx1H9PQ==; c_pai=true;
+          c_puc={"url":"https://shopping-uat.copaair.com/confirmation/ea121025-96c5-4273-b9fd-b3a18be57ae2/AYNDBA/LOPEZ","pnr":"AYNDBA"};
+          incap_ses_1705_2861533=TzAUEXDqEBhI1ZlQtmCpF+Hr3GQAAAAAolJ46x+jvuLfwvg64y1j1Q==;
+          nlbi_2861533_2147483392=2gOCLMUQxgkPwpb5IJevxwAAAACM6Z4fdr2ULwdp/RAdm3he;
+          incap_ses_1375_2844278=GCKpXQQ7PluFXAP59fsUE4vx3GQAAAAAxgpcfWlhxlw5TLnAEPyMNA==;
+          incap_ses_1705_2858083=7W//bnbR7WblP6BQtmCpF3Xz3GQAAAAAY8orGyzaGmdHwbej5uZaBg==;
+          uuid=6tixV7slJng1TRGHajzQr;
+          nlbi_2842487_2147483392=CIXTRef2u06Qy8PckOdCTQAAAADf+u8dSYNYODl5QYRGGtpP;
+          incap_ses_1705_2842487=7ov9Lxg45miRQKtQtmCpF4EA3WQAAAAArIgfAS/pjzR26di86y7kjQ==;
+          nlbi_2847270_2147483392=Nz7uYlv3bxSWtyo4OKP74QAAAABONDekWH+YYFwmWkpuvYIc;
+          incap_ses_1705_2847270=JyxSDoRXQFeqs7xQtmCpF5IV3WQAAAAAuS0HkieSJ1Hs2zkGS3IcTQ==;
+          incap_ses_1705_2844278=DYR5JiiLlUHb1sNQtmCpF6ce3WQAAAAA7nw3XOGD4YhHTZFRSK62OQ==;
+          nlbi_2844278_2147483392=z+fRFQYDPSsQMFSNzJbmoQAAAAB8cRl3g28SUDaF980bRDpV;
+          incap_ses_1705_2842481=WWhsWWF09WqjA8RQtmCpF9Ie3WQAAAAADuHVPs2lXUHBOdJmDeXQ4Q==;
+          incap-resubmit-token=9uQB5O7mmjs=:h9wrlq9W+Rk3ZvFI7/hgV+kW/JL8IOSpwzdb92r7Vf4=
+      - name: origin
+        value: https://services-uat.copaair.com
+      - name: sec-ch-ua
+        value: '"Not/A)Brand";v="99", "Google Chrome";v="115", "Chromium";v="115"'
+      - name: sec-ch-ua-mobile
+        value: ?0
+      - name: sec-ch-ua-platform
+        value: '"Windows"'
+      - name: sec-fetch-dest
+        value: empty
+      - name: sec-fetch-mode
+        value: cors
+      - name: sec-fetch-site
+        value: same-site
+      - name: user-agent
+        value: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like
+          Gecko) Chrome/115.0.0.0 Safari/537.36
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: ""
+    name: New Request
+    meta:
+      id: req_dfce824868964c38aa4f79d7d73eb6c2
+      created: 1718095504963
+      modified: 1718095504963
+      isPrivate: false
+      description: ""
+      sortKey: -1718095504963
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/2023.5.8
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: https://api-uat.copaair.com/mytrips/triphub/eligible-retract/ABDPR3/lopez
+    name: New Request
+    meta:
+      id: req_d2c4df18877b4592ad27a871e70822b8
+      created: 1718095509808
+      modified: 1718095681660
+      isPrivate: false
+      description: ""
+      sortKey: -1718095509808
+    method: GET
+    headers:
+      - name: accept
+        value: application/json, text/plain, */*
+      - name: accept-language
+        value: es-US,es-419;q=0.9,es;q=0.8
+      - name: cookie
+        value: visid_incap_2819725=ZKg4CTSOS0mcjr/0DgUy4+naiWQAAAAAQUIPAAAAAAC904J8YNCYfTNpKapapOqo;
+          logged=true; passengerLastName=Copa%20Airlines;
+          connecMilesId=231108513; emcid=T-B4DaxnVLl;
+          nlbi_2819725=dhdSEEtZKkk+eBa31+vilAAAAAASXkYsBdC9wH1OXbPhuZMx;
+          nlbi_2819725_2147483392=VvToQtOmpFzuCmTe1+vilAAAAAAFEsu1zLQjYwvq/svJwGT4;
+          domain=.copaair.com;
+          visid_incap_2819721=RbA+D/cpQLqeDjCiCZvGx1VzBGYAAAAAQUIPAAAAAAA8zLj8qkj6k4dO1UPLCrQb;
+          visid_incap_2819718=ywiQJV6mQnWnGT07FCvMfFbiJ2YAAAAAQUIPAAAAAAC4fvsdvjux6l/QecSMnu91;
+          nlbi_2819718=s04XIt86KVGNh8DACyN3bQAAAADCKe1aL9BPoqNaCwNcNhV/;
+          nlbi_2819718_2147483392=0K9CH7Rg2mAFDxc+CyN3bQAAAACQXYe8j8iZ1VqQnwNr+qXA;
+          nlbi_2861533_2147483392=jfsQcTf6YwkwKRaaIJevxwAAAADK/egooXwMYW9O/BR1gD3B;
+          nlbi_2844261=myJpa7cbBFnBUUzYOpaxYAAAAADHcLhAqe8ngFepYHrUJvJU;
+          gdprcm=true;
+          nlbi_2854162=XZnLVJhA0iXojtjSNVK3EQAAAABXsxz52sbnFXmRaNr37loy;
+          nlbi_2900896=gSIsAmyXNTZt7HXw77VrFwAAAABI21OTVYBUQyVFajm7cu7k;
+          visid_incap_2854160=LryYWlR5ROu9sUNrcfnKMgnXWGYAAAAAQUIPAAAAAAAlbcSAa6JJJ+Yi0Ziw3sX+;
+          nlbi_2854160=RzpMV6bnYxa2bvQgLlYrFQAAAACEluiM1YyyfhNA2yfumNdh;
+          nlbi_2842487=wbTiNVGfDnP0EgEbkOdCTQAAAABmI+DP2YOOZTOJ6qgEGBKJ;
+          nlbi_2844268=2h8+MK9d6jh+C47gfGe8BAAAAAAkvvNzTAtl2mVyvjdf4ae+;
+          nlbi_2844274=UKqKeKWONF5/o0qBt60qCgAAAADNPj08CQBG9z7hB0qtdmMY;
+          visid_incap_2844261=g3gdQX7KTMms9eAU60A6rYi4JmYAAAAARkIPAAAAAABNdWPE4KqNo8Eqe5XzO47g;
+          visid_incap_2847270=N2lfE0dESM6OoNkX4lU/26HbRGYAAAAAQkIPAAAAAAA9pXLBWfNwIKb+O0l8GFLR;
+          visid_incap_2842481=Er2LwSOQRySv3fNHFyu0RQ7TWWYAAAAAQkIPAAAAAACG5iETTfFGqcPB2wdo7HCS;
+          nlbi_2842481=X5fACtQtixqwGVMaC2ZXnAAAAABVVPQFdGhxJC7uGFnbtVDV;
+          visid_incap_2894058=tIk4XO74TiW4Yw/g4LIKqxHMXWYAAAAAQUIPAAAAAAAvgYhHjPB98q5+t9LdgTQB;
+          nlbi_2894058=BfjhFvCCRiZ1+O1/yv1i1QAAAACMcKT1OK7+QKoe3IWPrwZp;
+          visid_incap_2854162=8iR101qYRAWrhan/GfUgzTfNXWYAAAAAQUIPAAAAAACChK5xQRxqKkDzdkpSSiXX;
+          visid_incap_2900896=03HgBhwfR1etQ/vb5oIOZznNXWYAAAAAQUIPAAAAAACiUQ1DoDG9Ua1y8jdXzMeJ;
+          nlbi_2854160_2147483392=Ne6URE2UPwZ/ZU97LlYrFQAAAACCG0FMB4I6tnP95NNdWLoC;
+          Y29wYWFpci5jb20%3D-_lr_uf_-edny8h=1791844b-a58e-464c-a6c8-5e3345f30c37;
+          visid_incap_2842471=0NekXr9LRTqILMX8XHCCU+ccX2YAAAAAQUIPAAAAAAC6X5lGNT9gUqp2zgVd6doJ;
+          nlbi_2842471=eUqZBYybzWNyulbU0MKWPQAAAACL2vODnTW5pV6CbRC0HTTs;
+          incap_ses_996_2842471=dD7sXNftKhlnQ5FtyYDSDegcX2YAAAAAW1Lri51nudR70ELTqiP2MQ==;
+          nlbi_2842471_2147483392=/ps6Emyg6VrQFoHX0MKWPQAAAAASQGsXj4LuhWU8J6gomh7o;
+          visid_incap_2891441=F6KhicETTlqDpA8nJSOUp/9rX2YAAAAAQUIPAAAAAAAEGSj/RVwCoIqz1Cfse1U9;
+          visid_incap_2844268=gSr9rqhqTOKvsDg/4/oWpHR9X2YAAAAAQUIPAAAAAAAO9zKlz/yYw1Lhp9ekvBQx;
+          incap_ses_1618_2844261=lPYCbpiUGW1sRRkdgEp0FvZ9X2YAAAAASsIMI3gZOPWZMxb6I+qT2g==;
+          incap_ses_996_2891441=erSGeLvX2xCeYiJuyYDSDaajX2YAAAAAgm0gS68laXa3M3V7DQDrJQ==;
+          nlbi_2891441_2147483392=I4hUAi7lV0KXJUkOJ/WmtAAAAACPCmukWo+Y/hHWK/msG4FO;
+          incap_ses_1252_2844261=CXNTK5njnAfEuN88bv9fEfbgX2YAAAAAnfvnkdgiLtC8I3F1/gxZ7g==;
+          incap_ses_995_2842481=zzn7ftK6+AWkcOkcTfPODWR4YGYAAAAAXtVokXnOv3OozGxMDca/Wg==;
+          incap_ses_995_2894058=T6bzNSYRx2rru00dTfPODTHlYGYAAAAA0jdQmYdnzyw7Jam8NjLCzw==;
+          incap_ses_995_2844261=XybDPRHJ8Coi51ZkT/PODdQBYmYAAAAAWepgq4Q0VVaZV6LxPy8rPQ==;
+          incap_ses_996_2847270=4bHHMfEBxjzJY0W1y4DSDQAXYmYAAAAArOcqkdBcnPHj8+bNG8D95Q==;
+          visid_incap_2842487=PYHJdDxJQW676NLpIDW8SjE1YmYAAAAAQUIPAAAAAAA9PN5tGkQAOa+SNx8b2NVZ;
+          incap_ses_996_2842487=AmeDBaK5W0EzrWK1y4DSDTE1YmYAAAAAYbkltPPmvwhsgMifo5kQqg==;
+          incap_ses_996_2842481=K92JMVLuFGIYr2K1y4DSDTQ1YmYAAAAAzEaDC3NuZdT+hO6mb27GxA==;
+          incap_ses_996_2894058=JaSUXFpuQw3VXmO1y4DSDQg2YmYAAAAA3ZmtoWRZXWaiSOowXgXCXA==;
+          incap_ses_996_2844268=7/whGR/YNQ0piWO1y4DSDTw2YmYAAAAAIHTgA/O+edEM+GoDqO/Bmg==;
+          visid_incap_2844274=VlRb3nLuRw2O6cA8SliHphs3YmYAAAAAQUIPAAAAAADaw+dLehMnEkPr3Cx/5FMk;
+          incap_ses_996_2844274=k2BhQyOBySU4a2S1y4DSDRs3YmYAAAAAN6n8ChLrZI+awE5qytwlmA==;
+          nlbi_2844274_2147483394=i6nMepyxKxGbXqrJt60qCgAAAABpeicl4wHWsDXIzEi601Y2;
+          incap_ses_996_2900896=S1OmAjcywifBGmq1y4DSDSI9YmYAAAAAWkXVDNaF35L0HnZ6zwcJ9Q==;
+          nlbi_2819721=G+rUa/qq3EMZgS7GKqYZMAAAAAAr9w6VfuAC1/oAp7TyqKu3;
+          incap_ses_996_2819721=gERzOdRTFzOjJGq1y4DSDSk9YmYAAAAA/ZP8cfpNz7qhIifFdCIDHQ==;
+          nlbi_2854162_2147483392=7x9NFiFUYhF6v1mhNVK3EQAAAACyJsOBskNv0lwtQwBDbugL;
+          incap_ses_996_2854162=G9nqd44K5FIdCHm1y4DSDTdNYmYAAAAAH/VjN0ovUg73Rpdo+PZ/Kg==;
+          nlbi_2842487_2147483394=35iBOJXQvTDZSBfikOdCTQAAAABAhKTz3tM0kIgBRl1Q6hm+;
+          incap_ses_996_2844261=LdPvUZyc3Us8HX21y4DSDehRYmYAAAAAbqb6lvlC9OMX6VPIERq3tw==;
+          incap_ses_7230_2854162=Vgi7coY6HRtt+eMLwh5WZPWrYmYAAAAAUapgFG9BHwPmlZvNbUq1PA==;
+          nlbi_2847270=AedqQxsAXF+TGh9XOKP74QAAAAD/hm48Are7uSbJth83cCe8;
+          incap_ses_7230_2847270=LbCyfdM3NW9symgMwh5WZJs3Y2YAAAAA2beRWvQcvmsRwkXcw8yj0A==;
+          incap_ses_7230_2900896=mfcKKZyGSHlQz2gMwh5WZJ03Y2YAAAAANk3r55FMG6nuusn3FuI88w==;
+          nlbi_2847270_2147483392=bstzPuJ1Ii2yG/krOKP74QAAAADGPe0yy6x3jvmXtt+aADhV;
+          incap_ses_222_2900896=Ax0gZqIedn/hb06S5bMUA7VXY2YAAAAA/59eFnEOVjXHPx5ciBmfUg==;
+          incap_ses_222_2847270=XtJAdN/rywDgS0+S5bMUA75YY2YAAAAAG4ETUZ9Y5nnyMjvli1ae0w==;
+          incap_ses_222_2844261=uUYAFKpwD1Rhzl7Z57MUAzMGaGYAAAAACOKAIoftIHmyhNUyMtCrEw==;
+          _gid=GA1.2.1696778303.1718093366;
+          incap_ses_222_2894058=4I/bPYweTUj5zl7Z57MUAzYGaGYAAAAAaeIH9YMgd1k00OHRna9o+g==;
+          incap_ses_222_2842481=ixzWYTHeXDhcC1/Z57MUA6EHaGYAAAAAgbFOxA0JtZDs7i0CIBshmQ==;
+          visid_incap_2844282=FHpFBEBYTO+NGfrpIC2MHfQKaGYAAAAAQUIPAAAAAAASbMn4PT5k6zIa8j0+7/AZ;
+          nlbi_2844282=n4IFeSJN50H5WNH19LiRDAAAAACQvlJY4ZCgXzBbyS0YUWMF;
+          incap_ses_222_2844282=VjyjHmxKsBWxlF/Z57MUA/UKaGYAAAAARaWUAzZgq7jzlkDy1qA3Kw==;
+          nlbi_2844282_2147483392=lIP7aRSg9Ero7RHG9LiRDAAAAADNA9+h03WgDdFimN+A7SjL;
+          _ga_SEJ8DB2YNH=GS1.1.1718093365.5.1.1718094619.23.0.0;
+          _ga=GA1.2.1278005418.1717598444;
+          incap_ses_222_2842487=sg8AEK/fIgGz1V/Z57MUA4YMaGYAAAAA6e1XN//TKhkCd9KSD48UTg==;
+          currentLang=es; lang=es; currentPos=CMgs; origin=ibe;
+          containerApp=false;
+          incap_ses_222_2844268=FUqFJdPPpBEj3V/Z57MUA7cMaGYAAAAAG8IuBMAsIJlBdPZUX5wqVw==;
+          c_passenger=[{"name":"juan","surname":"lopez","gender":"Male","birthDate":"15/12/1992","mail":"kenlezcano@copaair.com","areaCode":"+507","phone":"60394848","populatedPhone":false,"typeCode":"ADT","complete":true,"open":false,"populated":false,"populatedMail":false,"KTN":"","redressNumber":"","FFInfo":{"number":"","programID":""},"FFPnumberError":false,"loyaltyErrorMsg":"","seats":[],"key":0,"state":"","stateCode":"","notResident":false,"marketingConsent":true,"cubaAffidavit":{"travelingReason":"","ofacLicense":"","state":"","city":"","checkbox":false,"address":"","postalCode":"","isApplicable":""}}];
+          nlbi_2844268_2147483392=R1kvGoUtlW9vQRmEfGe8BAAAAAC7g2Pg/uhzRAe9zwVXlFbL;
+          incap_ses_222_2844274=9sLja8fhFTfM5F/Z57MUA+cMaGYAAAAAezYTsgXe6fmXGk4ltf/Dhw==;
+          s_f=false;
+          c_v=U2FsdGVkX1/SFBdvMaMA7wGuDYm39vOspQMM/5EmszqW9JdIhTPmSQ==;
+          c_t=U2FsdGVkX18MrsZQ+ps5glDU;
+          c_aet=U2FsdGVkX18FyJ85nbhcObwhTjzjQnpywwBbii0xAfGtY6lsASi896Av5Pos9QGpvjKZUNqPVsyw3jbcLoZbH4OuHQRG+54z;
+          nlbi_2844274_2147483392=7YxIMJTYoTa6tSZct60qCgAAAAB7oTz6er3gU3PrCA/0lDU1;
+          cp_v=U2FsdGVkX18oSsDAuHRLH3qSHzBjgoJFgBQ5xbaYmv5RMeT51AxS0g==;
+          cp_s=U2FsdGVkX1+U4wwRvvIB34kb;
+          cp_c=U2FsdGVkX1+PFfDD7NSKIfuWID+9wWY2Rw50bhPV9F8k2Gq6gXYSvAjrhYHVb5D9+x+6QU41C9vJlbo=;
+          cp_t=U2FsdGVkX183H/CNyymeLBRm;
+          c_pr=U2FsdGVkX1+ec29h1pn3EnZzEGeQXdVXeSUB9beM+2ZWeMMqk77M72d1ldCZuYULj8KYpBU4PDSNEc5omxMhpDoIjNLVJM2DiGHg45ejtRrdwqQ=;
+          c_n=U2FsdGVkX18+vXBeDx/j+5pN; c_pai=true;
+          nlbi_2842487_2147483392=5PKqIVfCelqP6mUTkOdCTQAAAAA8W2DsfnYJbmF8BKkEGco4;
+          uuid=Ua34VnJfuvtAhWgh6Gse_;
+          Y29wYWFpci5jb20%3D-_lr_hb_-edny8h%2Fibe-testing-s4n={%22heartbeat%22:1718095183169};
+          c_puc={"url":"https://shopping-uat.copaair.com/confirmation/2ef98cb8-53cf-4466-ae5c-7f14bdfd4281/ABDPR3/LOPEZ","pnr":"ABDPR3"};
+          Y29wYWFpci5jb20%3D-_lr_tabs_-edny8h%2Fibe-testing-s4n={%22sessionID%22:0%2C%22recordingID%22:%225-e57866d6-9458-4984-91e6-e10395b6ff95%22%2C%22webViewID%22:null%2C%22lastActivity%22:1718095188188};
+          nlbi_2844261_2147483392=/hh7I4ODGQcmXYgGOpaxYAAAAABZYV1HTSzb5LVVKW1oALzk;
+          _gat_UA-26727407-1=1; _gat_gtag_UA_174663766_1=1;
+          _ga_R4PMF3F8Y8=GS1.1.1718093730.9.1.1718095215.0.0.0;
+          Y29wYWFpci5jb20%3D-_lr_hb_-edny8h%2Fmy-trips-uat={%22heartbeat%22:1718095220082};
+          Y29wYWFpci5jb20%3D-_lr_tabs_-edny8h%2Fmy-trips-uat={%22sessionID%22:0%2C%22recordingID%22:%225-1fad5e7a-4f4c-4f1c-b086-d2da8e15424e%22%2C%22webViewID%22:null%2C%22lastActivity%22:1718095222084}
+      - name: origin
+        value: https://mytrips-uat.copaair.com
+      - name: priority
+        value: u=1, i
+      - name: sec-ch-ua
+        value: '"Google Chrome";v="125", "Chromium";v="125", "Not.A/Brand";v="24"'
+      - name: sec-ch-ua-mobile
+        value: ?0
+      - name: sec-ch-ua-platform
+        value: '"Windows"'
+      - name: sec-fetch-dest
+        value: empty
+      - name: sec-fetch-mode
+        value: cors
+      - name: sec-fetch-site
+        value: same-site
+      - name: user-agent
+        value: CM/Performance/02.10.23
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: https://api-uat.copaair.com/srf/refund/refunds
+    name: Refund
+    meta:
+      id: req_e651aa19e5884ee1a7cbea033c70b1c7
+      created: 1723569188569
+      modified: 1723571258591
+      isPrivate: false
+      description: ""
+      sortKey: -1723569188569
+    method: GET
+    body:
+      mimeType: application/json
+      text: >-
+        {
+            "channel": "WEB",
+            "type": "AUTOPOPULATED",
+            "callCenterRequest": false,
+            "reason": {
+                "code": "InvoluntaryChange",
+                "description": "Cancelación o cambio de itinerario realizado por Copa Airlines",
+                "details": null
+            },
+            "language": "es",
+            "indirectChannel": false,
+            "requester": {
+                "firstName": "Luis",
+                "lastName": "*****les",
+                "nationality": null,
+                "email": "lyi@copaair.com",
+                "phone1": "+5072776767",
+                "phone2": null,
+                "relationShipWithPax": "Yo soy uno de los pasajeros"
+            },
+            "bank": {
+                "country": {
+                    "code": "PA",
+                    "description": ""
+                },
+                "name": "Banco General",
+                "fop": "CASH",
+                "owner": "kenny test",
+                "accountType": "Ahorro",
+                "accountNumber": "01252524154",
+                "cpfCpnj": null,
+                "code": null,
+                "agency": null,
+                "bankKey": null,
+                "currency": null,
+                "idNumber": "88281723",
+                "swiftcode": "1234",
+                "rfc": null,
+                "cbu": null,
+                "cuitCuil": null,
+                "amount": null,
+                "transitNumber": null,
+                "cci": null,
+                "iban": null,
+                "bankBranch": null,
+                "address": null
+            },
+            "passengers": [
+                {
+                    "firstName": "LUIS",
+                    "lastName": "*****GAL",
+                    "birthDate": "",
+                    "frequentFlyerStatus": null,
+                    "passengerSubType": null,
+                    "passengerType": "ADT"
+                },
+                {
+                    "firstName": "ALEXANDRA",
+                    "lastName": "YEE",
+                    "birthDate": "",
+                    "frequentFlyerStatus": null,
+                    "passengerSubType": null,
+                    "passengerType": "ADT"
+                }
+            ],
+            "flights": [
+                {
+                    "operatingAirlineCode": "CM",
+                    "operatingFlightNumber": "407",
+                    "marketingAirlineCode": "CM",
+                    "marketingFlightNumber": "407",
+                    "status": 26,
+                    "departure": {
+                        "date": "2024-09-15T04:45:00-06:00",
+                        "airportCode": "GUA",
+                        "country": "GT"
+                    },
+                    "arrival": {
+                        "date": "2024-09-15T08:14:00-05:00",
+                        "airportCode": "PTY",
+                        "country": "PA"
+                    }
+                },
+                {
+                    "operatingAirlineCode": "CM",
+                    "operatingFlightNumber": "224",
+                    "marketingAirlineCode": "CM",
+                    "marketingFlightNumber": "224",
+                    "status": 51,
+                    "departure": {
+                        "date": "2024-09-15T08:46:00-05:00",
+                        "airportCode": "PTY",
+                        "country": "PA"
+                    },
+                    "arrival": {
+                        "date": "2024-09-15T12:08:00-04:00",
+                        "airportCode": "CCS",
+                        "country": "VE"
+                    }
+                }
+            ],
+            "tickets": [
+                {
+                    "number": "2302187052023",
+                    "firstName": "LUIS",
+                    "lastName": "*****GAL",
+                    "ancillaries": null,
+                    "coupons": [
+                        {
+                            "couponStatusCode": "I",
+                            "couponStatus": "OPEN_FOR_USE",
+                            "fromCityCode": "SJO",
+                            "toCityCode": "PTY",
+                            "flightNumber": "465",
+                            "flightDate": "2024-09-15",
+                            "controllingCarrier": "CM",
+                            "carrierCode": "CM"
+                        },
+                        {
+                            "couponStatusCode": "I",
+                            "couponStatus": "ADJUSTED",
+                            "fromCityCode": "PTY",
+                            "toCityCode": "CCS",
+                            "flightNumber": "224",
+                            "flightDate": "2024-09-15",
+                            "controllingCarrier": "CM",
+                            "carrierCode": "CM"
+                        }
+                    ]
+                },
+                {
+                    "number": "2302187052024",
+                    "firstName": "RODRIGO",
+                    "lastName": "*****REZ",
+                    "ancillaries": null,
+                    "coupons": [
+                        {
+                            "couponStatusCode": "I",
+                            "couponStatus": "OPEN_FOR_USE",
+                            "fromCityCode": "SJO",
+                            "toCityCode": "PTY",
+                            "flightNumber": "465",
+                            "flightDate": "2024-09-15",
+                            "controllingCarrier": "CM",
+                            "carrierCode": "CM"
+                        },
+                        {
+                            "couponStatusCode": "I",
+                            "couponStatus": "ADJUSTED",
+                            "fromCityCode": "PTY",
+                            "toCityCode": "CCS",
+                            "flightNumber": "224",
+                            "flightDate": "2024-09-15",
+                            "controllingCarrier": "CM",
+                            "carrierCode": "CM"
+                        }
+                    ]
+                }
+            ],
+            "reservation": {
+                "pnr": "BKHIG4",
+                "parentPnr": null,
+                "createDate": "2024-08-13T15:34:00",
+                "issueDate": "2024-08-13T20:24:00",
+                "ticketingStatus": 3,
+                "flightSegments": 2,
+                "flightSegmentsRemoved": false,
+                "interline": false,
+                "redemption": false,
+                "nonRevenue": false,
+                "scheduledChange": true,
+                "storefront": null,
+                "daysFromIssue": null
+            },
+            "formOfPayment": {
+                "type": "OTHERS",
+                "details": [
+                    {
+                        "code": "CA",
+                        "description": "CASH",
+                        "maskedValue": null,
+                        "subType": null
+                    }
+                ],
+                "currency": "USD"
+            },
+            "documents": [
+                {
+                    "type": "ID DOCUMENT",
+                    "contentType": "application/pdf",
+                    "name": "boardingPass - 2023-12-18T110458.534.pdf",
+                    "uniqueName": "054f0b52-78d8-42f1-bade-1f5114ef08ab.pdf"
+                }
+            ]
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: Accept-Language
+        value: en-US
+      - name: User-Agent
+        value: CM/Performance/02.10.23
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - name: SRF
+    meta:
+      id: fld_862784dd88ab43eb971519ef83f3140f
+      created: 1678299438873
+      modified: 1678299438873
+      sortKey: -1678299438873
+      description: ""
+    children:
+      - name: TripHub
+        meta:
+          id: fld_edb210292a1f44ab947a1ebc1211110f
+          created: 1678299438596
+          modified: 1678299438596
+          sortKey: -1678299438596
+          description: ""
+        children:
+          - url: "{{triphub}}/triphub/load-trip"
+            name: Load-trip
+            meta:
+              id: req_a430ca3b608941759bbedaed8dc2ee37
+              created: 1678299438528
+              modified: 1724836392006
+              isPrivate: false
+              description: ""
+              sortKey: -1678299438528
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                    "pnrOrTicket": "AOWMT4",
+                    "surname": "GREE",
+                    "getAdditionalInfo": false
+                }
+            headers:
+              - name: Accept-Language
+                value: en-US
+              - name: Content-Type
+                value: application/json
+              - name: platform
+                value: SRF
+              - name: user-agent
+                value: CM/Performance/02.10.23
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{triphub}}/api-docs/swagger.json"
+            name: Swagger
+            meta:
+              id: req_e3cee51635494da989ea4bd46d9f3907
+              created: 1678299438549
+              modified: 1678299438549
+              isPrivate: false
+              description: ""
+              sortKey: -1678299438549
+            method: GET
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{triphub}}/triphub/healthcheck"
+            name: Status
+            meta:
+              id: req_577600928e914901a77908cda6931896
+              created: 1678299438562
+              modified: 1678299438562
+              isPrivate: false
+              description: ""
+              sortKey: -1678299438562
+            method: GET
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - name: OSL
+            meta:
+              id: fld_3a2d3d3c93da4e1b9dcde1b85a219b5e
+              created: 1678299438592
+              modified: 1678299438592
+              sortKey: -1678299438592
+              description: ""
+            children:
+              - url: https://api-uat.copa.com/booking/v3.0/ticket/2302171703799
+                name: BookingAPI - eTicket
+                meta:
+                  id: req_b2b5db30dcd24395a772ed4b3f387f45
+                  created: 1678299438574
+                  modified: 1678299438574
+                  isPrivate: false
+                  description: ""
+                  sortKey: -1678299438574
+                method: GET
+                parameters:
+                  - name: LastName
+                    value: GUERRA
+                    disabled: false
+                headers:
+                  - name: Ocp-Apim-Subscription-Key
+                    value: 388a87d4acc84c28944e9de7f8081d87
+                  - name: Copa-Channel-ID
+                    value: temp
+                  - name: Copa-Language
+                    value: es-PA
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+              - url: https://api-uat.copa.com/booking/v3.0/reservation/AT3QY3
+                name: BookingAPI - PNR
+                meta:
+                  id: req_64231dc1baee495e8dae2c9885c97aeb
+                  created: 1678299438580
+                  modified: 1678299438580
+                  isPrivate: false
+                  description: ""
+                  sortKey: -1678299438580
+                method: GET
+                parameters:
+                  - name: LastName
+                    value: fer
+                    disabled: false
+                headers:
+                  - name: Ocp-Apim-Subscription-Key
+                    value: ff3a8b977fcc476aa61f589fc1edb4e4
+                  - name: Copa-Channel-ID
+                    value: Web
+                  - name: Copa-Consumer-ID
+                    value: SRF
+                  - name: Copa-Language
+                    value: es-PA
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+      - name: Refund
+        meta:
+          id: fld_806b1072e1774259926f6d1a6e87763d
+          created: 1678299438862
+          modified: 1678299438862
+          sortKey: -1678299438862
+          description: ""
+        children:
+          - url: "{{refund}}/refund/documents"
+            name: Document
+            meta:
+              id: req_92141d0e842c4f3698c2b6c84561be3c
+              created: 1678299438601
+              modified: 1723568592533
+              isPrivate: false
+              description: ""
+              sortKey: -1678299438601
+            method: POST
+            body:
+              mimeType: multipart/form-data
+              params:
+                - name: file
+                  disabled: false
+                  fileName: C:\Users\kenlezcano\Desktop\PRUEBAS DE PROD pase de SRT.pptx
+                  type: file
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{refund}}/refund/validateRefund"
+            name: Validate Refund
+            meta:
+              id: req_bf3be83ede5e4f95b35460385a17185b
+              created: 1678299438611
+              modified: 1718746308099
+              isPrivate: false
+              description: ""
+              sortKey: -1678299438611
+            method: POST
+            body:
+              mimeType: ""
+              text: |-
+                {
+                    "pnr": "AYOE1F",
+                    "lastName": "Lopez"
+                }
+            headers:
+              - name: Accept-Language
+                value: en-US
+              - name: x-forwarded-for
+                value: 0.0.0.0
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: CM/Performance/02.10.23
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{refund}}/refund/refunds"
+            name: Refund
+            meta:
+              id: req_2704007f2c594dd59b895978d8c53d99
+              created: 1678299438621
+              modified: 1723568575962
+              isPrivate: false
+              description: ""
+              sortKey: -1678299438621
+            method: POST
+            body:
+              mimeType: application/json
+              text: >-
+                {
+                    "channel": "WEB",
+                    "type": "AUTOPOPULATED",
+                    "callCenterRequest": true,
+                    "indirectChannel": false,
+                    "language": "fr",
+                    "reason": {
+                        "code": "",
+                			"description": ""
+                        
+                    },
+                    "reservation": {
+                        "pnr": "TEST00",
+                        "createDate": "2023-03-22T21:24:00",
+                        "issueDate": "2023-03-22T20:22:00",
+                        "ticketingStatus": 3,
+                        "flightSegments": 1,
+                        "interline": false,
+                        "scheduledChange": false,
+                        "redemption": false
+                    },
+                    "requester": {
+                        "firstName": "Karate",
+                        "lastName": "Test",
+                        "email": "camilo_del_valle@epam.com",
+                        "phone1": "+0531222121"
+                    },
+                    "passengers": [
+                        {
+                            "firstName": "KARATE",
+                            "lastName": "TEST",
+                            "birthDate": "03/01/1987"
+                        },
+                        {
+                            "firstName": "KARATE",
+                            "lastName": "ATEST",
+                            "birthDate": "03/01/1987"
+                        }
+                    ],
+                    "tickets": [
+                        {
+                            "number": "2308884488710",
+                            "firstName": "KARATE",
+                            "lastName": "TEST",
+                            "coupons": [
+                                {
+                                    "couponStatusCode": "I",
+                                    "couponStatus": "",
+                                    "fromCityCode": "PTY",
+                                    "toCityCode": "BOG",
+                                    "flightNumber": "243",
+                                    "flightDate": "2022-08-17",
+                                    "controllingCarrier": "CM",
+                                    "carrierCode": "CM"
+                                }
+                            ]
+                        },
+                        {
+                            "number": "2308884488789",
+                            "firstName": "KARATE",
+                            "lastName": "ATEST",
+                            "coupons": [
+                                {
+                                    "couponStatusCode": "I",
+                                    "couponStatus": "",
+                                    "fromCityCode": "PTY",
+                                    "toCityCode": "BOG",
+                                    "flightNumber": "243",
+                                    "flightDate": "2022-08-17",
+                                    "controllingCarrier": "CM",
+                                    "carrierCode": "CM"
+                                }
+                            ]
+                        }
+                    ],
+                    "flights": [
+                        {
+                            "operatingAirlineCode": "CM",
+                            "operatingFlightNumber": "243",
+                            "marketingAirlineCode": "CM",
+                            "marketingFlightNumber": "243",
+                            "status": 26,
+                            "departure": {
+                                "date": "2022-08-17T07:55:00-05:00",
+                                "airportCode": "PTY",
+                                "country": "PA"
+                            },
+                            "arrival": {
+                                "date": "2022-08-17T09:29:00-05:00",
+                                "airportCode": "BOG",
+                                "country": "CO"
+                            }
+                        }
+                    ],
+                    "formOfPayment": {
+                        "type": "CREDITCARD",
+                        "details": [
+                            {
+                                "code": "CC",
+                                "description": "CREDITCARD",
+                                "maskedValue": "**** **** **** 1111",
+                                "subType": "VI"
+                            }
+                        ],
+                        "currency": "COP"
+                    },
+                    "documents": [
+                        {
+                            "type": "",
+                            "contentType": "image/png",
+                            "name": "ref2.png",
+                            "uniqueName": "d0ee91ea-3685-4fba-99d3-f2ceeef0d1cd.png"
+                        }
+                    ]
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: Accept-Language
+                value: en-US
+              - name: User-Agent
+                value: CM/Performance/02.10.23
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{refund}}/api-docs/swagger.yaml"
+            name: Swagger
+            meta:
+              id: req_35fa0f72b46d4001b14c955c934bc94b
+              created: 1678299438632
+              modified: 1678299438632
+              isPrivate: false
+              description: ""
+              sortKey: -1678299438632
+            method: GET
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{refund}}/refund/healthcheck"
+            name: Status
+            meta:
+              id: req_a0750f899d2040f2acf777035a46584c
+              created: 1678299438642
+              modified: 1678299438642
+              isPrivate: false
+              description: ""
+              sortKey: -1678299438642
+            method: GET
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - name: OSL
+            meta:
+              id: fld_7c36fff43e964137a211f8cf31f98a97
+              created: 1678299438856
+              modified: 1678299438856
+              sortKey: -1678299438856
+              description: ""
+            children:
+              - url: https://api-uat.copa.com/osl/refund/v1/documents/refunds/3992beda-8ac2-4b0c-b37b-3cd1ed173f3c.pdf
+                name: Document
+                meta:
+                  id: req_411d00a0d0ea40d989025a8cf0aaa4a5
+                  created: 1678299438654
+                  modified: 1755009742674
+                  isPrivate: false
+                  description: ""
+                  sortKey: -1678299438654
+                method: PUT
+                headers:
+                  - name: Content-Type
+                    value: application/octet-stream
+                  - name: Language
+                    value: en-US
+                  - name: Ocp-Apim-Subscription-Key
+                    value: ff3a8b977fcc476aa61f589fc1edb4e4
+                  - name: User-Agent
+                    value: CM/Performance/02.10.23
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+              - url: https://api-uat.copa.com/osl/refund/v1/documents/refunds/e47187ac-af9b-4c28-9bf1-8f3d0efa2adc.pdf
+                name: Document
+                meta:
+                  id: req_13f81fab7c3647e59c14cd1b9d79854b
+                  created: 1678299438780
+                  modified: 1755009959957
+                  isPrivate: false
+                  description: ""
+                  sortKey: -1678299438780
+                method: GET
+                body:
+                  mimeType: application/octet-stream
+                  fileName: C:\Users\kenlezcano\Desktop\ESTO ES UN PRUEBA DE COPA.pdf
+                headers:
+                  - name: Content-Type
+                    value: application/pdf
+                  - name: Language
+                    value: en-US
+                  - name: Ocp-Apim-Subscription-Key
+                    value: ff3a8b977fcc476aa61f589fc1edb4e4
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+              - url: https://api-uat.copa.com/osl/refund/v1/events/refunds
+                name: Refund
+                meta:
+                  id: req_cfa8f0fba4ad4166ae3d2dd4479404ee
+                  created: 1678299438804
+                  modified: 1693512921489
+                  isPrivate: false
+                  description: ""
+                  sortKey: -1678299438804
+                method: POST
+                body:
+                  mimeType: application/json
+                  text: >-
+                    [
+                        {
+                            "id": "5f926468-0891-4dd7-9f17-6b761ae46e72",
+                            "eventType": "SRF.Refunds.RefundRequest",
+                            "subject": "/SRF/Web/RefundRequest",
+                            "data": {
+                                "caseNumber": "RFD-PUE0000003",
+                                "channel": "WEB",
+                                "type": "AUTOPOPULATED",
+                                "callCenterRequest": false,
+                                "requestDate": "2022-08-12T15:58:42.333596Z",
+                                "reason": {
+                                    "code": "VoluntaryChange",
+                                    "description": "Je souhaite annuler selon les conditions de mon billet"
+                                },
+                                "language": "fr",
+                                "indirectChannel": false,
+                                "requester": {
+                                    "firstName": "Jhon",
+                                    "lastName": "Puerta",
+                                    "email": "camilo_del_valle@epam.com",
+                                    "phone1": "+0531222121"
+                                },
+                                "passengers": [
+                                    {
+                                        "firstName": "KARATE",
+                                        "lastName": "AUTOPAX",
+                                        "birthDate": "03/01/1987"
+                                    }
+                                ],
+                                "flights": [
+                                    {
+                                        "operatingAirlineCode": "CM",
+                                        "operatingFlightNumber": "243",
+                                        "marketingAirlineCode": "CM",
+                                        "marketingFlightNumber": "243",
+                                        "status": 26,
+                                        "departure": {
+                                            "date": "2022-08-17T07:55:00-05:00",
+                                            "airportCode": "PTY",
+                                            "country": "PA"
+                                        },
+                                        "arrival": {
+                                            "date": "2022-08-17T09:29:00-05:00",
+                                            "airportCode": "BOG",
+                                            "country": "CO"
+                                        }
+                                    }
+                                ],
+                                "tickets": [
+                                    {
+                                        "number": "2307670990413",
+                                        "firstName": "KARATE",
+                                        "lastName": "AUTOPAX",
+                                        "coupons": [
+                                            {
+                                                "couponStatusCode": "I",
+                                                "couponStatus": "",
+                                                "fromCityCode": "PTY",
+                                                "toCityCode": "BOG",
+                                                "flightNumber": "243",
+                                                "flightDate": "2022-08-17",
+                                                "controllingCarrier": "CM",
+                                                "carrierCode": "CM"
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "reservation": {
+                                    "pnr": "X9997S",
+                                    "createDate": "2022-07-28T21:24:00Z",
+                                    "issueDate": "2022-07-28T20:22:00Z",
+                                    "ticketingStatus": 3,
+                                    "flightSegments": 1,
+                                    "interline": false,
+                                    "redemption": false,
+                                    "scheduledChange": false
+                                },
+                                "formOfPayment": {
+                                    "type": "CREDITCARD",
+                                    "details": [
+                                        {
+                                            "code": "CC",
+                                            "description": "CREDITCARD",
+                                            "maskedValue": "**** **** **** 1111",
+                                            "subType": "VI"
+                                        }
+                                    ],
+                                    "currency": "COP"
+                                },
+                                "documents": [
+                                    {
+                                        "type": "",
+                                        "contentType": "application/pdf",
+                                        "name": "certificado (1).pdf",
+                                        "uniqueName": "aab2595b-1366-4ce6-b9f7-cfdf1970e999.pdf"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                headers:
+                  - name: Content-Type
+                    value: application/json
+                  - name: Language
+                    value: en-US
+                  - name: Ocp-Apim-Subscription-Key
+                    value: ff3a8b977fcc476aa61f589fc1edb4e4
+                  - name: User-Agent
+                    value: CM/Performance/02.10.23
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+              - url: https://api-uat.copa.com/osl/refund/v1/events/refunds
+                name: Refund - PNR / ETicket
+                meta:
+                  id: req_650f057b43804ae3bba579d38836fc62
+                  created: 1678299438829
+                  modified: 1678299438829
+                  isPrivate: false
+                  description: ""
+                  sortKey: -1678299438829
+                method: GET
+                parameters:
+                  - name: lastname
+                    value: cas
+                    disabled: true
+                  - name: ticketNumber
+                    value: "2309888988611"
+                    disabled: false
+                  - name: reservationCode
+                    value: A22233
+                    disabled: true
+                headers:
+                  - name: Content-Type
+                    value: application/json
+                  - name: Language
+                    value: en-US
+                  - name: Ocp-Apim-Subscription-Key
+                    value: ff3a8b977fcc476aa61f589fc1edb4e4
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+              - url: https://api-uat.copa.com/osl/refund/v1/events/refunds/RFD-TES0002173
+                name: Refund - CaseNumber
+                meta:
+                  id: req_9a6628c1db574a94b6dbcb08c0588d45
+                  created: 1678299438841
+                  modified: 1678299438841
+                  isPrivate: false
+                  description: ""
+                  sortKey: -1678299438841
+                method: GET
+                parameters:
+                  - name: lastname
+                    value: TEST
+                    disabled: false
+                headers:
+                  - name: Content-Type
+                    value: application/json
+                  - name: Language
+                    value: en-US
+                  - name: Ocp-Apim-Subscription-Key
+                    value: ff3a8b977fcc476aa61f589fc1edb4e4
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_6f844b2a61974c958b77f7126b4cd5ce
+    created: 1678299449396
+    modified: 1755009971580
+  cookies:
+    - id: 2289b9ab-d605-4408-bb91-320e73b547d6
+      key: incap-resubmit-token
+      value: JfR74lFR6is=:gOOItXx+O5Mi713120ri/MA5sfQVFQHNAtsgasiDgSs=
+      domain: api-uat.copaair.com
+      path: /
+      secure: true
+      httpOnly: true
+      hostOnly: true
+    - id: 3831410d-c69a-4141-8f3d-0412189b769e
+      key: visid_incap_2842481
+      value: 6KnEKwkMTY6oyo3N5rplpsj8cWYAAAAAQUIPAAAAAAD4G20AHYPrJ6ta/c4pk6hU
+      domain: copaair.com
+      path: /
+      secure: false
+      httpOnly: true
+      hostOnly: false
+    - id: 5ecd7ec5-76bb-443d-8460-214b6ed189c6
+      key: incap_ses_1705_2842481
+      value: a
+      domain: copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: false
+    - id: 06c73e33-2c6b-49ba-a1a4-338e1aca2e2e
+      key: nlbi_2842481
+      value: OAm2Rl0cSRUuEedIC2ZXnAAAAABwhCJLDLToiui9S20uszQE
+      domain: copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: false
+    - id: d0fca8cd-d54c-4420-bca7-b33124bfe9db
+      key: incap_ses_1310_2842481
+      value: a
+      domain: copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: false
+    - id: 0b68251f-86d4-4e48-8ef2-07c7ff8a6eff
+      key: nlbi_2847275
+      value: zr8KYYQG9hqEJ9vzM0wWFwAAAAAWgMUq5yf4FjfIW/I7Js7q
+      domain: copa.com
+      path: /
+      secure: false
+      httpOnly: true
+      hostOnly: false
+    - id: 9ae4def2-c01a-4765-95ba-aa16f9d646c8
+      key: visid_incap_2847275
+      value: LaXx52IfRWKZidSo8foYjp5Rm2gAAAAAQUIPAAAAAAD+DSrBg/P+geHanFHe+fuH
+      domain: copa.com
+      path: /
+      secure: false
+      httpOnly: true
+      hostOnly: false
+    - id: 914e2544-b262-40bc-9ec8-90fbb3a19137
+      key: incap_ses_1310_2847275
+      value: a
+      domain: copa.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: false
+    - id: b405108d-c4d3-4af0-90b7-54e155530e27
+      key: incap_ses_9219_2847275
+      value: a
+      domain: copa.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: false
+    - id: 24a5f7b5-6602-4a8f-9e96-21e0f2e4c022
+      key: incap_ses_1604_2842481
+      value: a
+      domain: copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: false
+    - id: 4ec64950-0efe-4840-bf38-8dfede490f1f
+      key: incap_ses_996_2842481
+      value: zjsCRq3BjgyKzzHBy4DSDcj8cWYAAAAAlwl39DOkMwGKPYsLNlvZUw==
+      domain: copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: false
+    - id: ccb1e493-561f-493b-81cd-d1db93742718
+      key: incap_ses_1618_2842481
+      value: a
+      domain: api-uat.copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: true
+    - id: 57975ccb-4fa5-4687-b9f1-9935d76300d5
+      key: incap_ses_996_2842481
+      value: a
+      domain: api-uat.copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: true
+    - id: 46b49a58-29f3-447e-8469-5921fad97fa7
+      key: nlbi_2842481
+      value: yEHPH7/6Ow56fhjQC2ZXnAAAAAB2ww42/6+CjOf/eIKEYA/X
+      domain: api-uat.copaair.com
+      path: /
+      secure: false
+      httpOnly: true
+      hostOnly: true
+    - id: 30d015d3-6d04-45c3-82e1-299b7273c15d
+      key: incap_ses_1615_2842481
+      value: r0RUQZmgZk0zbir8FqJpFinqzmYAAAAA8T4DBeMPqpy/kQZCdQb6PA==
+      domain: api-uat.copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: true
+    - id: 68cad1e3-f6e5-4799-949b-de3d9d565f53
+      key: incap_ses_622_2847275
+      value: a
+      domain: copa.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: false
+    - id: 324e39e9-f975-42a4-a857-408082faaa00
+      key: incap_ses_621_2847275
+      value: ewgIBVG1fVNne5/thDyeCJ9Rm2gAAAAA0TsqNGylsAeknoX9Inj9Ww==
+      domain: copa.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: false
+    - id: b280d086-b34a-41cf-92dd-94c3241a7f3e
+      key: incap_ses_1621_2847275
+      value: JsJLbrhs9mHGqKAyS/N+FrBTm2gAAAAAtVGOPH4J6YYxZZRa5ERBOA==
+      domain: copa.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: false
+environments:
+  name: Base Environment
+  meta:
+    id: env_01b61bbc17da43c086ca381aa1d63ca6
+    created: 1678299449391
+    modified: 1678299449391
+    isPrivate: false
+  subEnvironments:
+    - name: SRF - UAT
+      meta:
+        id: env_a49048921a384bcdaef1a910304ea93d
+        created: 1678299469763
+        modified: 1678299469763
+        isPrivate: false
+        sortKey: 1678299469763
+      data:
+        refund: https://api-uat.copaair.com/srf
+        triphub: https://api-uat.copaair.com/srf

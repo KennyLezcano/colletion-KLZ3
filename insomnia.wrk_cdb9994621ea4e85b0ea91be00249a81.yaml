@@ -1,0 +1,453 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: Merchandising  SDC with Fee
+meta:
+  id: wrk_cdb9994621ea4e85b0ea91be00249a81
+  created: 1729035547693
+  modified: 1729035547693
+  description: ""
+collection:
+  - name: OSL - AppConfig
+    meta:
+      id: fld_6df4b0a00c8349b0ba5807965fba3cab
+      created: 1729035586678
+      modified: 1729035586678
+      sortKey: -1729035573717
+      description: ""
+    children:
+      - url: https://cm-osl-int-apim.azure-api.net/osl/appconfig/v1/read/appconfig/Payment.application
+        name: Get App Config - INT
+        meta:
+          id: req_b69030d01d224b8081cf23725a900185
+          created: 1729035586698
+          modified: 1729035954581
+          isPrivate: false
+          description: ""
+          sortKey: -1729035573716
+        method: GET
+        parameters:
+          - name: Area
+            value: ""
+            disabled: true
+          - name: LastUpdate
+            value: ""
+            disabled: true
+          - name: Value
+            value: ""
+            disabled: true
+          - name: Key
+            value: ""
+            disabled: true
+        headers:
+          - name: Ocp-Apim-Subscription-Key
+            value: "{{_['env-apim-internal-subscription']}}"
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: https://{{_['env-apim']}}/osl/appconfig/v1/read/appconfig/Payment.application
+        name: Get App Config - ENV - Payment
+        meta:
+          id: req_b54c6c1dd970410e8d0aa135a0f30da7
+          created: 1729035586701
+          modified: 1729035847567
+          isPrivate: false
+          description: ""
+          sortKey: -1729035573715
+        method: GET
+        parameters:
+          - name: Area
+            value: ""
+            disabled: true
+          - name: LastUpdate
+            value: ""
+            disabled: true
+          - name: Value
+            value: ""
+            disabled: true
+          - name: Key
+            value: ""
+            disabled: true
+        headers:
+          - name: Ocp-Apim-Subscription-Key
+            value: "{{_['env-apim-internal-subscription']}}"
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: https://{{_['env-apim']}}/osl/appconfig/v1/read/appconfig/Reservation.application
+        name: Get App Config - ENV - Reservation
+        meta:
+          id: req_2ad143bd8fd04ee484adcbd58c8e91db
+          created: 1729035586702
+          modified: 1729035891870
+          isPrivate: false
+          description: ""
+          sortKey: -1729035573714
+        method: GET
+        parameters:
+          - name: Area
+            value: ""
+            disabled: true
+          - name: LastUpdate
+            value: ""
+            disabled: true
+          - name: Value
+            value: ""
+            disabled: true
+          - name: Key
+            value: ""
+            disabled: true
+        headers:
+          - name: Ocp-Apim-Subscription-Key
+            value: "{{_['env-apim-internal-subscription']}}"
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: https://{{_['env-apim']}}/osl/appconfig/v1/read/appconfig/Refund.application
+        name: Get App Config - ENV - Refund
+        meta:
+          id: req_939ab3b4d3e34f9ea94414c803c528b6
+          created: 1729035586703
+          modified: 1729035586703
+          isPrivate: false
+          description: ""
+          sortKey: -1729035573713
+        method: GET
+        parameters:
+          - name: Area
+            value: ""
+            disabled: true
+          - name: LastUpdate
+            value: ""
+            disabled: true
+          - name: Value
+            value: ""
+            disabled: true
+          - name: Key
+            value: ""
+            disabled: true
+        headers:
+          - name: Ocp-Apim-Subscription-Key
+            value: "{{_['env-apim-internal-subscription']}}"
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: https://cm-osl-int-apim.azure-api.net/osl/appconfig/v1/create/appconfig/config
+        name: Add App Config - INT (Single Prop)
+        meta:
+          id: req_c3fa115f20f940ecbbb1546913691a40
+          created: 1729035586707
+          modified: 1729035586707
+          isPrivate: false
+          description: ""
+          sortKey: -1729035573712
+        method: PUT
+        body:
+          mimeType: ""
+          text: "{\r
+
+            \            \"ApplicationCode\": \"Payment.application\",\r
+
+            \            \"Area\": \"AppConfigData\",\r
+
+            \            \"Key\": \"DXCSupportLanguage\",\r
+
+            \            \"Value\": \"{ \\\"ItemValues\\\": [ { \\\"From\\\":
+            \\\",EN-US,ES,PT,\\\", \\\"To\\\": \\\"true\\\" } ] }\",\r
+
+            \            \"LastUpdate\": \"2023-09-06T22:18:00.000\"\r
+
+            }"
+        headers:
+          - name: Ocp-Apim-Subscription-Key
+            value: "{{_['env-apim-internal-subscription']}}"
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: https://cm-osl-int-apim.azure-api.net/osl/appconfig/v1/create/appconfig/configlist
+        name: Add App Config - INT (Multiple Prop Add/Updates)
+        meta:
+          id: req_42a1930ddf14438598cccdce9f506055
+          created: 1729035586709
+          modified: 1729035586709
+          isPrivate: false
+          description: ""
+          sortKey: -1729035573711
+        method: PUT
+        body:
+          mimeType: ""
+          text: "{\r
+
+            \"Values\": [\r
+
+            \        {\r
+
+            \            \"ApplicationCode\": \"Merchandising.application\",\r
+
+            \            \"Area\": \"AppConfigPPS\",\r
+
+            \            \"Key\": \"WEB-CR\",\r
+
+            \            \"Value\": \"{        \\\"DefaultCurrency\\\":
+            \\\"CRC\\\",        \\\"TicketLocation\\\":
+            \\\"SJO\\\",        \\\"TripleA\\\":
+            \\\"WJO\\\",        \\\"MerchantCode\\\":
+            \\\"COPAECOM\\\",        \\\"IATACode\\\":
+            \\\"77991605\\\",        \\\"IDContext\\\":
+            \\\"IATA\\\",        \\\"RequestorType\\\":
+            \\\"A\\\",        \\\"Version\\\":
+            \\\"1.0\\\",        \\\"TerminalID\\\":
+            \\\"123456\\\",        \\\"DecimalUnit\\\":
+            \\\"0\\\"      ,\\\"DefaultPostalCode\\\":\\\"11111\\\"     }\",\r
+
+            \            \"LastUpdate\": \"2024-09-10T12:00:00.000\"\r
+
+            \        },\r
+
+            \        {\r
+
+            \            \"ApplicationCode\": \"Merchandising.application\",\r
+
+            \            \"Area\": \"AppConfigPPS\",\r
+
+            \            \"Key\": \"WEBIBE-CR\",\r
+
+            \            \"Value\": \"{        \\\"DefaultCurrency\\\":
+            \\\"CRC\\\",        \\\"TicketLocation\\\":
+            \\\"SJO\\\",        \\\"TripleA\\\":
+            \\\"WJO\\\",        \\\"MerchantCode\\\":
+            \\\"COPAECOM\\\",        \\\"IATACode\\\":
+            \\\"77991605\\\",        \\\"IDContext\\\":
+            \\\"IATA\\\",        \\\"RequestorType\\\":
+            \\\"A\\\",        \\\"Version\\\":
+            \\\"1.0\\\",        \\\"TerminalID\\\":
+            \\\"123456\\\",        \\\"DecimalUnit\\\":
+            \\\"0\\\"      ,\\\"DefaultPostalCode\\\":\\\"11111\\\"     }\",\r
+
+            \            \"LastUpdate\": \"2024-09-10T12:00:00.000\"\r
+
+            \        },\r
+
+            \t\t{\r
+
+            \            \"ApplicationCode\": \"Merchandising.application\",\r
+
+            \            \"Area\": \"AppConfigPPS\",\r
+
+            \            \"Key\": \"WEBMMB-CR\",\r
+
+            \            \"Value\": \"{        \\\"DefaultCurrency\\\":
+            \\\"CRC\\\",        \\\"TicketLocation\\\":
+            \\\"SJO\\\",        \\\"TripleA\\\":
+            \\\"WJO\\\",        \\\"MerchantCode\\\":
+            \\\"COPAECOM\\\",        \\\"IATACode\\\":
+            \\\"77991620\\\",        \\\"IDContext\\\":
+            \\\"IATA\\\",        \\\"RequestorType\\\":
+            \\\"A\\\",        \\\"Version\\\":
+            \\\"1.0\\\",        \\\"TerminalID\\\":
+            \\\"123456\\\",        \\\"DecimalUnit\\\":
+            \\\"0\\\"      ,\\\"DefaultPostalCode\\\":\\\"11111\\\"     }\",\r
+
+            \            \"LastUpdate\": \"2024-09-10T12:00:00.000\"\r
+
+            \        },\r
+
+            \        {\r
+
+            \            \"ApplicationCode\": \"Merchandising.application\",\r
+
+            \            \"Area\": \"AppConfigPPS\",\r
+
+            \            \"Key\": \"WCI-CR\",\r
+
+            \            \"Value\": \"{        \\\"DefaultCurrency\\\":
+            \\\"CRC\\\",        \\\"TicketLocation\\\":
+            \\\"SJO\\\",        \\\"TripleA\\\":
+            \\\"WJO\\\",        \\\"MerchantCode\\\":
+            \\\"COPAECOM\\\",        \\\"IATACode\\\":
+            \\\"77991664\\\",        \\\"IDContext\\\":
+            \\\"IATA\\\",        \\\"RequestorType\\\":
+            \\\"A\\\",        \\\"Version\\\":
+            \\\"1.0\\\",        \\\"TerminalID\\\":
+            \\\"123456\\\",        \\\"DecimalUnit\\\":
+            \\\"0\\\"      ,\\\"DefaultPostalCode\\\":\\\"11111\\\"     }\",\r
+
+            \            \"LastUpdate\": \"2024-09-10T12:00:00.000\"\r
+
+            \        },\t\t\r
+
+            \        {\r
+
+            \            \"ApplicationCode\": \"Merchandising.application\",\r
+
+            \            \"Area\": \"AppConfigPPS\",\r
+
+            \            \"Key\": \"WEBLOYALTYIBE-CR\",\r
+
+            \            \"Value\": \"{ \\\"DefaultCurrency\\\": \\\"CRC\\\",
+            \\\"TicketLocation\\\": \\\"SJO\\\", \\\"TripleA\\\": \\\"WJO\\\",
+            \\\"MerchantCode\\\": \\\"COPAECOM\\\", \\\"IATACode\\\":
+            \\\"77991605\\\", \\\"IDContext\\\": \\\"IATA\\\",
+            \\\"RequestorType\\\": \\\"A\\\", \\\"Version\\\": \\\"1.0\\\",
+            \\\"TerminalID\\\": \\\"123456\\\", \\\"DecimalUnit\\\":
+            \\\"0\\\",\\\"DefaultPostalCode\\\":\\\"11111\\\" }\",\r
+
+            \            \"LastUpdate\": \"2024-09-10T12:00:00.000\"\r
+
+            \        },\r
+
+            \        {\r
+
+            \            \"ApplicationCode\": \"Merchandising.application\",\r
+
+            \            \"Area\": \"AppConfigPPS\",\r
+
+            \            \"Key\": \"MTP-CR\",\r
+
+            \            \"Value\": \"{ \\\"DefaultCurrency\\\": \\\"CRC\\\",
+            \\\"TicketLocation\\\": \\\"SJO\\\", \\\"TripleA\\\": \\\"WJO\\\",
+            \\\"MerchantCode\\\": \\\"COPAECOM\\\", \\\"IATACode\\\":
+            \\\"77991620\\\", \\\"IDContext\\\": \\\"IATA\\\",
+            \\\"RequestorType\\\": \\\"A\\\", \\\"Version\\\": \\\"1.0\\\",
+            \\\"TerminalID\\\": \\\"123456\\\", \\\"DecimalUnit\\\":
+            \\\"0\\\",\\\"DefaultPostalCode\\\":\\\"11111\\\" }\",\r
+
+            \            \"LastUpdate\": \"2024-09-10T12:00:00.000\"\r
+
+            \        },\r
+
+            \        {\r
+
+            \            \"ApplicationCode\": \"Merchandising.application\",\r
+
+            \            \"Area\": \"AppConfigPPS\",\r
+
+            \            \"Key\": \"INDAGENTIBE-CR\",\r
+
+            \            \"Value\": \"{        \\\"DefaultCurrency\\\":
+            \\\"CRC\\\",        \\\"TicketLocation\\\":
+            \\\"SJO\\\",        \\\"TripleA\\\":
+            \\\"WJO\\\",        \\\"MerchantCode\\\":
+            \\\"COPAECOM\\\",        \\\"IATACode\\\":
+            \\\"77991605\\\",        \\\"IDContext\\\":
+            \\\"IATA\\\",        \\\"RequestorType\\\":
+            \\\"A\\\",        \\\"Version\\\":
+            \\\"1.0\\\",        \\\"TerminalID\\\":
+            \\\"123456\\\",        \\\"DecimalUnit\\\":
+            \\\"0\\\"      ,\\\"DefaultPostalCode\\\":\\\"11111\\\"     }\",\r
+
+            \            \"LastUpdate\": \"2024-09-10T12:00:00.000\"\r
+
+            \        },\r
+
+            \        {\r
+
+            \            \"ApplicationCode\": \"Merchandising.application\",\r
+
+            \            \"Area\": \"AppConfigPPS\",\r
+
+            \            \"Key\": \"INDAGENTMMB-CR\",\r
+
+            \            \"Value\": \"{        \\\"DefaultCurrency\\\":
+            \\\"CRC\\\",        \\\"TicketLocation\\\":
+            \\\"SJO\\\",        \\\"TripleA\\\":
+            \\\"WJO\\\",        \\\"MerchantCode\\\":
+            \\\"COPAECOM\\\",        \\\"IATACode\\\":
+            \\\"77991605\\\",        \\\"IDContext\\\":
+            \\\"IATA\\\",        \\\"RequestorType\\\":
+            \\\"A\\\",        \\\"Version\\\":
+            \\\"1.0\\\",        \\\"TerminalID\\\":
+            \\\"123456\\\",        \\\"DecimalUnit\\\":
+            \\\"0\\\"      ,\\\"DefaultPostalCode\\\":\\\"11111\\\"     }\",\r
+
+            \            \"LastUpdate\": \"2024-09-10T12:00:00.000\"\r
+
+            \        }\r
+
+            ]\r
+
+            }"
+        headers:
+          - name: Ocp-Apim-Subscription-Key
+            value: "{{_['env-apim-internal-subscription']}}"
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: https://cm-osl-int-apim.azure-api.net/osl/appconfig/v1/cancel/appconfig
+        name: Cancel App Config - INT - DOESNT WORK NOW
+        meta:
+          id: req_e6427142a277470c857eb2adfe8414f5
+          created: 1729035586710
+          modified: 1729035586710
+          isPrivate: false
+          description: ""
+          sortKey: -1729035573710
+        method: PUT
+        body:
+          mimeType: ""
+          text: "{\r
+
+            \    \"ApplicationCode\": \"Payment.application\",\r
+
+            \    \"Area\": \"AppConfigSetting\",\r
+
+            \    \"Key\": \"ConsolidateProducts\",\r
+
+            \    \"Value\": \"[carrental, rentals, insurance, carbonoffset]\",\r
+
+            \    \"LastUpdate\": \"2023-05-22T23:44:49.768\"\r
+
+            }"
+        headers:
+          - name: Ocp-Apim-Subscription-Key
+            value: "{{_['env-apim-internal-subscription']}}"
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_3db3053c8046ab8f32eb8e4e3a878527c2d28dde
+    created: 1729035547700
+    modified: 1729035547700
+environments:
+  name: Base Environment
+  meta:
+    id: env_3db3053c8046ab8f32eb8e4e3a878527c2d28dde
+    created: 1729035547697
+    modified: 1729035547697
+    isPrivate: false

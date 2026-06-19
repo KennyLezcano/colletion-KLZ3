@@ -1,0 +1,2553 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: COMARCH
+meta:
+  id: wrk_c864ac5087d341bd8c47310dea61892b
+  created: 1727977739319
+  modified: 1730234671481
+  description: ""
+collection:
+  - url: https://api-uat.copa.com/osl-loyalty/createcustomer/v2.0/CreateModifyProfile/CustomerProfile/Create
+    name: Create in COMARCH
+    meta:
+      id: req_23c5341fb08c4d9b87fca950b4673ee3
+      created: 1693516372202
+      modified: 1694561180851
+      isPrivate: false
+      description: ""
+      sortKey: -1693516372202
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+            
+            "birthdate": "1990-01-01",
+            "surname": "LOPEZ",
+            "nationality": "PA",
+        	"sourcecode": "MYTRIPS",
+            "name": "JULIETA",
+            "password": "Holamund04",
+            "emails": [
+                {
+                    "emailPreferred": "T",
+                    "emailAddress": "kenlezcano@copaair.com", 
+                    "seqNo": 1,
+                    "emailType": "PER"
+                }
+            ]
+        }
+    headers:
+      - name: Copa-Channel-ID
+        value: WEB
+      - name: Copa-Consumer-ID
+        value: MYTRIPS
+        disabled: false
+      - name: Content-Type
+        value: application/json
+      - name: Ocp-Apim-Subscription-Key
+        value: adf0bce05db74f9fb493a37effe03ea9
+      - name: Authorization
+        value: Bearer
+          eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InJtM3Z4VDkyZUdlSnFDRHBULXBaXyJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLXVhdC5jb3BhYWlyLmNvbS8iLCJzdWIiOiJlVnNFT3BYSmlBYmNkcWF0N3Zpd045Vm1XVE5Eb1lrTUBjbGllbnRzIiwiYXVkIjoiaHR0cHM6Ly9jbS11YXQtY2lhbS51cy5hdXRoMC5jb20vYXBpL3YyLyIsImlhdCI6MTY5NDU2MDk3NiwiZXhwIjoxNjk0NjQ3Mzc2LCJhenAiOiJlVnNFT3BYSmlBYmNkcWF0N3Zpd045Vm1XVE5Eb1lrTSIsInNjb3BlIjoicmVhZDp1c2VycyB1cGRhdGU6dXNlcnMgY3JlYXRlOnVzZXJzIGNyZWF0ZTp1c2VyX3RpY2tldHMiLCJndHkiOiJjbGllbnQtY3JlZGVudGlhbHMifQ.wmldBPdjnk2QAEDDL26MJfQiF6RZaxnYhI-Y9KUJYCd1KE5EnqCXs_yhuSQNooRmGHz6wXcAIczynUtrzFa-YAOUEEB_SbzV5tcIyhwzPW4HClKsZTBUPsCj_ouKwPsV7stWkpAMd2284TeVKAazkgKffbIiSz3yTwB0GitSYYLdpa6nWj6OJzjyvCyvZH9l7lx0gjf9QaTBYJ_03AeDwvciPHsiKdYPYw6qWZxQayAN6DnqSF7n1bl69F4brwKgIF_eHou_n9p82Zpmfilc_EIarwGvcdJ_C_SVDTx-LTZ1Yqkda6aJ-cjysgeTu3KnVtYYna5G-nx0r_DgEioa0Q
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: https://api-uat.copa.com/osl-loyalty/createcustomer/v2.0/CreateModifyProfile/CustomerProfile/Create
+    name: Create in ciam uat/osl uat/comarch stage
+    meta:
+      id: req_9e38353a58104326b3a14ef4c0a9f3dd
+      created: 1694200220242
+      modified: 1703174746076
+      isPrivate: false
+      description: ""
+      sortKey: -1694200220242
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+            "birthdate": "1985-01-01",
+            "surname": "LOPEZDEV",
+            "nationality": "PA",
+            "sourcecode": "WCIQE",
+            "name": "Andrea",
+            "password": "Holamund04",
+            "emails": [
+                {
+                    "emailPreferred": "T",
+                    "emailAddress": "VALERIE@UAT.com",
+                    "seqNo": 1,
+                    "emailType": "PER"
+                }
+            ]
+        }
+    headers:
+      - name: Authorization
+        value: eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InJtM3Z4VDkyZUdlSnFDRHBULXBaXyJ9.eyJodHRwczovL2FwaS11YXQuY29wYS5jb20vQ3VzdG9tZXJJRCI6IjQ3NzIzNTAiLCJodHRwczovL2FwaS11YXQuY29wYS5jb20vQWNjb3VudElEIjoiNDc3MTMwMCIsImh0dHBzOi8vYXBpLXVhdC5jb3BhLmNvbS9mZm4iOiIyNjE1MjY0NjQiLCJpc3MiOiJodHRwczovL2xvZ2luLXVhdC5jb3BhYWlyLmNvbS8iLCJzdWIiOiJhdXRoMHxhdXRoMHwyNjE1MjY0NjQiLCJhdWQiOiJodHRwczovL2FwaS11YXQuY29wYS5jb20iLCJpYXQiOjE3MDMxNzQwNzcsImV4cCI6MTcwMzE3NTg3NywiYXpwIjoiM1g4Qmp0UWRlVHhhTkM3OGQweFhXSDhDeVQxZ2tOdGoiLCJzY29wZSI6ImVtYWlsIHJlYWQ6dXNlcnMgdXBkYXRlOnVzZXJzIGNyZWF0ZTp1c2VycyByZWFkOnVzZXJzX2FwcF9tZXRhZGF0YSB1cGRhdGU6dXNlcnNfYXBwX21ldGFkYXRhIGRlbGV0ZTp1c2Vyc19hcHBfbWV0YWRhdGEgY3JlYXRlOnVzZXJzX2FwcF9tZXRhZGF0YSByZWFkOnVzZXJzX2N1c3RvbV9ibG9ja3MiLCJndHkiOiJwYXNzd29yZCJ9.ZeA2MCQpuUvgS2udBJVJrmjn9Wvmh-6ZzqANi97TAKWmugkRPNMvagf0XCT4gH9BAglgGoVchiaQBtdssC9_t7oZlIqa2r6dhfocJbcbBLslXrvsZjQmQD1Lk2QvuzT3mI0aSkKJnYuoufMpaMdCIMKeqIGt_iXAZs6XTqdAXFzMPhK2dbKk1oKQywTvy0GRDTF2omyD5XUtHN4vbVkB-ZBYQb_H_gMxAMdp5lSsuR-oyt0pR6Enj91hpos0jIfDG_bC-L659DmsJtiuRZ0uyaqNNBErwfOYxbzVt5pPFKd3WmMk9F-yaBRq1aPQ6JXoSVCz_mKcdQ7FGzvp5Gm33g
+      - name: Content-Type
+        value: application/json
+      - name: Copa-Channel-ID
+        value: Web
+      - name: Copa-Consumer-ID
+        value: MyAccount
+      - name: Ocp-Apim-Subscription-Key
+        value: c7f2c32f8ad7441bb828a626e1d1da5d
+      - name: Cookie
+        value: ApplicationGatewayAffinity=01346d839f1dc501b1d23d704bd15cea;
+          visid_incap_2847275=ECtjd6IlQq6KQDRxIga4nSdfVWQAAAAAQUIPAAAAAAC89CBQIEq%2FoQ3N7id%2BZmHO;
+          nlbi_2847275=WuXfe%2FE7xhs1EsnYeZuB0wAAAABMVyJPmASh1fGsr7qaaUL3;
+          nlbi_2802616=i8W3D%2Fp%2FxHWiusB%2F1KWtQwAAAAAdMs%2FLOPfgHMx90Vu1YhgV;
+          visid_incap_2802616=Cc%2BZL3NnQUCIeMebIjCg9vjiv2QAAAAAQUIPAAAAAACUxmSSJw4jiMSmdekdbsBu;
+          visid_incap_2875442=PPsaM%2BSSSSq03gw%2FRyAMV%2BEBVGQAAAAAQUIPAAAAAACRNIECGk7skfYbsAaM5Szb;
+          nlbi_2875442=DQTBKeQl2xOqUkU3pdx5ZQAAAACkwmt7%2BvRdZuXwujvTTBvS;
+          visid_incap_2875446=d%2FEU34pOQG%2BRUkdM3Sj0XCS462MAAAAAQUIPAAAAAADEoLfMQ1gIiLkFxorafN79;
+          nlbi_2875446=71e%2BMbRN%2BEivFHw8OycnRAAAAAD8FT8eK5tCb6WYNtxb9rGa;
+          incap_ses_1310_2847275=9aX5VP2m1AvRiKJEwA8uEpPa%2BWQAAAAAJPgD11b8DXKJeMOXTuCitQ%3D%3D;
+          incap_ses_223_2847275=tRkSGo5ZIRYyWzPJJ0IYA9Yf9mQAAAAAHBk%2FahWMOY5RHhWLg8oMvQ%3D%3D;
+          incap_ses_1310_2875442=DVwiQEsq1lbbE8tEwA8uEhsB%2BmQAAAAA5Wpo77TqxeNSk3Q173FHjw%3D%3D;
+          incap_ses_1603_2875442=ST3aO5DPYXBHtwDjcwA%2FFmdw%2B2QAAAAAznAdmLR2H84DPXDDp9MUaA%3D%3D
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: ""
+    name: Modify Profile
+    meta:
+      id: req_7c7d6280b7c440afb117551828ad5d0d
+      created: 1694533544952
+      modified: 1694533794140
+      isPrivate: false
+      description: ""
+      sortKey: -1694533544952
+    method: GET
+    body:
+      mimeType: application/json
+      text: |-
+        {
+            
+            "surname": "Schwepps",
+            "nationality": "IN",
+            "id": "009400453",
+            "name": "Ginger",
+            "memberDocs": [
+                {
+                    "actionType": "A",
+                    "documentType": "PASSPORT",
+                    "issuingCountry": "PA",
+                    "validUntil": "2026-01-01",
+                    "documentId": "PA374674",
+                    "validFrom": "2020-01-01"
+                },
+                {
+                    "actionType": "A",
+                    "documentType": "NATIONAL_ID",
+                    "issuingCountry": "PA",
+                    "validUntil": "2024-01-01",
+                    "documentId": "898373",
+                    "validFrom": "2020-01-01"
+                }
+            ]
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/2023.5.8
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: ""
+    name: New Request
+    meta:
+      id: req_9d3ee9546f32415ea33b7b6d40f257fe
+      created: 1697567893330
+      modified: 1697567893330
+      isPrivate: false
+      description: ""
+      sortKey: -1697567893330
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/2023.5.8
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://127.0.0.1:8083/loyalty/updateProfile
+    name: New Request
+    meta:
+      id: req_aba6dd2b7ed14302ac9f2e3add9c1203
+      created: 1697567897644
+      modified: 1697567928983
+      isPrivate: false
+      description: ""
+      sortKey: -1697567897644
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "id": "009400847",
+          "firstName": "Luiz Marco",
+          "surname": "Sanches",
+          "codeTitle": "Mrs.",
+          "birthDate": "1992-01-02",
+          "gender": "Male",
+          "email": "name456@copaprueba.com",
+          "address": {
+            "addressLine": "Av Parque 123",
+            "countryIso2": "UY",
+            "department": "ap1",
+            "cityName": "Montevideo",
+            "postalCode": "102050",
+            "stateName": "R517",
+            "countryName": "UY",
+            "sequenceNumber": null
+          },
+          "passport": {
+            "number": "co4564556",
+            "expirationDate": "2026-06-10",
+            "issueCountry": {
+              "name": null,
+              "iso2": "CO",
+              "iso3": null
+            },
+            "sequenceNumber": "1",
+            "category": "PRINCIPAL",
+            "docTypeName": null
+          },
+          "secondaryPassport": {
+            "number": "co4564598",
+            "expirationDate": "2026-06-10",
+            "issueCountry": {
+              "name": null,
+              "iso2": "CO",
+              "iso3": null
+            },
+            "sequenceNumber": "1",
+            "category": "SECONDARY_PASSPORT",
+            "docTypeName": null
+          },
+          "nationalID": {
+            "number": "88888888888",
+            "expirationDate": "2025-06-10",
+            "issueCountry": {
+              "name": null,
+              "iso2": "CO",
+              "iso3": null
+            },
+            "sequenceNumber": "706",
+            "docTypeName": "N"
+          },
+          "drivingLicense": {
+            "number": "77777777779",
+            "expirationDate": "2030-09-10",
+            "issueCountry": {
+              "name": null,
+              "iso2": "CO",
+              "iso3": null
+            },
+            "sequenceNumber": "707",
+            "docTypeName": "D"
+          },
+          "knownTravelerNumber": {
+            "number": "169977789",
+            "expirationDate": "2028-09-10",
+            "issueCountry": {
+              "name": null,
+              "iso2": "US",
+              "iso3": null
+            },
+            "sequenceNumber": "608"
+          },
+          "redressNumber": {
+            "number": "345345345345",
+            "issueCountry": {
+              "name": null,
+              "iso2": "CR",
+              "iso3": null
+            },
+            "sequenceNumber": "609"
+          },
+          "consent": {
+            "consentEmail": true,
+            "consentEmailPartners": true,
+            "consentFax": true,
+            "consentSms": true,
+            "consentPush": true,
+            "consentPost": true,
+            "consentPhone": true,
+            "consentInfo": true,
+            "consentAdverts": true,
+            "consentFacebook": true,
+            "consentSegmentation": true,
+            "consentRemoveAvatar": true,
+            "consentFbMessenger": true
+          },
+          "preferences": {
+            "preferenceAirSeat": "WINDOW",
+            "preferenceFavoriteDestination1": "MEX",
+            "preferenceMealPreference": "VEGETARIAN"
+          },
+          "usVisaNumber": {
+            "number": "USA66666666",
+            "expirationDate": "2030-07-07",
+            "validFrom": "2022-01-01",
+            "sequenceNumber": "660"
+          },
+          "telephone": {
+            "phoneTechType": "1",
+            "phoneNumber": "(567)1357900",
+            "countryAccessCode": "57",
+            "remark": "HPH",
+            "phoneLocationType": null,
+            "sequenceNumber": "1",
+            "isDefault": null,
+            "areaCityCode": null,
+            "phoneType": null
+          },
+          "actionType": "U"
+        }
+    headers:
+      - name: accept-language
+        value: es-PA
+      - name: new-version
+        value: "true"
+      - name: Token
+        value: eyJ...G-Q
+      - name: Channel
+        value: MYACC
+      - name: User-Agent
+        value: CM/dev/tool/23.03.23
+      - name: Content-Type
+        value: application/json
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: ""
+    name: New Request
+    meta:
+      id: req_c4705d5cc56d49e18950248103fe6382
+      created: 1698257920382
+      modified: 1698257920382
+      isPrivate: false
+      description: ""
+      sortKey: -1698257920382
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/2023.5.8
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: https://cm-osl-sis-apim.azure-api.net/osl-loyalty/createcustomer/v2.0/CreateModifyProfile/CustomerProfile/Create
+    name: New Request
+    meta:
+      id: req_0a9d95bbe9174146967e329ce831c958
+      created: 1698257924828
+      modified: 1716419574137
+      isPrivate: false
+      description: ""
+      sortKey: -1698257924828
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"birthdate": "1990-01-01",
+        	"surname": "Fernandez",
+        	"nationality": "PA",
+        	"sourcecode": "WCIQE",
+        	"name": "Ana",
+        	"password": "Cop@202404",
+        	"emails": [
+        		{
+        			"emailPreferred": "T",
+        			"emailAddress": "AnaFernandez@UAThyneskhater.com",
+        			"seqNo": 1,
+        			"emailType": "PER"
+        		}
+        	]
+        }
+    headers:
+      - name: Authorization
+        value: eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IkdUN3J5WnRKcE1DcDI2X3czcV9qWSJ9.eyJodHRwczovL2FwaS1kZXYuY29wYS5jb20vZmZuIjoiMDA5NDAxMDI0IiwiaXNzIjoiaHR0cHM6Ly9sb2dpbi1kZXYuY29wYWFpci5jb20vIiwic3ViIjoiYXV0aDB8MDA5NDAxMDI0IiwiYXVkIjoiaHR0cHM6Ly9hcGktdWF0LmNvcGEuY29tIiwiaWF0IjoxNjkzMjM4NDIzLCJleHAiOjE2OTMzMjQ4MjMsImF6cCI6IjlJQlFleUFCS05kS3ZYSERra0h1SkZ4UGFOaGFrWThjIiwic2NvcGUiOiJlbWFpbCByZWFkOnVzZXJzIHVwZGF0ZTp1c2VycyBjcmVhdGU6dXNlcnMgcmVhZDp1c2Vyc19hcHBfbWV0YWRhdGEgdXBkYXRlOnVzZXJzX2FwcF9tZXRhZGF0YSBkZWxldGU6dXNlcnNfYXBwX21ldGFkYXRhIGNyZWF0ZTp1c2Vyc19hcHBfbWV0YWRhdGEgcmVhZDp1c2Vyc19jdXN0b21fYmxvY2tzIiwiZ3R5IjoicGFzc3dvcmQifQ.NOTXwJpyDq-37civ5rqhh_MTqe87ZZhB7BD4ObAsQDB9eAv2z7fuzkHXTJ1cWYVTICGJEDCvNb1atvOqJnlpNPJ7n1wrSaDFHDytuqzmeCdGlv5RapMQvCjxSbMVrb-MVbHwmlrw2BlxUd2WCKGEuApnFLeLkjj7IRCqBsL3iz02T6pc89P8mZu9xbG0rgV7i-9RLaGgr3WERtnozzxMkd1_9T7Qu-6LoRwKUymSjkWBMMujqN-3QPr9h0KvBX3zDWSkYX4tiPmkn-6bnfyMJZ3KRhtnqj8jCZQd2ED7ddHwS5HG9baxUzD8wpyXzqirOnHrRnE5JawOg0a0q1vYHA
+      - name: Content-Type
+        value: application/json
+      - name: Copa-Channel-ID
+        value: Web
+        disabled: true
+      - name: Copa-Consumer-ID
+        value: MyAccount
+        disabled: true
+      - name: Ocp-Apim-Subscription-Key
+        value: a1a876bcf742484fadedd2323a75f0c0
+    authentication:
+      type: basic
+      useISO88591: false
+      username: 9IBQeyABKNdKvXHDkkHuJFxPaNhakY8c
+      password: T-BV-8pB9PdTv18CDb2njnixD2sphEgImFWyByE79MWARRtPx4JaCCV4QGwYDrWL
+      disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - name: comarch dev
+    meta:
+      id: fld_5e942404c7c8479ca62d6926edff264e
+      created: 1698261700212
+      modified: 1698261700212
+      sortKey: -1698261700212
+      description: ""
+    children:
+      - url: https://login-dev.copaair.com/oauth/token
+        name: Login - OSL SIS
+        meta:
+          id: req_76398230a71744708731601f8adda676
+          created: 1698258180355
+          modified: 1698261745767
+          isPrivate: false
+          description: ""
+          sortKey: -1698261741603
+        method: POST
+        body:
+          mimeType: application/x-www-form-urlencoded
+          params:
+            - name: grant_type
+              value: http://auth0.com/oauth/grant-type/password-realm
+            - name: username
+              value: autopaxQMUES@mailinator.com
+              multiline: false
+              fileName: gmail.com
+              type: text
+            - name: password
+              value: Cop@2023@
+              multiline: false
+              fileName: "2023"
+              type: text
+            - name: realm
+              value: LoyaltyDB
+            - name: audience
+              value: https://api-uat.copa.com
+            - name: scope
+              value: email
+        headers:
+          - name: Authorization
+            value: Basic
+              OUlCUWV5QUJLTmRLdlhIRGtrSHVKRnhQYU5oYWtZOGM6VC1CVi04cEI5UGRUdjEzQ0RiMm5qbml4RDJzcGhFZ2xtRld5QnlFNzlNd0FSUnRQeDRKYUNDVjRRR3dZRHJXTA==
+          - name: Content-Type
+            value: application/x-www-form-urlencoded
+          - name: Cookie
+            value: visid_incap_2842481=KcTC7AbfT8ewbnHOud0nEfEtxGQAAAAAQUIPAAAAAADtmMo5aTHYBHmPEb3HeudT;
+              nlbi_2842481=WwQafKcYWQJsXqdtC2ZXnAAAAAAOvXtglML2oW3A5BmKRoo%2B;
+              nlbi_2819721=jgqkYGmOBGtYXYWcEbD4pAAAAAAT62bJyMJnq74LbmyYeiqi;
+              visid_incap_2819721=BYfVZUcFSFO%2Bq1DTAs3YAJchx2MAAAAAQUIPAAAAAADq5kIJj5ndEOceTmLzPV9o;
+              did=s%253Av0%253A1ecd23c0-11d9-11ee-82a7-91405607d6db.qETE3GYPtcmwLsHukChW6LNUt6%252Fb0nOp7ApbJlThjU4;
+              did_compat=s%253Av0%253A1ecd23c0-11d9-11ee-82a7-91405607d6db.qETE3GYPtcmwLsHukChW6LNUt6%252Fb0nOp7ApbJlThjU4;
+              visid_incap_2894058=bVqqmHfHRK%2BYW%2F3vSFBdreDmlWQAAAAAQUIPAAAAAACw2IC9y%2Fzbqc%2B7lNM293sK;
+              nlbi_2894058=BCEARFbWohP875L7yv1i1QAAAADWcGG80B9Fpf2avgqoi8rv;
+              incap_ses_1310_2894058=K27jW8VdG0K1KLyewg8uEoI5FGUAAAAAxr17IOLyVNLgsVz8gZ5imw%3D%3D;
+              incap_ses_1603_2894058=dyP8TkJdoxOCyrVDdgA%2FFvY6HGUAAAAA6M%2FLdLrtTGAWP7guXL%2B2gQ%3D%3D
+        authentication:
+          type: basic
+          useISO88591: false
+          username: 9IBQeyABKNdKvXHDkkHuJFxPaNhakY8c
+          password: T-BV-8pB9PdTv18CDb2njnixD2sphEgImFWyByE79MWARRtPx4JaCCV4QGwYDrWL
+          disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: https://cm-osl-sis-apim.azure-api.net/osl-loyalty/createcustomer/v2.0/CreateModifyProfile/CustomerProfile/Create
+        name: Create Profile OSL SIS-DEV
+        meta:
+          id: req_b7d35ab087be47beb0fc6e4e3399719f
+          created: 1698259519132
+          modified: 1735337366322
+          isPrivate: false
+          description: ""
+          sortKey: -1698261741503
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"birthdate": "1990-01-01",
+            	"name": "HUGO",
+            	"surname": "CHDDEV",
+            	"nationality": "PA",
+            	"sourcecode": "WCIQE",
+            	"password": "Cop@2024",
+            	"emails": [
+            		{
+            			"emailPreferred": "T",
+            			"emailAddress": "HUGOCHDDEV@DEV.com",
+            			"seqNo": 1,
+            			"emailType": "PER"
+            		}
+            	]
+            }
+        headers:
+          - name: Authorization
+            value: eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IkdUN3J5WnRKcE1DcDI2X3czcV9qWSJ9.eyJodHRwczovL2FwaS1kZXYuY29wYS5jb20vQ3VzdG9tZXJJRCI6IjEzNTYwIiwiaHR0cHM6Ly9hcGktZGV2LmNvcGEuY29tL0FjY291bnRJRCI6IjEyOTU5IiwiaHR0cHM6Ly9hcGktZGV2LmNvcGEuY29tL2ZmbiI6IjAwOTUyODI1OCIsImlzcyI6Imh0dHBzOi8vbG9naW4tZGV2LmNvcGFhaXIuY29tLyIsInN1YiI6ImF1dGgwfDAwOTUyODI1OCIsImF1ZCI6Imh0dHBzOi8vYXBpLXVhdC5jb3BhLmNvbSIsImlhdCI6MTczMDIzNjk0MSwiZXhwIjoxNzMwMzIzMzQxLCJzY29wZSI6ImVtYWlsIHJlYWQ6dXNlcnMgdXBkYXRlOnVzZXJzIGNyZWF0ZTp1c2VycyByZWFkOnVzZXJzX2FwcF9tZXRhZGF0YSB1cGRhdGU6dXNlcnNfYXBwX21ldGFkYXRhIGRlbGV0ZTp1c2Vyc19hcHBfbWV0YWRhdGEgY3JlYXRlOnVzZXJzX2FwcF9tZXRhZGF0YSByZWFkOnVzZXJzX2N1c3RvbV9ibG9ja3MiLCJndHkiOiJwYXNzd29yZCIsImF6cCI6IjlJQlFleUFCS05kS3ZYSERra0h1SkZ4UGFOaGFrWThjIn0.x1urw_XRkFEjev40T2F2v2j-RrZ4OBrMgkS_TAzKaTNTJw4ocYiQTUM1Bg4mzFAjr--wiMUU_titgh7Mi9QBwYIOmoGlobr0gipFXbEAWHSm9rMs3szX-093aq8Pgw_br-sVh-7VSOvkn-aC63JB_qX_Qfzrpw7fERxdN7TzkZG7tJrEtVeBmSCIqh1T-5rH0qWoMX_tWbTnNC4xlJP6jiTFM8yqUVb8WA-8vFDxMZMj-D-XdNdSg4Oj15SvhFZLcGmhW_fP53ILVkBnb0b6gsjFSHZk5NW_243X9SdYEaUtREOtbxo2EeavfehWvQMq2yJ6-G-3VCwjn8dpCqrdIQ
+          - name: Content-Type
+            value: application/json
+          - name: Copa-Channel-ID
+            value: Web
+          - name: Copa-Consumer-ID
+            value: MyAccount
+          - name: Ocp-Apim-Subscription-Key
+            value: a1a876bcf742484fadedd2323a75f0c0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: comarch uat
+    meta:
+      id: fld_f1b484272cc44b0e9c3493ee09cef348
+      created: 1698261709574
+      modified: 1698261709574
+      sortKey: -1698261709574
+      description: ""
+    children:
+      - url: https://api-uat.copa.com/osl-loyalty/customer/v2.0/member/230105273/fullprofile
+        name: Get Profile Comar
+        meta:
+          id: req_aa21b76f72a84f9ebe63777235f02670
+          created: 1693519831897
+          modified: 1763571848722
+          isPrivate: false
+          description: ""
+          sortKey: -1698261726821
+        method: GET
+        headers:
+          - name: User-Agent
+            value: Insomnia/2023.5.4
+          - name: Host
+            value: api-uat.copa.com
+          - name: Copa-Channel-ID
+            value: WEB
+          - name: Copa-Consumer-ID
+            value: MYTRIPS
+          - name: Ocp-Apim-Subscription-Key
+            value: adf0bce05db74f9fb493a37effe03ea9
+          - name: Authorization
+            value: eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InJtM3Z4VDkyZUdlSnFDRHBULXBaXyJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLXVhdC5jb3BhYWlyLmNvbS8iLCJzdWIiOiJhdXRoMHwyMzAxMDUyNzMiLCJhdWQiOiJodHRwczovL2FwaS11YXQuY29wYS5jb20iLCJpYXQiOjE3NjM1NzE4NDcsImV4cCI6MTc2MzU3MzY0Nywic2NvcGUiOiJlbWFpbCBzY29wZTpwcm9maWxlIHJlYWQ6dXNlcnMgcHJvZmlsZTphdHRyaWJ1dGVzIHByb2ZpbGU6Y291bnRlcnMiLCJndHkiOiJwYXNzd29yZCIsImF6cCI6IjNYOEJqdFFkZVR4YU5DNzhkMHhYV0g4Q3lUMWdrTnRqIn0.AQQDKj6xRKYmuYUdmzZMVqoM_gcqH5Tg6B0H0QLfq6WFy75Me7cebtqpYevRa1IDl7mRFh6gFw6qvFKY68b5y2hHkE81hHeiRxLdtGGWrje9tIuhzL3MGaku1kCUwVhCRet3Oe1gEhF20ERcUxahXhSDV2UXs_R68zmxPXqmk7Z5z8spGQXVwnRlK-gZQiXetMV4PlBr8d89036to4mo60QGOHFUnfALOdHumWYYA7cu8z4ItO3rJADljIdVqW2h8EHvvFU0j6VKPV3FKTS2kPQPW9tI1SDapVDH2m5vz_eQ8AVzGx_qUSPYd1B1AYePufZasSb6glMjfzW5Bpp3VA
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: https://api-uat.copa.com/osl-loyalty/createcustomer/v2.0/CreateModifyProfile/CustomerProfile/Create
+        name: Create Profile CIAM UAT
+        meta:
+          id: req_9cc34a86120a4ca8b2a1bf432168c557
+          created: 1698260395581
+          modified: 1763067982407
+          isPrivate: false
+          description: ""
+          sortKey: -1698261726721
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"birthdate": "1990-01-01",
+            	"surname": "Mezauta",
+            	"nationality": "PA",
+            	"sourcecode": "WCIQE",
+            	"name": "Giancarlo",
+            	"password": "Cop@202404",
+            	"emails": [
+            		{
+            			"emailPreferred": "T",
+            			"emailAddress": "Giancarlo_Meza+2@hotmail.com",
+            			"seqNo": 1,
+            			"emailType": "PER"
+            		}
+            	]
+            }
+        headers:
+          - name: Authorization
+            value: eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InJtM3Z4VDkyZUdlSnFDRHBULXBaXyJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLXVhdC5jb3BhYWlyLmNvbS8iLCJzdWIiOiJhdXRoMHwyMzAxMDUyNzMiLCJhdWQiOiJodHRwczovL2FwaS11YXQuY29wYS5jb20iLCJpYXQiOjE3NjMwNjc2MzcsImV4cCI6MTc2MzA2OTQzNywic2NvcGUiOiJlbWFpbCBzY29wZTpwcm9maWxlIHJlYWQ6dXNlcnMgcHJvZmlsZTphdHRyaWJ1dGVzIHByb2ZpbGU6Y291bnRlcnMiLCJndHkiOiJwYXNzd29yZCIsImF6cCI6IjNYOEJqdFFkZVR4YU5DNzhkMHhYV0g4Q3lUMWdrTnRqIn0.gUN7dGmEeaj4Uxni4Eu3kkqbarUlLql8rHuqSUn7mB-R0z27ZGxJQ9a-uEVRfl4XBr3rGgcSHqg7-7fVdUUjAhqqP4aUAH_wJGDBsx_XgAb5KlKVbw75fo88pSoAVoo2UHWdESZjcSwUs4A6GFFr7jYcdRjcRlK-HV9RL_pQLSTH98Qa1sw4n_2xkBh247WDnxXgW2A5AO10jx2O0c47NMJoqLBubi0AfdqyR2ppEcaQOViVXA7xo8aThxTefNWrWJth5IuzF28O3YMTkd8D3GaTwKova6c0iSwxQfxm-yAlT4UxC3qY48iTfKHWth0w_hNeMXDD3NUQ8k5VmlWgBA
+          - name: Content-Type
+            value: application/json
+          - name: Copa-Channel-ID
+            value: Web
+          - name: Copa-Consumer-ID
+            value: MyAccount
+          - name: Ocp-Apim-Subscription-Key
+            value: c7f2c32f8ad7441bb828a626e1d1da5d
+          - name: Cookie
+            value: ApplicationGatewayAffinity=ea0dac919dd8ab645ed5c2be02e16e3d;
+              visid_incap_2847275=ECtjd6IlQq6KQDRxIga4nSdfVWQAAAAAQUIPAAAAAAC89CBQIEq%2FoQ3N7id%2BZmHO;
+              nlbi_2847275=WuXfe%2FE7xhs1EsnYeZuB0wAAAABMVyJPmASh1fGsr7qaaUL3;
+              nlbi_2802616=i8W3D%2Fp%2FxHWiusB%2F1KWtQwAAAAAdMs%2FLOPfgHMx90Vu1YhgV;
+              visid_incap_2802616=Cc%2BZL3NnQUCIeMebIjCg9vjiv2QAAAAAQUIPAAAAAACUxmSSJw4jiMSmdekdbsBu;
+              visid_incap_2875442=PPsaM%2BSSSSq03gw%2FRyAMV%2BEBVGQAAAAAQUIPAAAAAACRNIECGk7skfYbsAaM5Szb;
+              nlbi_2875442=DQTBKeQl2xOqUkU3pdx5ZQAAAACkwmt7%2BvRdZuXwujvTTBvS;
+              visid_incap_2875446=d%2FEU34pOQG%2BRUkdM3Sj0XCS462MAAAAAQUIPAAAAAADEoLfMQ1gIiLkFxorafN79;
+              nlbi_2875446=71e%2BMbRN%2BEivFHw8OycnRAAAAAD8FT8eK5tCb6WYNtxb9rGa;
+              incap_ses_1310_2847275=cwqdJVXLTnhVWLyewg8uEq45FGUAAAAAaMrH58WmF3%2F1YU9E6qwMEQ%3D%3D;
+              incap_ses_1310_2875442=zIqtH4uQCHXj4tOewg8uElFOFGUAAAAA1hQcPon3c6RrkM2kF6eLZQ%3D%3D;
+              incap_ses_1603_2875442=ALxVCEdWnRv1t46FeAA%2FFs5tHWUAAAAAqlC%2F%2BXhOlUpNUBqqsXAdLg%3D%3D
+        authentication:
+          type: basic
+          useISO88591: false
+          username: 3X8BjtQdeTxaNC78d0xXWH8CyT1gkNtj
+          password: Hb7CcgnCInS1wGwx1Xa4nfwzbX8e8|HMbBhz-CvLP5mxxQv0a61_MR8mzziBRCR3
+          disabled: true
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: https://login-uat.copaair.com/oauth/token
+        name: Login - CIAM UAT
+        meta:
+          id: req_1b1801af8aea4c07b829157a74ac4568
+          created: 1698260556393
+          modified: 1763571935072
+          isPrivate: false
+          description: ""
+          sortKey: -1698261727021
+        method: POST
+        body:
+          mimeType: application/x-www-form-urlencoded
+          params:
+            - name: grant_type
+              value: http://auth0.com/oauth/grant-type/password-realm
+            - name: username
+              value: "121260195"
+              multiline: false
+              fileName: gmail.com
+              type: text
+            - name: password
+              value: Cop@202404
+              multiline: false
+              fileName: "2023"
+              type: text
+            - name: realm
+              value: LoyaltyDB
+            - name: audience
+              value: https://api-uat.copa.com
+            - name: scope
+              value: email
+        headers:
+          - name: Authorization
+            value: Basic
+              M1g4Qmp0UWRlVHhhTkM3OGQweFhXSDhDeVQxZ2tOdGo6SGI3Q2NnbkNsblMxd0d3eDFYYTRuZnd6Ylg4ZThJSE1iQmh6LWN2TFA1bXh4UXYwYTYxX01SOG16emlCUkNSMw==
+          - name: Content-Type
+            value: application/x-www-form-urlencoded
+          - name: Cookie
+            value: visid_incap_2842481=KcTC7AbfT8ewbnHOud0nEfEtxGQAAAAAQUIPAAAAAADtmMo5aTHYBHmPEb3HeudT;
+              nlbi_2842481=WwQafKcYWQJsXqdtC2ZXnAAAAAAOvXtglML2oW3A5BmKRoo%2B;
+              nlbi_2819721=jgqkYGmOBGtYXYWcEbD4pAAAAAAT62bJyMJnq74LbmyYeiqi;
+              visid_incap_2819721=BYfVZUcFSFO%2Bq1DTAs3YAJchx2MAAAAAQUIPAAAAAADq5kIJj5ndEOceTmLzPV9o;
+              did=s%253Av0%253A49ab5910-11f5-11ee-96f0-4fbbb29445e1.0FqprjMNhA4%252FkIiC6rlU%252FGlLBIgdFmGNTP1%252Fxx%252BLVDA;
+              did_compat=s%253Av0%253A49ab5910-11f5-11ee-96f0-4fbbb29445e1.0FqprjMNhA4%252FkIiC6rlU%252FGlLBIgdFmGNTP1%252Fxx%252BLVDA;
+              visid_incap_2894058=bVqqmHfHRK%2BYW%2F3vSFBdreDmlWQAAAAAQUIPAAAAAACw2IC9y%2Fzbqc%2B7lNM293sK;
+              nlbi_2894058=BCEARFbWohP875L7yv1i1QAAAADWcGG80B9Fpf2avgqoi8rv;
+              incap_ses_1310_2894058=K27jW8VdG0K1KLyewg8uEoI5FGUAAAAAxr17IOLyVNLgsVz8gZ5imw%3D%3D;
+              incap_ses_1603_2894058=dyP8TkJdoxOCyrVDdgA%2FFvY6HGUAAAAA6M%2FLdLrtTGAWP7guXL%2B2gQ%3D%3D
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: https://api-uat.copa.com/osl-loyalty/modifycustomer/v2.0/CreateModifyProfile/CustomerProfile/Modify
+        name: Mofify profile
+        meta:
+          id: req_aab497de4ea54f97822484f77e1323a8
+          created: 1698703445033
+          modified: 1716419705163
+          isPrivate: false
+          description: ""
+          sortKey: -1698261726621
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"surname": "lukas",
+            	"name": "Sobrino",
+            	"nationality": "PA",
+            	"id": "126179375",
+            	"gender": "F",
+            	"title": "Ms.",
+            	"emails": [
+            		{
+            			"emailPreferred": "T",
+            			"emailAddress": "sobrino.lukas@cmgmail.com",
+            			"emailStatus": "T",
+            			"seqNo": 1,
+            			"emailType": "PER"
+            		}
+            	],
+            	"phones": [
+            		{
+            			"actionType": "U",
+            			"seqNo": "1",
+            			"phoneType": "1",
+            			"phoneNumber": "123456789"
+            		}
+            	],
+            	"Address": [
+            		{
+            			"actionType": "U",
+            			"addressLine1": [
+            				"Av Parque 456, boulevard avenue"
+            			],
+            			"city": "Montevideo",
+            			"zipCode": "102050",
+            			"department": "Apto 5",
+            			"country": "PA"
+            		}
+            	],
+            	"preferences": [
+            		{
+            			"actionType": "U",
+            			"preferenceType": "OTHER_FFP",
+            			"preferenceValue": "66|123456"
+            		}
+            	],
+            	"memberDocs": [
+            		{
+            			"actionType": "U",
+            			"seqNo": 1154,
+            			"documentType": "N",
+            			"issuingCountry": "PA",
+            			"validUntil": "2024-01-01",
+            			"documentId": "999999998888",
+            			"validFrom": "2020-01-01"
+            		}
+            	],
+            	"attributes": [
+            		{
+            			"actionType": "U",
+            			"code": "CONSENT_BANKS",
+            			"value": "0"
+            		},
+            		{
+            			"actionType": "U",
+            			"code": "CONSENT_CMI_NEWS",
+            			"value": "0"
+            		}
+            	]
+            }
+        headers:
+          - name: Authorization
+            value: ""
+          - name: Content-Type
+            value: application/json
+          - name: Cookie
+            value: ApplicationGatewayAffinity=ea0dac919dd8ab645ed5c2be02e16e3d;
+              visid_incap_2847275=ECtjd6IlQq6KQDRxIga4nSdfVWQAAAAAQUIPAAAAAAC89CBQIEq%2FoQ3N7id%2BZmHO;
+              nlbi_2847275=WuXfe%2FE7xhs1EsnYeZuB0wAAAABMVyJPmASh1fGsr7qaaUL3;
+              nlbi_2802616=i8W3D%2Fp%2FxHWiusB%2F1KWtQwAAAAAdMs%2FLOPfgHMx90Vu1YhgV;
+              visid_incap_2802616=Cc%2BZL3NnQUCIeMebIjCg9vjiv2QAAAAAQUIPAAAAAACUxmSSJw4jiMSmdekdbsBu;
+              visid_incap_2875442=PPsaM%2BSSSSq03gw%2FRyAMV%2BEBVGQAAAAAQUIPAAAAAACRNIECGk7skfYbsAaM5Szb;
+              nlbi_2875442=DQTBKeQl2xOqUkU3pdx5ZQAAAACkwmt7%2BvRdZuXwujvTTBvS;
+              visid_incap_2875446=d%2FEU34pOQG%2BRUkdM3Sj0XCS462MAAAAAQUIPAAAAAADEoLfMQ1gIiLkFxorafN79;
+              nlbi_2875446=71e%2BMbRN%2BEivFHw8OycnRAAAAAD8FT8eK5tCb6WYNtxb9rGa;
+              incap_ses_1310_2847275=cwqdJVXLTnhVWLyewg8uEq45FGUAAAAAaMrH58WmF3%2F1YU9E6qwMEQ%3D%3D;
+              incap_ses_1310_2875442=zIqtH4uQCHXj4tOewg8uElFOFGUAAAAA1hQcPon3c6RrkM2kF6eLZQ%3D%3D;
+              incap_ses_1603_2875442=ALxVCEdWnRv1t46FeAA%2FFs5tHWUAAAAAqlC%2F%2BXhOlUpNUBqqsXAdLg%3D%3D;
+              ApplicationGatewayAffinity=398c0e88b43ba76621585d1f2cf73f5f;
+              visid_incap_2847275=QmL1%2BEdbSWW1TILC%2B3blDGuoW2QAAAAAQUIPAAAAAABNe9vAKfKQTf%2BWGKlHcQuU;
+              nlbi_2847275=uyYdVbIZyk0%2BTYSdeZuB0wAAAAA%2B1V6qRrf%2Fw092we9JLtRb;
+              visid_incap_2875442=ZBD4P4fOTCKeZUtlo4HLP3o1VGQAAAAAQkIPAAAAAABUStlMglJFr60aBgfJkHPV;
+              nlbi_2875442=1KYFdgT84Cf42S7Spdx5ZQAAAACZPwH8fdBurKnzzIo%2FRFV2;
+              nlbi_2802616=v6S%2FH45d80gcjH9H1KWtQwAAAAAqFvENyDvmqz5VL5GcHy59;
+              visid_incap_2802616=egWfKbvsRQyJAveOGe9Aj6AvZWQAAAAAQUIPAAAAAACsmazGHdV1CFrXFLLwSaoG;
+              incap_ses_1596_2847275=jm1IOqjT%2B1UCkhQHCSImFgAiQGUAAAAAqb4Xeo6KUlhULDI2tYPhxQ%3D%3D;
+              incap_ses_1596_2875442=cLVkTdPGakvyjRADCSImFj5gOWUAAAAA4w6Jl9usSavu3UPUPanCcA%3D%3D
+          - name: Copa-Channel-ID
+            value: Web
+          - name: Copa-Language
+            value: es-PA
+          - name: Ocp-Apim-Subscription-Key
+            value: 0b647f8c154e4a1a8ecc0e1b02ab860e
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: https://api-uat.copa.com/osl-loyalty/modifycustomer/v2.0/CreateModifyProfile/CustomerProfile/Modify
+        name: Mofify profile 2
+        meta:
+          id: req_a559f025aa6941e28f834d73f0edf0b7
+          created: 1707249628846
+          modified: 1707249738481
+          isPrivate: false
+          description: ""
+          sortKey: -1698259825724.5
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"surname": "BARROS",
+            	"name": "ESTHER",
+            	"nationality": "PA",
+            	"id": "237239544",
+            	"gender": "F",
+            	"title": "Ms.",
+            	"memberDocs": [
+            		{
+            			"actionType": "U",
+            			"seqNo": 1154,
+            			"documentType": "N",
+            			"issuingCountry": "PA",
+            			"validUntil": "2024-01-01",
+            			"documentId": "999999998888",
+            			"validFrom": "2020-01-01"
+            		}
+            	]
+            }
+        headers:
+          - name: Authorization
+            value: eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InJtM3Z4VDkyZUdlSnFDRHBULXBaXyJ9.eyJodHRwczovL2FwaS11YXQuY29wYS5jb20vQ3VzdG9tZXJJRCI6IjI2OTgwODMiLCJodHRwczovL2FwaS11YXQuY29wYS5jb20vQWNjb3VudElEIjoiMjY5NzAzMyIsImh0dHBzOi8vYXBpLXVhdC5jb3BhLmNvbS9mZm4iOiIyMzcyMzk1NDQiLCJpc3MiOiJodHRwczovL2xvZ2luLXVhdC5jb3BhYWlyLmNvbS8iLCJzdWIiOiJhdXRoMHwyMzcyMzk1NDQiLCJhdWQiOiJodHRwczovL2FwaS11YXQuY29wYS5jb20iLCJpYXQiOjE3MDcyNDk2NzQsImV4cCI6MTcwNzI1MTQ3NCwiYXpwIjoiM1g4Qmp0UWRlVHhhTkM3OGQweFhXSDhDeVQxZ2tOdGoiLCJzY29wZSI6ImVtYWlsIHJlYWQ6dXNlcnMgdXBkYXRlOnVzZXJzIGNyZWF0ZTp1c2VycyByZWFkOnVzZXJzX2FwcF9tZXRhZGF0YSB1cGRhdGU6dXNlcnNfYXBwX21ldGFkYXRhIGRlbGV0ZTp1c2Vyc19hcHBfbWV0YWRhdGEgY3JlYXRlOnVzZXJzX2FwcF9tZXRhZGF0YSByZWFkOnVzZXJzX2N1c3RvbV9ibG9ja3MiLCJndHkiOiJwYXNzd29yZCJ9.C0Jud5OCD-bUN89vofnrgdgV-D32iuSTwpvcqbTpfcOB0-n4g9KnhEoD3A3e_ulzd3ZgX4Y5e5EK9RBCEmgC_BtITJEtgy_JPc-nOG-da3vU59RZQ4cs_s8Li5zlWEOTWAQ4q8LaAYQt_r_EC08k1eAzBKCwfOTheQhszfmLB4-2VITvOYDe2bnxMPwwjqLhspEPr26T-UXKSHQEryMc4BnvTZc9Ym1lwlsJwRxCyrrH9EOnWqLGbpXphoJmCyeAqXfET-ap6BOUvODYikl2WLb1T8s0hTiZ349ImR3GRpv9gk7n3AH91xJiOvXUcwKjZkjUQj2ePAZe3bs7JkCo_Q
+          - name: Content-Type
+            value: application/json
+          - name: Cookie
+            value: ApplicationGatewayAffinity=ea0dac919dd8ab645ed5c2be02e16e3d;
+              visid_incap_2847275=ECtjd6IlQq6KQDRxIga4nSdfVWQAAAAAQUIPAAAAAAC89CBQIEq%2FoQ3N7id%2BZmHO;
+              nlbi_2847275=WuXfe%2FE7xhs1EsnYeZuB0wAAAABMVyJPmASh1fGsr7qaaUL3;
+              nlbi_2802616=i8W3D%2Fp%2FxHWiusB%2F1KWtQwAAAAAdMs%2FLOPfgHMx90Vu1YhgV;
+              visid_incap_2802616=Cc%2BZL3NnQUCIeMebIjCg9vjiv2QAAAAAQUIPAAAAAACUxmSSJw4jiMSmdekdbsBu;
+              visid_incap_2875442=PPsaM%2BSSSSq03gw%2FRyAMV%2BEBVGQAAAAAQUIPAAAAAACRNIECGk7skfYbsAaM5Szb;
+              nlbi_2875442=DQTBKeQl2xOqUkU3pdx5ZQAAAACkwmt7%2BvRdZuXwujvTTBvS;
+              visid_incap_2875446=d%2FEU34pOQG%2BRUkdM3Sj0XCS462MAAAAAQUIPAAAAAADEoLfMQ1gIiLkFxorafN79;
+              nlbi_2875446=71e%2BMbRN%2BEivFHw8OycnRAAAAAD8FT8eK5tCb6WYNtxb9rGa;
+              incap_ses_1310_2847275=cwqdJVXLTnhVWLyewg8uEq45FGUAAAAAaMrH58WmF3%2F1YU9E6qwMEQ%3D%3D;
+              incap_ses_1310_2875442=zIqtH4uQCHXj4tOewg8uElFOFGUAAAAA1hQcPon3c6RrkM2kF6eLZQ%3D%3D;
+              incap_ses_1603_2875442=ALxVCEdWnRv1t46FeAA%2FFs5tHWUAAAAAqlC%2F%2BXhOlUpNUBqqsXAdLg%3D%3D;
+              ApplicationGatewayAffinity=398c0e88b43ba76621585d1f2cf73f5f;
+              visid_incap_2847275=QmL1%2BEdbSWW1TILC%2B3blDGuoW2QAAAAAQUIPAAAAAABNe9vAKfKQTf%2BWGKlHcQuU;
+              nlbi_2847275=uyYdVbIZyk0%2BTYSdeZuB0wAAAAA%2B1V6qRrf%2Fw092we9JLtRb;
+              visid_incap_2875442=ZBD4P4fOTCKeZUtlo4HLP3o1VGQAAAAAQkIPAAAAAABUStlMglJFr60aBgfJkHPV;
+              nlbi_2875442=1KYFdgT84Cf42S7Spdx5ZQAAAACZPwH8fdBurKnzzIo%2FRFV2;
+              nlbi_2802616=v6S%2FH45d80gcjH9H1KWtQwAAAAAqFvENyDvmqz5VL5GcHy59;
+              visid_incap_2802616=egWfKbvsRQyJAveOGe9Aj6AvZWQAAAAAQUIPAAAAAACsmazGHdV1CFrXFLLwSaoG;
+              incap_ses_1596_2847275=jm1IOqjT%2B1UCkhQHCSImFgAiQGUAAAAAqb4Xeo6KUlhULDI2tYPhxQ%3D%3D;
+              incap_ses_1596_2875442=cLVkTdPGakvyjRADCSImFj5gOWUAAAAA4w6Jl9usSavu3UPUPanCcA%3D%3D
+          - name: Copa-Channel-ID
+            value: Web
+          - name: Copa-Language
+            value: es-PA
+          - name: Ocp-Apim-Subscription-Key
+            value: 0b647f8c154e4a1a8ecc0e1b02ab860e
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: https://api-uat.copa.com/osl-loyalty/createcustomer/v2.0/CreateModifyProfile/CustomerProfile/Create
+        name: Create Profile CIAM UAT / Residence
+        meta:
+          id: req_f88f6f28655b464b81b20bcc7c0e1393
+          created: 1749583341052
+          modified: 1750946394500
+          isPrivate: false
+          description: ""
+          sortKey: -1698261726671
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"birthdate": "2000-01-01",
+            	"surname": "Kozume",
+            	"nationality": "PA",
+            	"sourcecode": "T",
+            	"name": "Kenma",
+            	"title": "Mr.",
+            	"gender": "M",
+              "password": "Cop@202404",
+            	"Address": [
+            		{
+            			"country": "PA"
+            		}
+            	],
+            	"emails": [
+            		{
+            			"emailAddress": "Kenma@Kozume.com",
+            			"emailPreferred": "true",
+            			"emailStatus": "false",
+            			"emailType": "PER"
+            		}
+            	],
+            	"memberDocs": [
+            		{
+            			"documentId": "Pa132383",
+            			"documentType": "P",
+            			"issuingCountry": "PA",
+            			"validUntil": "2028-01-01T00:00:00-05:00",
+            			"actionType": "A"
+            		}
+            	]
+            }
+        headers:
+          - name: Authorization
+            value: eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InJtM3Z4VDkyZUdlSnFDRHBULXBaXyJ9.eyJodHRwczovL2FwaS11YXQuY29wYS5jb20vQ3VzdG9tZXJJRCI6IjYwNDIxODgiLCJodHRwczovL2FwaS11YXQuY29wYS5jb20vQWNjb3VudElEIjoiNjA0MTEzOCIsImh0dHBzOi8vYXBpLXVhdC5jb3BhLmNvbS9mZm4iOiIyMzAxMDUyNzMiLCJpc3MiOiJodHRwczovL2xvZ2luLXVhdC5jb3BhYWlyLmNvbS8iLCJzdWIiOiJhdXRoMHwyMzAxMDUyNzMiLCJhdWQiOiJodHRwczovL2FwaS11YXQuY29wYS5jb20iLCJpYXQiOjE3NTA5NDYwOTQsImV4cCI6MTc1MDk0Nzg5NCwic2NvcGUiOiJlbWFpbCBzY29wZTpwcm9maWxlIHJlYWQ6dXNlcnMgcHJvZmlsZTphdHRyaWJ1dGVzIHByb2ZpbGU6Y291bnRlcnMiLCJndHkiOiJwYXNzd29yZCIsImF6cCI6IjNYOEJqdFFkZVR4YU5DNzhkMHhYV0g4Q3lUMWdrTnRqIn0.YIdA9na57AthWS_8eINuLnfELhGJFn4eIQZy784pRks3K7DZ2AYusvphakPk4wdCFaDAPWxvcU0KmO0NaOlDrxONSO_-0CJPocPTw-nXCxXUHRn_172D1hRt4WLLCdRMiDi7JWmmAQ1Sj0SGuGIvpDmWPQOLMSs7EXt0nJZ3UJ58ezCcbZNpmcqN0cxMDyW5BFllS8LDIB1jQM1tJiEh5B4xQld9lDo46nd5SuQqPRcWOck3p2-jGrgJXEkLmxMUPkljOx0790tv-n4vu1zIUgL4TJAcCO1Ec-iEcZ-w0LWqmKX9f03DJTRq3-r34NrrHNNp1drRfmoUm8fXlNepCQ
+          - name: Content-Type
+            value: application/json
+          - name: Copa-Channel-ID
+            value: Web
+          - name: Copa-Consumer-ID
+            value: MyAccount
+          - name: Ocp-Apim-Subscription-Key
+            value: c7f2c32f8ad7441bb828a626e1d1da5d
+          - name: Cookie
+            value: ApplicationGatewayAffinity=ea0dac919dd8ab645ed5c2be02e16e3d;
+              visid_incap_2847275=ECtjd6IlQq6KQDRxIga4nSdfVWQAAAAAQUIPAAAAAAC89CBQIEq%2FoQ3N7id%2BZmHO;
+              nlbi_2847275=WuXfe%2FE7xhs1EsnYeZuB0wAAAABMVyJPmASh1fGsr7qaaUL3;
+              nlbi_2802616=i8W3D%2Fp%2FxHWiusB%2F1KWtQwAAAAAdMs%2FLOPfgHMx90Vu1YhgV;
+              visid_incap_2802616=Cc%2BZL3NnQUCIeMebIjCg9vjiv2QAAAAAQUIPAAAAAACUxmSSJw4jiMSmdekdbsBu;
+              visid_incap_2875442=PPsaM%2BSSSSq03gw%2FRyAMV%2BEBVGQAAAAAQUIPAAAAAACRNIECGk7skfYbsAaM5Szb;
+              nlbi_2875442=DQTBKeQl2xOqUkU3pdx5ZQAAAACkwmt7%2BvRdZuXwujvTTBvS;
+              visid_incap_2875446=d%2FEU34pOQG%2BRUkdM3Sj0XCS462MAAAAAQUIPAAAAAADEoLfMQ1gIiLkFxorafN79;
+              nlbi_2875446=71e%2BMbRN%2BEivFHw8OycnRAAAAAD8FT8eK5tCb6WYNtxb9rGa;
+              incap_ses_1310_2847275=cwqdJVXLTnhVWLyewg8uEq45FGUAAAAAaMrH58WmF3%2F1YU9E6qwMEQ%3D%3D;
+              incap_ses_1310_2875442=zIqtH4uQCHXj4tOewg8uElFOFGUAAAAA1hQcPon3c6RrkM2kF6eLZQ%3D%3D;
+              incap_ses_1603_2875442=ALxVCEdWnRv1t46FeAA%2FFs5tHWUAAAAAqlC%2F%2BXhOlUpNUBqqsXAdLg%3D%3D
+        authentication:
+          type: basic
+          useISO88591: false
+          username: 3X8BjtQdeTxaNC78d0xXWH8CyT1gkNtj
+          password: Hb7CcgnCInS1wGwx1Xa4nfwzbX8e8|HMbBhz-CvLP5mxxQv0a61_MR8mzziBRCR3
+          disabled: true
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Others
+    meta:
+      id: fld_83f43f867c054a8da381b05c927367bd
+      created: 1751393756199
+      modified: 1751393756199
+      sortKey: -1751393756199
+      description: ""
+    children:
+      - url: ""
+        name: New Request
+        meta:
+          id: req_519c002390744b359640b542e09218d4
+          created: 1703194876146
+          modified: 1751393817375
+          isPrivate: false
+          description: ""
+          sortKey: -1751393762239
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/2023.5.8
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: https://api-uat.copaair.com/mytrips/reservation/AHMYEI/tif/save-complete
+        name: New Request
+        meta:
+          id: req_1bcce5196de24b4baadbc16828f0acff
+          created: 1703194882039
+          modified: 1751393814417
+          isPrivate: false
+          description: ""
+          sortKey: -1751393762139
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+                "apis": {
+                    "firstName": "PABLO",
+                    "surname": "ERA",
+                    "usaSecurityDocument": [],
+                    "passport": {
+                        "number": "12345",
+                        "expirationDate": "2025-04-04",
+                        "issueCountry": {
+                            "name": "Panamá",
+                            "iso2": "PA",
+                            "iso3": "PAN",
+                            "phoneCodes": null
+                        },
+                        "seqNo": null
+                    },
+                    "redressNumber": null,
+                    "knownTravelerNumber": null,
+                    "nationality": {
+                        "name": "Honduras",
+                        "iso2": "HN",
+                        "iso3": "HND",
+                        "phoneCodes": null
+                    },
+                    "residenceCountry": {
+                        "name": "Honduras",
+                        "iso2": "HN",
+                        "iso3": "HND",
+                        "phoneCodes": null
+                    },
+                    "birthDate": "1993-08-09",
+                    "gender": "Female",
+                    "extendedApis": null,
+                    "trustedData": false,
+                    "infantIndicator": false,
+                    "apisStatus": null,
+                    "travelerKey": "1",
+                    "emergencyContact": null,
+                    "inTransit": null,
+                    "sequenceNumber": null,
+                    "travelReasons": []
+                },
+                "mail": [
+                    {
+                        "mail": "JNTRMGI@XFG.COM",
+                        "travelerKey": "1.1"
+                    }
+                ],
+                "loyalty": null,
+                "isEqualFFN": false,
+                "updateProfileCM": true,
+                "language": "en-US",
+                "travelerKey": "1.1",
+                "channel": "Mobile",
+                "sessionFFN": "230032786",
+                "profileStatus": null,
+                "sessionToken": null
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: Accept-Language
+            value: en-US
+          - name: session-token
+            value: 0A2390A7625D6E13775A99D13680DF0C8A06A632
+          - name: Cookie
+            value: incap_ses_190_2819721=0B+DM1jTYA0QnzmVHASjAvOPgWUAAAAAzE1unCcYPkf4uTqHGdKeqg==;
+              incap_ses_190_2842481=Ld+HLYFkWhEgFO2VHASjAmAYgmUAAAAAfSJ8sbLuI1s7iBM9gcjpiQ==;
+              nlbi_2842481=PGqMeh9k2CDhuyYSC2ZXnAAAAAB3Il0zu3aYDxNA3Bfj8np2;
+              visid_incap_2802554=pUMjphBTSC2zlVwts01b4BGsZWQAAAAAQUIPAAAAAABHOrS/yx4QPZClIJyBhfRb;
+              visid_incap_2819721=aAe2hWN0TNimY+Xe0vGkwb3sW2QAAAAAQUIPAAAAAADAHcyO9stEGL/X/gTE2y//;
+              visid_incap_2842481=7pn+b2rQSlGDHryKy7ZU6AysZWQAAAAAQUIPAAAAAAAslEhIZmke8QSwiCCsXAoI;
+              visid_incap_2849400=r/qL/6s5TaG3fTwARoiJ8DkWVGQAAAAAQUIPAAAAAABXHwb5fE09KBzsIm3xUhUX;
+              visid_incap_2849404=O8PP4o5bSZSF6WhG5PhKJDEWVGQAAAAAQUIPAAAAAAB2UsPiEwwzG9DcZvPzNn3n;
+              visid_incap_2854163=k43OvNnGQLeLY9fHVzZVQSGb8GQAAAAAQUIPAAAAAABIn/tHLxXk2kKtiG9wTV/T;
+              visid_incap_2858083=QN4Il2xSSkG0+fLv+AeRs3EbWWQAAAAAQUIPAAAAAABGD6WFkYU+zLy4s0SfcXIM
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: https://api-uat.copaair.com/mytrips/triphub/refresh-trips
+        name: refresh-trips
+        meta:
+          id: req_7ffaafcfb64a44489b4e8a3be7c17e61
+          created: 1704401214162
+          modified: 1751393810516
+          isPrivate: false
+          description: ""
+          sortKey: -1751393762039
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"ffn": "230436782",
+            	"surname": "Silver",
+            	"notificationDevConf": false
+            }
+        headers:
+          - name: authority
+            value: api-uat.copaair.com
+          - name: accept
+            value: application/json, text/plain, */*
+          - name: accept-language
+            value: es-PA
+          - name: content-type
+            value: application/json
+          - name: cookie
+            value: visid_incap_2819721=60O5M4duSTmPMZ8yeWY3hS2ygGQAAAAAQUIPAAAAAAAboSpW3V++HXwJfKjewB3S;
+              nlbi_2819725=onbsVyW1/jWsbiDy1+vilAAAAACYfoakrkuEZ+wKHrD+/Xb8;
+              visid_incap_2819725=ZKg4CTSOS0mcjr/0DgUy4+naiWQAAAAAQUIPAAAAAAC904J8YNCYfTNpKapapOqo;
+              visid_incap_2819718=mW+4ai0ITfK2upeivc1od7GiuWQAAAAAQUIPAAAAAACMjLFS5pxeUX4u1nHC0uiD;
+              logged=true; passengerLastName=Copa%20Airlines;
+              connecMilesId=231108513; emcid=T-B4DaxnVLl;
+              visid_incap_2842487=KwnADuzGQFezIidrcJnAlvRVJWUAAAAAQUIPAAAAAAD4eJtHKRhLT10SziBETtsX;
+              visid_incap_2861533=bo4vn++sTJubxVWWLxW5B+OuJWUAAAAAQUIPAAAAAAC0aqZqRX9HTZkoijMq+3ef;
+              visid_incap_2849399=b2pfvu8LRSGhDQuUkhzecAOvJWUAAAAAQUIPAAAAAADu1yDbRUvKyhm3rMnoCup1;
+              visid_incap_2844282=nPRF57+7QzmHc+axAxoa3JncJWUAAAAAQUIPAAAAAAAxX7UZaBEiWHFu5rkQf5+U;
+              visid_incap_2854160=pDjC4tfHS1iTMeHt/agGje0QCWUAAAAAQkIPAAAAAAC0H9bIMNHfTp4XzXmoSMOv;
+              visid_incap_2854161=hWQ+I9kXRheR3q4MF+ws55j7J2UAAAAAQUIPAAAAAADfyVzLOWKfGUV12fjVivB+;
+              visid_incap_2810706=RdmCVTILRhCN1NCXZj8fRo17KGUAAAAAQUIPAAAAAADZ2K/RCWHOVp+blF5fsfOy;
+              visid_incap_2847188=fo443mSiQuOY3aYyAYxv8I97KGUAAAAAQUIPAAAAAAB/X+ueVlur9ijjXoT287ni;
+              visid_incap_2847189=SD40hAIGSGGhUPvkF7o6qY97KGUAAAAAQUIPAAAAAABlNkNbcBnUQmF78gtzWSvm;
+              visid_incap_2842471=vAVbiPf4TmWc00W0CXiJI1J2KWUAAAAAQUIPAAAAAADV4AZ6Fk139jrVvyjq3z2R;
+              visid_incap_2851261=h4hrv+HwTP20cWFsq9/QuaqVLWUAAAAAQUIPAAAAAABYpvBgRBxMqi66i1OUThCO;
+              visid_incap_2842481=HfT6KsR+SR+P6T8t7G9foP0nH2UAAAAAQkIPAAAAAABZhwWmGFXIqlh2e87nfPMH;
+              visid_incap_2854162=WM5mhheJTbOHNLmfBFaFNCHAHWUAAAAAQ0IPAAAAAACf7vdGCnUOzOWDkpD2E96J;
+              visid_incap_2844268=ljDolcFiSvKL4s9/Alzvan6jLWUAAAAAQUIPAAAAAAC1h/HsAocrbXjjPtaz5X3T;
+              visid_incap_2844274=H5pey7XCRJeQJJA4M8sRjLujLWUAAAAAQUIPAAAAAADZ1zLdSiDc/ZGRZ0boutU9;
+              visid_incap_2894058=xOHHiHhgQdyw5KKUrVoU1j6kLmUAAAAAQUIPAAAAAACXJMEb7eQsQiuU1ECHXtF2;
+              visid_incap_2847270=nEz5f9gfQQOjeBrw1/Y7FwikLmUAAAAAQkIPAAAAAABbZcmpbdqxDrAawgX0SlkJ;
+              visid_incap_2858083=g0qCXUdRTdKeVqFfhn39VSf3LmUAAAAAQUIPAAAAAABaoHS15ZQj0mHDbHj/6wR9;
+              visid_incap_2854176=tqJm0hoqRcKcHkAXc5WZuCW3SmUAAAAAQUIPAAAAAACramYv2EC7GL0WxRxA266j;
+              visid_incap_2847192=hLoU9+2YRrq7AKIqgZKZNxpqUmUAAAAAQUIPAAAAAABGHmfU6awwbiCf0K4lD5c5;
+              visid_incap_2802554=yIwyxO/bQ2a9aT12qcQIzi1qUmUAAAAAQUIPAAAAAADC0DJvqTXKy2hGM2cH4jGX;
+              visid_incap_2844278=zuK9ki6fQtO3wp2k/4Ea66LqU2UAAAAAQUIPAAAAAAB65nSu1DC8dLCPGzdf+Gxn;
+              visid_incap_2844261=Qc0NGI4+RwW9eoEgnKIGsix4IGUAAAAARUIPAAAAAACAS4CwAcna1ChlPI+DJGAYS3wOlhiPIDte;
+              visid_incap_2900896=YV7+CLFzSK+Vr6fHlEH3xcZ/eGUAAAAAQUIPAAAAAAB7cK0btTIoLbVz7UZqicFZ;
+              nlbi_2819718=AR4EGFTyIy26rdzcCyN3bQAAAAB11DzkRhvdaUm83ZTGiBRf;
+              visid_incap_2891445=ER0YMWIzRVyv9ty9WcFPttlYfGUAAAAAQUIPAAAAAAAof6mo5CScynfcSD1M2nZy;
+              nlbi_2891445=XXDBJQcte19wmjAoxSDp5AAAAADS7OnBv4ysEw36xd2YRn+c;
+              nlbi_2891445_2147483392=uTuVWCPPlWc2ifoExSDp5AAAAACUqKHb/nNpb2+9yIFIR/DT;
+              nlbi_2819718_2147483392=JUkNUaCgtUewRBB+CyN3bQAAAADMMOfZ9ze9utMbHd9Sc5Rf;
+              nlbi_2854161=MdXfXKCTYzHCCp56UYplAAAAAADkZymiW+71yxZ7k1Fx/BBH;
+              nlbi_2819725_2147483392=SQ9gZr5yiWs91PYl1+vilAAAAACGk+SIpQSdpSehMuHU85QU;
+              nlbi_2854160_2147483392=TjiiGM2Y+GLRQz6XLlYrFQAAAABfIuM7ufVRJXp6AKPEDCpx;
+              nlbi_2854161_2147483392=0kEMfRl+GgrbqEi4UYplAAAAAADXF/QC7BmV3epgPNtzMfS4;
+              lang=es;
+              nlbi_2842481=1OTjHnTxBDdgYzNyC2ZXnAAAAADaUSWE4xqMlXe6pjM+4fmr;
+              nlbi_2847192_2147483392=kCSncZxfpGVj9F2kMLXFwwAAAAAxowzYNPxOXaoOQPQGTB9A;
+              visid_incap_2891441=uL0xAmFBS9623WSEGFRdVjpQhGUAAAAAQUIPAAAAAABJLZAcIqKsD8N5rUISmaRe;
+              nlbi_2891441=RK1OYjyLNke+6R/DJ/WmtAAAAADO8WCog7Rqjt9n67Q+/mFE;
+              nlbi_2891441_2147483392=Q8uZC+qBBkB3mPMvJ/WmtAAAAAAnfq70g5emRxhV+DdakGHJ;
+              nlbi_2842487=rfThX4K4B0CzQNukkOdCTQAAAAAU4savOvY1Nsp56m+k1OYk;
+              nlbi_2894058=fOCsQ1k4kzyhqWfhyv1i1QAAAACAYLRDeunJEPNEvcE3r3eU;
+              nlbi_2844261=KtAbRmIWsgY5n0ixOpaxYAAAAAAEsjRUm+F+T0QuR6pmyMAV;
+              Y29wYWFpci5jb20%3D-_lr_uf_-edny8h=5b2dcd18-eedf-4f1e-bcf5-41f55d8a1bc3;
+              nlbi_2844268=MuPLPEZr1h8QrIONfGe8BAAAAACkN+V9TLgCVCTVhv0JPZ5L;
+              nlbi_2844274=w1ZSGwmp3Uj5Prtzt60qCgAAAAAwJkHbpQ/zcvmsGyKYGcW0;
+              nlbi_2847270=mNa0QQlHblVgmXYcOKP74QAAAACWweoaAi8JK9lX4PPORf/5;
+              nlbi_2854162=MUkZHCLSl3vfb02bNVK3EQAAAAAhmEXsuLgx7Ruyi6QvQ1WF;
+              nlbi_2900896=46eeQyB34SmADiab77VrFwAAAAC5idNR13h0P7YYUHXdRX44;
+              nlbi_2819721=Q6A0IXpKbUzibuvBKqYZMAAAAAAgErCsbJVOEPmx5XHzrPkE;
+              nlbi_2842471=t+r3XTUFYRR5z/2Q0MKWPQAAAACT6qmttA5keKxXT9xfcqa0;
+              gdprcm=true;
+              nlbi_2854162_2147483392=NUCaauDfQBKo77xvNVK3EQAAAAB4l46JD+HJ2zi+e4dpjGLT;
+              incap_ses_1605_2842481=ZzKIWAHvBQp/EyQtfxtGFu/djWUAAAAAUjGHCE0kwXLqG1XOmmRFTw==;
+              incap_ses_1605_2894058=Kta9UHviGGNaCSUtfxtGFp3ejWUAAAAA+84m+ryebCDkGG+M02y8Xg==;
+              incap_ses_1605_2844261=DasaGBT0NjnSOjctfxtGFsvrjWUAAAAADJsAT2nxJqWT1QGyn3RdnA==;
+              incap_ses_1605_2844268=n1nNeh3gUxVJskAtfxtGFpfyjWUAAAAAZgaakHuHk9XX8oUNDM8PCw==;
+              nlbi_2844274_2147483392=7RXXZzFYxhYPhWCpt60qCgAAAACDkrbxOYRRAjgxPyiqJ6RG;
+              incap_ses_1605_2844274=gZq+VHuxPUPsskgtfxtGFq/4jWUAAAAAKkvz14cX4YBnwoBl7GCrKw==;
+              nlbi_2842471_2147483392=a5iQEA5MZTKABvl/0MKWPQAAAAD/wh2Uc0L3mktmL27A5yIR;
+              incap_ses_1605_2842471=FOjRVfC/wAlVckktfxtGFmP5jWUAAAAAQ3GJg9kq7HW7JyIm7VDPNg==;
+              incap_ses_8079_2847270=PCvQJoTnlkCDHxT9k2AecAvbjmUAAAAABH5Ce+ECIL8kEw2BdFOFQQ==;
+              nlbi_2858083=MrwEEBiuizLcy8zO960vUwAAAACehOHxsXzs9U4UuV6onXMu;
+              incap_ses_8079_2858083=jjYIRN2PSi6nJBT9k2AecA/bjmUAAAAAFjDiaJ/r1okxrjIR71nBxg==;
+              nlbi_2847270_2147483392=jCD4cQtNFAYkB9pqOKP74QAAAAD8+I6I45YZK2rM66s7Ree1;
+              incap_ses_1605_2847270=VdfTZjb5lEH8CUIufxtGFpkzj2UAAAAACusaEPd0AKSMcDOBNLlipA==;
+              origin=ibe; containerApp=false; _gid=GA1.2.434728513.1704376896;
+              incap_ses_1602_2842487=ZPprAwFfCH3LbAc/CnM7FgnMlmUAAAAA0vBQa9JVBUnUCRDK4Rr7Fg==;
+              uuid=kKyB8YJg5C7ehQ5YM1D5S;
+              nlbi_2842487_2147483392=9rPONqgRHyIDbNiLkOdCTQAAAAB7eHU3q1SeReD5AqXTKvLT;
+              incap_ses_1602_2891441=JFpgU4dUth1e9RQ/CnM7FrralmUAAAAAXQoYrZ4RQsiOyylykzIzBQ==;
+              currentPos=CMus;
+              c_os={"o":"mytrips","ru":"https://mytrips-uat.copaair.com/trip-detail/BOWNIE/wea"};
+              s_f=false;
+              incap_ses_1602_2847270=Fc5UOa02TwiCUTQ/CnM7Fun7lmUAAAAAtWLfzQDYxuh9NvfqMTyuGQ==;
+              incap_ses_1602_2894058=P+AMZ2EYPDvxmUM/CnM7FtQMl2UAAAAAm8goB41mKWJ7F9HcUbx0Wg==;
+              nlbi_2844268_2147483392=jRYXVA+JZFM0Nx2cfGe8BAAAAADvE4oeSMLVTEGkfbZ8NM+Y;
+              incap_ses_1602_2844268=orZYOfv4aWz5MU0/CnM7FooXl2UAAAAAZ+XNWann1CruHtWvzt6oOQ==;
+              incap_ses_1602_2844261=D6tbWe5ViH0JPU0/CnM7FpYXl2UAAAAA5FPQ7n9TCOtZgP4BytI2CQ==;
+              Y29wYWFpci5jb20%3D-_lr_hb_-edny8h%2Fmy-trips-uat={%22heartbeat%22:1704400853915};
+              _gat_UA-26727407-1=1; _gat_UA-174663766-1=1;
+              _gat_gtag_UA_174663766_1=1;
+              masterSessionId=031E79835AF1BC931A34F1858FE284E9CCF2331E;
+              lp_ffn=230436782; lp_firstname=Sandra; lp_lastname=Silver;
+              lp_miles=7930503; lp_level=Silver;
+              incap_ses_1602_2842481=8kD1cg5YZW59eE0/CnM7FuAXl2UAAAAAcWH5vyi7uJk5D1/D1mX8FA==;
+              Y29wYWFpci5jb20%3D-_lr_tabs_-edny8h%2Fmy-trips-uat={%22sessionID%22:0%2C%22recordingID%22:%225-98e5f3e7-1d03-4c4a-9795-a23d51c09911%22%2C%22webViewID%22:null%2C%22lastActivity%22:1704400882499};
+              _ga_R4PMF3F8Y8=GS1.1.1704400890.141.0.1704400890.0.0.0;
+              _ga=GA1.1.789318114.1696525023;
+              nlbi_2844261_2147483392=D9NuMXIcvT35Phy/OpaxYAAAAAC6olLINrd1aRsrvWJohVtD
+          - name: origin
+            value: https://mytrips-uat.copaair.com
+          - name: sec-ch-ua
+            value: '"Not_A Brand";v="8", "Chromium";v="120", "Google Chrome";v="120"'
+          - name: sec-ch-ua-mobile
+            value: ?0
+          - name: sec-ch-ua-platform
+            value: '"Windows"'
+          - name: sec-fetch-dest
+            value: empty
+          - name: sec-fetch-mode
+            value: cors
+          - name: sec-fetch-site
+            value: same-site
+          - name: session-token
+            value: 031E79835AF1BC931A34F1858FE284E9CCF2331E
+          - name: User-Agent
+            value: CM/Performance/02.10.23
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: https://api-uat.copaair.com/mytrips/triphub/get-past-trips
+        name: get-past-trips
+        meta:
+          id: req_765df30b30964349940087fae702d2e9
+          created: 1704405658833
+          modified: 1751393803853
+          isPrivate: false
+          description: ""
+          sortKey: -1751393761939
+        method: GET
+        headers:
+          - name: authority
+            value: api-uat.copaair.com
+          - name: accept
+            value: application/json, text/plain, */*
+          - name: accept-language
+            value: es-PA
+          - name: cookie
+            value: visid_incap_2819721=60O5M4duSTmPMZ8yeWY3hS2ygGQAAAAAQUIPAAAAAAAboSpW3V++HXwJfKjewB3S;
+              nlbi_2819725=onbsVyW1/jWsbiDy1+vilAAAAACYfoakrkuEZ+wKHrD+/Xb8;
+              visid_incap_2819725=ZKg4CTSOS0mcjr/0DgUy4+naiWQAAAAAQUIPAAAAAAC904J8YNCYfTNpKapapOqo;
+              visid_incap_2819718=mW+4ai0ITfK2upeivc1od7GiuWQAAAAAQUIPAAAAAACMjLFS5pxeUX4u1nHC0uiD;
+              logged=true; passengerLastName=Copa%20Airlines;
+              connecMilesId=231108513; emcid=T-B4DaxnVLl;
+              visid_incap_2842487=KwnADuzGQFezIidrcJnAlvRVJWUAAAAAQUIPAAAAAAD4eJtHKRhLT10SziBETtsX;
+              visid_incap_2861533=bo4vn++sTJubxVWWLxW5B+OuJWUAAAAAQUIPAAAAAAC0aqZqRX9HTZkoijMq+3ef;
+              visid_incap_2849399=b2pfvu8LRSGhDQuUkhzecAOvJWUAAAAAQUIPAAAAAADu1yDbRUvKyhm3rMnoCup1;
+              visid_incap_2844282=nPRF57+7QzmHc+axAxoa3JncJWUAAAAAQUIPAAAAAAAxX7UZaBEiWHFu5rkQf5+U;
+              visid_incap_2854160=pDjC4tfHS1iTMeHt/agGje0QCWUAAAAAQkIPAAAAAAC0H9bIMNHfTp4XzXmoSMOv;
+              visid_incap_2854161=hWQ+I9kXRheR3q4MF+ws55j7J2UAAAAAQUIPAAAAAADfyVzLOWKfGUV12fjVivB+;
+              visid_incap_2810706=RdmCVTILRhCN1NCXZj8fRo17KGUAAAAAQUIPAAAAAADZ2K/RCWHOVp+blF5fsfOy;
+              visid_incap_2847188=fo443mSiQuOY3aYyAYxv8I97KGUAAAAAQUIPAAAAAAB/X+ueVlur9ijjXoT287ni;
+              visid_incap_2847189=SD40hAIGSGGhUPvkF7o6qY97KGUAAAAAQUIPAAAAAABlNkNbcBnUQmF78gtzWSvm;
+              visid_incap_2842471=vAVbiPf4TmWc00W0CXiJI1J2KWUAAAAAQUIPAAAAAADV4AZ6Fk139jrVvyjq3z2R;
+              visid_incap_2851261=h4hrv+HwTP20cWFsq9/QuaqVLWUAAAAAQUIPAAAAAABYpvBgRBxMqi66i1OUThCO;
+              visid_incap_2842481=HfT6KsR+SR+P6T8t7G9foP0nH2UAAAAAQkIPAAAAAABZhwWmGFXIqlh2e87nfPMH;
+              visid_incap_2854162=WM5mhheJTbOHNLmfBFaFNCHAHWUAAAAAQ0IPAAAAAACf7vdGCnUOzOWDkpD2E96J;
+              visid_incap_2844268=ljDolcFiSvKL4s9/Alzvan6jLWUAAAAAQUIPAAAAAAC1h/HsAocrbXjjPtaz5X3T;
+              visid_incap_2844274=H5pey7XCRJeQJJA4M8sRjLujLWUAAAAAQUIPAAAAAADZ1zLdSiDc/ZGRZ0boutU9;
+              visid_incap_2894058=xOHHiHhgQdyw5KKUrVoU1j6kLmUAAAAAQUIPAAAAAACXJMEb7eQsQiuU1ECHXtF2;
+              visid_incap_2847270=nEz5f9gfQQOjeBrw1/Y7FwikLmUAAAAAQkIPAAAAAABbZcmpbdqxDrAawgX0SlkJ;
+              visid_incap_2858083=g0qCXUdRTdKeVqFfhn39VSf3LmUAAAAAQUIPAAAAAABaoHS15ZQj0mHDbHj/6wR9;
+              visid_incap_2854176=tqJm0hoqRcKcHkAXc5WZuCW3SmUAAAAAQUIPAAAAAACramYv2EC7GL0WxRxA266j;
+              visid_incap_2847192=hLoU9+2YRrq7AKIqgZKZNxpqUmUAAAAAQUIPAAAAAABGHmfU6awwbiCf0K4lD5c5;
+              visid_incap_2802554=yIwyxO/bQ2a9aT12qcQIzi1qUmUAAAAAQUIPAAAAAADC0DJvqTXKy2hGM2cH4jGX;
+              visid_incap_2844278=zuK9ki6fQtO3wp2k/4Ea66LqU2UAAAAAQUIPAAAAAAB65nSu1DC8dLCPGzdf+Gxn;
+              visid_incap_2844261=Qc0NGI4+RwW9eoEgnKIGsix4IGUAAAAARUIPAAAAAACAS4CwAcna1ChlPI+DJGAYS3wOlhiPIDte;
+              visid_incap_2900896=YV7+CLFzSK+Vr6fHlEH3xcZ/eGUAAAAAQUIPAAAAAAB7cK0btTIoLbVz7UZqicFZ;
+              nlbi_2819718=AR4EGFTyIy26rdzcCyN3bQAAAAB11DzkRhvdaUm83ZTGiBRf;
+              visid_incap_2891445=ER0YMWIzRVyv9ty9WcFPttlYfGUAAAAAQUIPAAAAAAAof6mo5CScynfcSD1M2nZy;
+              nlbi_2819718_2147483392=JUkNUaCgtUewRBB+CyN3bQAAAADMMOfZ9ze9utMbHd9Sc5Rf;
+              nlbi_2819725_2147483392=SQ9gZr5yiWs91PYl1+vilAAAAACGk+SIpQSdpSehMuHU85QU;
+              lang=es;
+              visid_incap_2891441=uL0xAmFBS9623WSEGFRdVjpQhGUAAAAAQUIPAAAAAABJLZAcIqKsD8N5rUISmaRe;
+              nlbi_2819721=Q6A0IXpKbUzibuvBKqYZMAAAAAAgErCsbJVOEPmx5XHzrPkE;
+              incap_ses_8079_2858083=jjYIRN2PSi6nJBT9k2AecA/bjmUAAAAAFjDiaJ/r1okxrjIR71nBxg==;
+              nlbi_2847270_2147483392=jCD4cQtNFAYkB9pqOKP74QAAAAD8+I6I45YZK2rM66s7Ree1;
+              incap_ses_1605_2847270=VdfTZjb5lEH8CUIufxtGFpkzj2UAAAAACusaEPd0AKSMcDOBNLlipA==;
+              origin=ibe; containerApp=false; _gid=GA1.2.434728513.1704376896;
+              incap_ses_1602_2891441=JFpgU4dUth1e9RQ/CnM7FrralmUAAAAAXQoYrZ4RQsiOyylykzIzBQ==;
+              s_f=false;
+              incap_ses_1602_2847270=Fc5UOa02TwiCUTQ/CnM7Fun7lmUAAAAAtWLfzQDYxuh9NvfqMTyuGQ==;
+              masterSessionId=031E79835AF1BC931A34F1858FE284E9CCF2331E;
+              lp_ffn=230436782; lp_firstname=Sandra; lp_lastname=Silver;
+              lp_miles=7930503; lp_level=Silver; isMiles=true; pc_apply=false;
+              c_rsc=1;
+              incap_ses_1602_2844268=hLchAxaFyhNSvVM/CnM7Fl4fl2UAAAAAn+W/jp7ECS4hV+JrR0uJ9Q==;
+              c_passenger=[{"name":"Sandra","surname":"Silver","gender":"Female","birthDate":"04/11/1983","mail":"modificados@gmail.com","areaCode":"+90","phone":"8892191329","populatedPhone":false,"typeCode":"ADT","complete":true,"open":false,"populated":true,"populatedMail":false,"KTN":"","redressNumber":"","FFInfo":{"number":"230436782","programID":"CM"},"FFPnumberError":false,"loyaltyErrorMsg":"","seats":[],"key":0,"state":"","title":"Sra.","stateCode":"","notResident":false,"marketingConsent":false}];
+              incap_ses_1602_2844274=v1sgf1CARUDvXlQ/CnM7Fncfl2UAAAAAW+VnUygN1nB42eiuhOXmYw==;
+              c_aet=U2FsdGVkX1+dC3PMVC/cui2MvrgEt+4ij8V4AhSYJFfbpsKieGUQ1eHB+jqfQR9lH3azu3+3W1fd5wwgBL1usxOa/8usLSzr;
+              cp_v=U2FsdGVkX18w7jL1vPKEw3n0auBeSVMlzg8TWjFThWBrMi3Q44MJvQ==;
+              cp_s=U2FsdGVkX18BgOZiKpVa9UPl;
+              cp_c=U2FsdGVkX1+CZ5wgA7h58e118vqzxLV3LjgJwtMJjs/XYoU9YowlbO+LnFVGzIfdIqw/dXePPY3tNUA=;
+              cp_t=U2FsdGVkX18o0S4n3eUW7Ka5;
+              c_pr=U2FsdGVkX19pY1+m7KI1UhGk13LdeCgJx57vfioLD0ncP5mnF9iiK6klvoKZHfCvTRZ/sgkPxryDtLUpwA==;
+              c_n=U2FsdGVkX19+JJnLmTMiOdDV; c_nn=false;
+              uuid=ymumt2Gl4tr4xrHnl__VU;
+              nlbi_2844274_2147483392=MRxZR+F/k29ZRroYt60qCgAAAAD1OoRG/Bs5zShwMqgWz2Xz;
+              p_t=U2FsdGVkX18Ka0WepFm8YdsFz4T15K0JLvOZ5h/K3LYUW1LegxH3SGlBW06kDjLDSHDNLJlK4pXc/w==;
+              p_st=U2FsdGVkX1+YyO8xGHDIa5ZT/VBvGeEppH6+Is9gk8MlS5gayPg1EhCsBozks9icVOdmysiuaxLkDIj7HWZiXDrIwo/VZXguTMoNVLacZjKOjDq1dJAMdtPX/ZACplh4Gm1Ir7hTCENIknVixzLITSPv;
+              p_rt=U2FsdGVkX1/78M2CBDcmaM5EhruhbH9NSa+CYX+8/vNiOkQLstPLmGKctwr3EXTaxDF9CGa6vmc7/uSok3mdCgRICRkWqsQd56AHnLnDL8PAXCdgWOfp+loChlovuoo2pRwuGjEBkaG8cZ6uJvdyWmNCb/MRv73XUxwVfLiwYK1u+gAHLObdN3lEM6/P9756i3xy4h9VHCcKYkA0;
+              c_os={"o":"mytrips","ru":"https://mytrips-uat.copaair.com/trip-detail/BOWN5R/gran"};
+              currentPos=CMus;
+              nlbi_2844268_2147483392=qepTLx37gzFN2l9afGe8BAAAAAAnMjAHRk/22RsVvDWKlnfW;
+              c_px=U2FsdGVkX18ysnxfbb5rjr06le6Hp045SQKNmqdsjIcW058rGAi5pKbJtzfa+xDwSiI/4q77W0D1F3WunjupWjNuR2jzXIFzA/T1qi0Vd6TmjPZ5in36+V9NYvQbFsY8neZ6VTFsrUoG9ZW9Pc2BPiM9ApR7SSuY5dH7L0v2YVRK08jNsINZ+nFDAldOpgm22KgDb9vpeKd2ot45EKM9i/D2g/gO1BakVCpQkTMvJq72Y8VQzw7EKk9ASxe6cH0THgK/qYjgduREqNZjLgHw6YrqSpH/qEUE9FaAKZthcHqh9sGkucaXY+T3IqRoeYT/vHw=;
+              c_f=U2FsdGVkX1+mjtsjlwFNE9ZDLwzFN4X9NpyH0kEyq0m5d2+rX/egjx6DOFK2YUc3AkrNg099iT6lFwnu6eNUBwxOxbu/3hetqq9HZJivYSZ2gmywFdkrzLekpMkJ/cRxLE9qL80qvJeuuLduVc8dcpdtPGl3al3teaCdeATVtGYLHqHBeor3G3mpPzEtZIffqEPd73pjeL4nf+paKY47OkFUrBfRSttqZ5DwUJySA83eAfnGEc2rmOoczmg1DmD82C5ZYgkzmMD06M3acseWFQFS4z5vp1IK4mD7QvLp3OC2ZQldEpyiWytHW305asEG1tzIkuM3EijDo4qTQgenwfGTO1J8gafWC+s4aKS4QVbmxcsScovzqYEKyHtCuzofUmSRq85pfhwMEvN4hC7e1HUVXEwyn+gI5lPz5tTcxkcWQPQJry9Gs06VKNkp9DrbLcTc4+azhFVDDS1UgpOdROPOqCaeZxLGt3DKYhnxGcufUPA+xM6rPUXX9NI1+ib57RzjZGNYNLvBlCDzjTkBhN54iWMijri689vTJ+FZ2zwlfpuTL1EcPTh4BerYDJ9zrapg1oahZetmKx1oiGkpgLEnTzKpWdo4xUIdpAjJPKHdXrwUG/GO4/K4bVnyf/VD5SrFVUH0l4Xod0VQ+4gUacEBNLLZlPbacEQKqFuf+cIqssTLUqkM4LtTz5q65cq+rm49ZFf3qziNMZCf55FlkiM5Y5HJR8/+QVB7aT21Ifxcrj5Z+3od0+MReOE/gInPVuIykE5Z00lDb2eXUuhjd1THU6cOofkGZfE2WRDLMW2lHFQ/Ao3Fs524l9Bz;
+              c_re=U2FsdGVkX18ctGk9G0b1PNxh; c_inst_t=U2FsdGVkX1/Oriag6v3+toPr;
+              c_v=U2FsdGVkX1/Hq6ZCSHp7gigK3eRk7bjMSFiKPD+P2UKqGEDEWtZ7KIV051DZy/90htebKHnFMw==;
+              c_s=U2FsdGVkX1+me9hRrq+WPgOu;
+              c_c=U2FsdGVkX18/HdNeSQOZFLsLdyQO8zu0RkeFxjt/R/K3cDNp0dYf0JJz6yBnjykgphP13phFYdgEST4=;
+              c_t=U2FsdGVkX19twsrBYlw8Y8Qi;
+              nlbi_2842487_2147483392=FClPZl/cWVB43FWRkOdCTQAAAAC5aFD1xAFUiHEaEKJdrWCZ;
+              incap_ses_1602_2842487=Zq87ENNnCWHczlw/CnM7Fpkpl2UAAAAAEU93uX1NPD45xYitMazBHg==;
+              incap_ses_1602_2844261=re+feHt/XWinw10/CnM7Fvspl2UAAAAAMSa2Tr3dvbn0+8s07ikmoQ==;
+              _ga_R4PMF3F8Y8=GS1.1.1704405506.142.0.1704405506.0.0.0;
+              incap_ses_1602_2894058=rymqBPfw8XJCy10/CnM7FgQql2UAAAAAyQHuiTfu1AA8IqPwE2paCw==;
+              incap_ses_1602_2842481=72MqUfdb9mfuyV0/CnM7Fgcql2UAAAAA3C2HaeMOk5aaDGMUCOlJTw==;
+              nlbi_2844261_2147483392=XKOeNuyW6nFoN6YTOpaxYAAAAABuGNfmgczyAJ4wopN1Jyxc;
+              Y29wYWFpci5jb20%3D-_lr_tabs_-edny8h%2Fmy-trips-uat={%22sessionID%22:0%2C%22recordingID%22:%225-98e5f3e7-1d03-4c4a-9795-a23d51c09911%22%2C%22webViewID%22:null%2C%22lastActivity%22:1704405518935};
+              Y29wYWFpci5jb20%3D-_lr_hb_-edny8h%2Fmy-trips-uat={%22heartbeat%22:1704405518935};
+              _ga=GA1.2.789318114.1696525023; _gat_UA-26727407-1=1;
+              _gat_UA-174663766-1=1; _gat_gtag_UA_174663766_1=1
+          - name: identifier-ffn
+            value: "230436782"
+          - name: origin
+            value: https://mytrips-uat.copaair.com
+          - name: sec-ch-ua
+            value: '"Not_A Brand";v="8", "Chromium";v="120", "Google Chrome";v="120"'
+          - name: sec-ch-ua-mobile
+            value: ?0
+          - name: sec-ch-ua-platform
+            value: '"Windows"'
+          - name: sec-fetch-dest
+            value: empty
+          - name: sec-fetch-mode
+            value: cors
+          - name: sec-fetch-site
+            value: same-site
+          - name: session-token
+            value: 031E79835AF1BC931A34F1858FE284E9CCF2331E
+          - name: User-Agent
+            value: CM/Performance/02.10.23
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: https://api-uat.copaair.com/mytrips/triphub/delete-trip
+        name: delete-trip
+        meta:
+          id: req_ede204eb142d422c9464d7d2aa11b33d
+          created: 1704406420066
+          modified: 1751393799873
+          isPrivate: false
+          description: ""
+          sortKey: -1751393761839
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"ffn": "230436782",
+            	"pnr": "AS5N5V",
+            	"surname": "Silver"
+            }
+        headers:
+          - name: authority
+            value: api-uat.copaair.com
+          - name: accept
+            value: application/json, text/plain, */*
+          - name: accept-language
+            value: es-PA
+          - name: content-type
+            value: application/json
+          - name: cookie
+            value: visid_incap_2819721=60O5M4duSTmPMZ8yeWY3hS2ygGQAAAAAQUIPAAAAAAAboSpW3V++HXwJfKjewB3S;
+              nlbi_2819725=onbsVyW1/jWsbiDy1+vilAAAAACYfoakrkuEZ+wKHrD+/Xb8;
+              visid_incap_2819725=ZKg4CTSOS0mcjr/0DgUy4+naiWQAAAAAQUIPAAAAAAC904J8YNCYfTNpKapapOqo;
+              visid_incap_2819718=mW+4ai0ITfK2upeivc1od7GiuWQAAAAAQUIPAAAAAACMjLFS5pxeUX4u1nHC0uiD;
+              logged=true; passengerLastName=Copa%20Airlines;
+              connecMilesId=231108513; emcid=T-B4DaxnVLl;
+              visid_incap_2842487=KwnADuzGQFezIidrcJnAlvRVJWUAAAAAQUIPAAAAAAD4eJtHKRhLT10SziBETtsX;
+              visid_incap_2861533=bo4vn++sTJubxVWWLxW5B+OuJWUAAAAAQUIPAAAAAAC0aqZqRX9HTZkoijMq+3ef;
+              visid_incap_2849399=b2pfvu8LRSGhDQuUkhzecAOvJWUAAAAAQUIPAAAAAADu1yDbRUvKyhm3rMnoCup1;
+              visid_incap_2844282=nPRF57+7QzmHc+axAxoa3JncJWUAAAAAQUIPAAAAAAAxX7UZaBEiWHFu5rkQf5+U;
+              visid_incap_2854160=pDjC4tfHS1iTMeHt/agGje0QCWUAAAAAQkIPAAAAAAC0H9bIMNHfTp4XzXmoSMOv;
+              visid_incap_2854161=hWQ+I9kXRheR3q4MF+ws55j7J2UAAAAAQUIPAAAAAADfyVzLOWKfGUV12fjVivB+;
+              visid_incap_2810706=RdmCVTILRhCN1NCXZj8fRo17KGUAAAAAQUIPAAAAAADZ2K/RCWHOVp+blF5fsfOy;
+              visid_incap_2847188=fo443mSiQuOY3aYyAYxv8I97KGUAAAAAQUIPAAAAAAB/X+ueVlur9ijjXoT287ni;
+              visid_incap_2847189=SD40hAIGSGGhUPvkF7o6qY97KGUAAAAAQUIPAAAAAABlNkNbcBnUQmF78gtzWSvm;
+              visid_incap_2842471=vAVbiPf4TmWc00W0CXiJI1J2KWUAAAAAQUIPAAAAAADV4AZ6Fk139jrVvyjq3z2R;
+              visid_incap_2851261=h4hrv+HwTP20cWFsq9/QuaqVLWUAAAAAQUIPAAAAAABYpvBgRBxMqi66i1OUThCO;
+              visid_incap_2842481=HfT6KsR+SR+P6T8t7G9foP0nH2UAAAAAQkIPAAAAAABZhwWmGFXIqlh2e87nfPMH;
+              visid_incap_2854162=WM5mhheJTbOHNLmfBFaFNCHAHWUAAAAAQ0IPAAAAAACf7vdGCnUOzOWDkpD2E96J;
+              visid_incap_2844268=ljDolcFiSvKL4s9/Alzvan6jLWUAAAAAQUIPAAAAAAC1h/HsAocrbXjjPtaz5X3T;
+              visid_incap_2844274=H5pey7XCRJeQJJA4M8sRjLujLWUAAAAAQUIPAAAAAADZ1zLdSiDc/ZGRZ0boutU9;
+              visid_incap_2894058=xOHHiHhgQdyw5KKUrVoU1j6kLmUAAAAAQUIPAAAAAACXJMEb7eQsQiuU1ECHXtF2;
+              visid_incap_2847270=nEz5f9gfQQOjeBrw1/Y7FwikLmUAAAAAQkIPAAAAAABbZcmpbdqxDrAawgX0SlkJ;
+              visid_incap_2858083=g0qCXUdRTdKeVqFfhn39VSf3LmUAAAAAQUIPAAAAAABaoHS15ZQj0mHDbHj/6wR9;
+              visid_incap_2854176=tqJm0hoqRcKcHkAXc5WZuCW3SmUAAAAAQUIPAAAAAACramYv2EC7GL0WxRxA266j;
+              visid_incap_2847192=hLoU9+2YRrq7AKIqgZKZNxpqUmUAAAAAQUIPAAAAAABGHmfU6awwbiCf0K4lD5c5;
+              visid_incap_2802554=yIwyxO/bQ2a9aT12qcQIzi1qUmUAAAAAQUIPAAAAAADC0DJvqTXKy2hGM2cH4jGX;
+              visid_incap_2844278=zuK9ki6fQtO3wp2k/4Ea66LqU2UAAAAAQUIPAAAAAAB65nSu1DC8dLCPGzdf+Gxn;
+              visid_incap_2844261=Qc0NGI4+RwW9eoEgnKIGsix4IGUAAAAARUIPAAAAAACAS4CwAcna1ChlPI+DJGAYS3wOlhiPIDte;
+              visid_incap_2900896=YV7+CLFzSK+Vr6fHlEH3xcZ/eGUAAAAAQUIPAAAAAAB7cK0btTIoLbVz7UZqicFZ;
+              nlbi_2819718=AR4EGFTyIy26rdzcCyN3bQAAAAB11DzkRhvdaUm83ZTGiBRf;
+              visid_incap_2891445=ER0YMWIzRVyv9ty9WcFPttlYfGUAAAAAQUIPAAAAAAAof6mo5CScynfcSD1M2nZy;
+              nlbi_2819718_2147483392=JUkNUaCgtUewRBB+CyN3bQAAAADMMOfZ9ze9utMbHd9Sc5Rf;
+              nlbi_2819725_2147483392=SQ9gZr5yiWs91PYl1+vilAAAAACGk+SIpQSdpSehMuHU85QU;
+              lang=es;
+              visid_incap_2891441=uL0xAmFBS9623WSEGFRdVjpQhGUAAAAAQUIPAAAAAABJLZAcIqKsD8N5rUISmaRe;
+              nlbi_2819721=Q6A0IXpKbUzibuvBKqYZMAAAAAAgErCsbJVOEPmx5XHzrPkE;
+              incap_ses_8079_2858083=jjYIRN2PSi6nJBT9k2AecA/bjmUAAAAAFjDiaJ/r1okxrjIR71nBxg==;
+              nlbi_2847270_2147483392=jCD4cQtNFAYkB9pqOKP74QAAAAD8+I6I45YZK2rM66s7Ree1;
+              incap_ses_1605_2847270=VdfTZjb5lEH8CUIufxtGFpkzj2UAAAAACusaEPd0AKSMcDOBNLlipA==;
+              origin=ibe; containerApp=false; _gid=GA1.2.434728513.1704376896;
+              incap_ses_1602_2891441=JFpgU4dUth1e9RQ/CnM7FrralmUAAAAAXQoYrZ4RQsiOyylykzIzBQ==;
+              s_f=false;
+              incap_ses_1602_2847270=Fc5UOa02TwiCUTQ/CnM7Fun7lmUAAAAAtWLfzQDYxuh9NvfqMTyuGQ==;
+              masterSessionId=031E79835AF1BC931A34F1858FE284E9CCF2331E;
+              lp_ffn=230436782; lp_firstname=Sandra; lp_lastname=Silver;
+              lp_miles=7930503; lp_level=Silver; isMiles=true; pc_apply=false;
+              c_rsc=1;
+              incap_ses_1602_2844268=hLchAxaFyhNSvVM/CnM7Fl4fl2UAAAAAn+W/jp7ECS4hV+JrR0uJ9Q==;
+              c_passenger=[{"name":"Sandra","surname":"Silver","gender":"Female","birthDate":"04/11/1983","mail":"modificados@gmail.com","areaCode":"+90","phone":"8892191329","populatedPhone":false,"typeCode":"ADT","complete":true,"open":false,"populated":true,"populatedMail":false,"KTN":"","redressNumber":"","FFInfo":{"number":"230436782","programID":"CM"},"FFPnumberError":false,"loyaltyErrorMsg":"","seats":[],"key":0,"state":"","title":"Sra.","stateCode":"","notResident":false,"marketingConsent":false}];
+              incap_ses_1602_2844274=v1sgf1CARUDvXlQ/CnM7Fncfl2UAAAAAW+VnUygN1nB42eiuhOXmYw==;
+              c_aet=U2FsdGVkX1+dC3PMVC/cui2MvrgEt+4ij8V4AhSYJFfbpsKieGUQ1eHB+jqfQR9lH3azu3+3W1fd5wwgBL1usxOa/8usLSzr;
+              cp_v=U2FsdGVkX18w7jL1vPKEw3n0auBeSVMlzg8TWjFThWBrMi3Q44MJvQ==;
+              cp_s=U2FsdGVkX18BgOZiKpVa9UPl;
+              cp_c=U2FsdGVkX1+CZ5wgA7h58e118vqzxLV3LjgJwtMJjs/XYoU9YowlbO+LnFVGzIfdIqw/dXePPY3tNUA=;
+              cp_t=U2FsdGVkX18o0S4n3eUW7Ka5;
+              c_pr=U2FsdGVkX19pY1+m7KI1UhGk13LdeCgJx57vfioLD0ncP5mnF9iiK6klvoKZHfCvTRZ/sgkPxryDtLUpwA==;
+              c_n=U2FsdGVkX19+JJnLmTMiOdDV; c_nn=false;
+              uuid=ymumt2Gl4tr4xrHnl__VU;
+              nlbi_2844274_2147483392=MRxZR+F/k29ZRroYt60qCgAAAAD1OoRG/Bs5zShwMqgWz2Xz;
+              p_t=U2FsdGVkX18Ka0WepFm8YdsFz4T15K0JLvOZ5h/K3LYUW1LegxH3SGlBW06kDjLDSHDNLJlK4pXc/w==;
+              p_st=U2FsdGVkX1+YyO8xGHDIa5ZT/VBvGeEppH6+Is9gk8MlS5gayPg1EhCsBozks9icVOdmysiuaxLkDIj7HWZiXDrIwo/VZXguTMoNVLacZjKOjDq1dJAMdtPX/ZACplh4Gm1Ir7hTCENIknVixzLITSPv;
+              p_rt=U2FsdGVkX1/78M2CBDcmaM5EhruhbH9NSa+CYX+8/vNiOkQLstPLmGKctwr3EXTaxDF9CGa6vmc7/uSok3mdCgRICRkWqsQd56AHnLnDL8PAXCdgWOfp+loChlovuoo2pRwuGjEBkaG8cZ6uJvdyWmNCb/MRv73XUxwVfLiwYK1u+gAHLObdN3lEM6/P9756i3xy4h9VHCcKYkA0;
+              c_os={"o":"mytrips","ru":"https://mytrips-uat.copaair.com/trip-detail/BOWN5R/gran"};
+              currentPos=CMus;
+              nlbi_2844268_2147483392=qepTLx37gzFN2l9afGe8BAAAAAAnMjAHRk/22RsVvDWKlnfW;
+              c_px=U2FsdGVkX18ysnxfbb5rjr06le6Hp045SQKNmqdsjIcW058rGAi5pKbJtzfa+xDwSiI/4q77W0D1F3WunjupWjNuR2jzXIFzA/T1qi0Vd6TmjPZ5in36+V9NYvQbFsY8neZ6VTFsrUoG9ZW9Pc2BPiM9ApR7SSuY5dH7L0v2YVRK08jNsINZ+nFDAldOpgm22KgDb9vpeKd2ot45EKM9i/D2g/gO1BakVCpQkTMvJq72Y8VQzw7EKk9ASxe6cH0THgK/qYjgduREqNZjLgHw6YrqSpH/qEUE9FaAKZthcHqh9sGkucaXY+T3IqRoeYT/vHw=;
+              c_f=U2FsdGVkX1+mjtsjlwFNE9ZDLwzFN4X9NpyH0kEyq0m5d2+rX/egjx6DOFK2YUc3AkrNg099iT6lFwnu6eNUBwxOxbu/3hetqq9HZJivYSZ2gmywFdkrzLekpMkJ/cRxLE9qL80qvJeuuLduVc8dcpdtPGl3al3teaCdeATVtGYLHqHBeor3G3mpPzEtZIffqEPd73pjeL4nf+paKY47OkFUrBfRSttqZ5DwUJySA83eAfnGEc2rmOoczmg1DmD82C5ZYgkzmMD06M3acseWFQFS4z5vp1IK4mD7QvLp3OC2ZQldEpyiWytHW305asEG1tzIkuM3EijDo4qTQgenwfGTO1J8gafWC+s4aKS4QVbmxcsScovzqYEKyHtCuzofUmSRq85pfhwMEvN4hC7e1HUVXEwyn+gI5lPz5tTcxkcWQPQJry9Gs06VKNkp9DrbLcTc4+azhFVDDS1UgpOdROPOqCaeZxLGt3DKYhnxGcufUPA+xM6rPUXX9NI1+ib57RzjZGNYNLvBlCDzjTkBhN54iWMijri689vTJ+FZ2zwlfpuTL1EcPTh4BerYDJ9zrapg1oahZetmKx1oiGkpgLEnTzKpWdo4xUIdpAjJPKHdXrwUG/GO4/K4bVnyf/VD5SrFVUH0l4Xod0VQ+4gUacEBNLLZlPbacEQKqFuf+cIqssTLUqkM4LtTz5q65cq+rm49ZFf3qziNMZCf55FlkiM5Y5HJR8/+QVB7aT21Ifxcrj5Z+3od0+MReOE/gInPVuIykE5Z00lDb2eXUuhjd1THU6cOofkGZfE2WRDLMW2lHFQ/Ao3Fs524l9Bz;
+              c_re=U2FsdGVkX18ctGk9G0b1PNxh; c_inst_t=U2FsdGVkX1/Oriag6v3+toPr;
+              c_v=U2FsdGVkX1/Hq6ZCSHp7gigK3eRk7bjMSFiKPD+P2UKqGEDEWtZ7KIV051DZy/90htebKHnFMw==;
+              c_s=U2FsdGVkX1+me9hRrq+WPgOu;
+              c_c=U2FsdGVkX18/HdNeSQOZFLsLdyQO8zu0RkeFxjt/R/K3cDNp0dYf0JJz6yBnjykgphP13phFYdgEST4=;
+              c_t=U2FsdGVkX19twsrBYlw8Y8Qi;
+              nlbi_2842487_2147483392=FClPZl/cWVB43FWRkOdCTQAAAAC5aFD1xAFUiHEaEKJdrWCZ;
+              incap_ses_1602_2842487=Zq87ENNnCWHczlw/CnM7Fpkpl2UAAAAAEU93uX1NPD45xYitMazBHg==;
+              incap_ses_1602_2844261=re+feHt/XWinw10/CnM7Fvspl2UAAAAAMSa2Tr3dvbn0+8s07ikmoQ==;
+              incap_ses_1602_2894058=rymqBPfw8XJCy10/CnM7FgQql2UAAAAAyQHuiTfu1AA8IqPwE2paCw==;
+              incap_ses_1602_2842481=72MqUfdb9mfuyV0/CnM7Fgcql2UAAAAA3C2HaeMOk5aaDGMUCOlJTw==;
+              nlbi_2844261_2147483392=XKOeNuyW6nFoN6YTOpaxYAAAAABuGNfmgczyAJ4wopN1Jyxc;
+              nlbi_2842481=lor3L2sFUjVIkWk0C2ZXnAAAAADNCR8W7xaMGzNUaFPfMTwc;
+              nlbi_2844261=UZwACEC9tzPBgXbeOpaxYAAAAAArXusmoXmeyAhXfhxqDiMi;
+              _ga_R4PMF3F8Y8=GS1.1.1704405506.142.1.1704405945.0.0.0;
+              _ga=GA1.2.789318114.1696525023;
+              Y29wYWFpci5jb20%3D-_lr_hb_-edny8h%2Fmy-trips-uat={%22heartbeat%22:1704405999309};
+              Y29wYWFpci5jb20%3D-_lr_tabs_-edny8h%2Fmy-trips-uat={%22sessionID%22:0%2C%22recordingID%22:%225-98e5f3e7-1d03-4c4a-9795-a23d51c09911%22%2C%22webViewID%22:null%2C%22lastActivity%22:1704406014127}
+          - name: origin
+            value: https://mytrips-uat.copaair.com
+          - name: sec-ch-ua
+            value: '"Not_A Brand";v="8", "Chromium";v="120", "Google Chrome";v="120"'
+          - name: sec-ch-ua-mobile
+            value: ?0
+          - name: sec-ch-ua-platform
+            value: '"Windows"'
+          - name: sec-fetch-dest
+            value: empty
+          - name: sec-fetch-mode
+            value: cors
+          - name: sec-fetch-site
+            value: same-site
+          - name: User-Agent
+            value: CM/Performance/02.10.23
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: https://dev-apis.copa.s4n.co/mytrips/triphub/add-new-trip
+        name: add-new-trip
+        meta:
+          id: req_76bd98434e3248b6a09d52ef7aaed603
+          created: 1704975872601
+          modified: 1751393794450
+          isPrivate: false
+          description: ""
+          sortKey: -1751393761739
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"identifier": null,
+            	"pnrOrTicket": "BKQL2A",
+            	"surname": "LOPEZ",
+            	"ffn": "261526464",
+            	"notificationDevConf": false
+            }
+        headers:
+          - name: authority
+            value: dev-apis.copa.s4n.co
+          - name: accept
+            value: application/json, text/plain, */*
+          - name: accept-language
+            value: es-PA
+          - name: content-type
+            value: application/json
+          - name: cookie
+            value: gdprcm=true; lang=es;
+              masterSessionId=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IkdUN3J5WnRKcE1DcDI2X3czcV9qWSJ9.eyJodHRwczovL2FwaS1kZXYuY29wYS5jb20vQ3VzdG9tZXJJRCI6IjQ3NzIzNTAiLCJodHRwczovL2FwaS1kZXYuY29wYS5jb20vQWNjb3VudElEIjoiNDc3MTMwMCIsImh0dHBzOi8vYXBpLWRldi5jb3BhLmNvbS9mZm4iOiIyNjE1MjY0NjQiLCJpc3MiOiJodHRwczovL2xvZ2luLWRldi5jb3BhYWlyLmNvbS8iLCJzdWIiOiJhdXRoMHwyNjE1MjY0NjQiLCJhdWQiOlsiaHR0cHM6Ly9hcGktZGV2LmNvcGEuY29tIiwiaHR0cHM6Ly9jbS1kZXYtY2lhbS51cy5hdXRoMC5jb20vdXNlcmluZm8iXSwiaWF0IjoxNzA0OTc1NzcwLCJleHAiOjE3MDQ5Nzc1NzAsImF6cCI6IlVwT2JIc09TRHMxdVQ1QXVSVURwcmN1T2pjaUwyMVlaIiwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCJ9.itMS3mS5z9FbnVENrvV7E5R0snoVDrbyM7V0gTkxpPp1ZwnpN7Qm9eJ1MPGr9251Mh37JoX1eGbO2zbGdDOfabo1qu98ti5gHywcRjuhWbx7nrKQcFYvynNv-gPQObWFbEpGe5gcBfrIPKzePId-snWBGxsJeRNbh0Or5aUpDjvuRA3hrSg_4WosU10BXYdw3GIezKh1X5aYfct72nLDJcl2QXGsqy64A2op9TP7C2k5oyygn9kAZrTZS6c3aZeTBdRglKaJOJSkXmF_oty9jMxvmHmbGZXsTbB6YlU0fFLQIFN0-jCjoMx6uaRPEP_Z_6ETGZam_EwDO8amX5pgWA;
+              lp_ffn=261526464; lp_firstname=ANDRES; lp_lastname=CABALLERO
+              FABREGA; lp_miles=16189; lp_level=Silver
+          - name: origin
+            value: https://mytrips-dev.copa.s4n.co
+          - name: sec-ch-ua
+            value: '"Not_A Brand";v="8", "Chromium";v="120", "Google Chrome";v="120"'
+          - name: sec-ch-ua-mobile
+            value: ?0
+          - name: sec-ch-ua-platform
+            value: '"Windows"'
+          - name: sec-fetch-dest
+            value: empty
+          - name: sec-fetch-mode
+            value: cors
+          - name: sec-fetch-site
+            value: same-site
+          - name: session-token
+            value: eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InJtM3Z4VDkyZUdlSnFDRHBULXBaXyJ9.eyJodHRwczovL2FwaS11YXQuY29wYS5jb20vQ3VzdG9tZXJJRCI6IjQ3NzIzNTAiLCJodHRwczovL2FwaS11YXQuY29wYS5jb20vQWNjb3VudElEIjoiNDc3MTMwMCIsImh0dHBzOi8vYXBpLXVhdC5jb3BhLmNvbS9mZm4iOiIyNjE1MjY0NjQiLCJpc3MiOiJodHRwczovL2xvZ2luLXVhdC5jb3BhYWlyLmNvbS8iLCJzdWIiOiJhdXRoMHwyNjE1MjY0NjQiLCJhdWQiOiJodHRwczovL2FwaS11YXQuY29wYS5jb20iLCJpYXQiOjE3MDQ5NzU4OTMsImV4cCI6MTcwNDk3NzY5MywiYXpwIjoiM1g4Qmp0UWRlVHhhTkM3OGQweFhXSDhDeVQxZ2tOdGoiLCJzY29wZSI6ImVtYWlsIHJlYWQ6dXNlcnMgdXBkYXRlOnVzZXJzIGNyZWF0ZTp1c2VycyByZWFkOnVzZXJzX2FwcF9tZXRhZGF0YSB1cGRhdGU6dXNlcnNfYXBwX21ldGFkYXRhIGRlbGV0ZTp1c2Vyc19hcHBfbWV0YWRhdGEgY3JlYXRlOnVzZXJzX2FwcF9tZXRhZGF0YSByZWFkOnVzZXJzX2N1c3RvbV9ibG9ja3MiLCJndHkiOiJwYXNzd29yZCJ9.zBfQ2M_55Nki2mZPv0mwBzPJk45KyOgpwlgJv90k-DGEggpTw0dmZ-978CCxTlileOvrP5jLJBoAvDB9PEXb-B83ZZ3q2w7V99CFMNM01t2RSXsdjpQzuXXFME-B0KVfgeL14-8HGAkTW1ZE0kmU8F477PWOLJbwYn5sZHuDnHwecPzfDfrm4yyANgS9vfM29WtHwyVbNDs9YyCBjr8VQjD-DunyeFUoQXDb1C3WJXdvNRlrjQAvyz59Iy2w1Dc1Z9yDqsngeaXFq1IJTMLuYmMPGX9QKeUDYBbdPGzc7Tbnggmauvp7FH3_g248XeK31auSLDLlkqbz6-uPCOGyEA
+          - name: user-agent
+            value: CM/Performance/02.10.23
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: ""
+        name: New Request
+        meta:
+          id: req_9abbc5250cab4a04aa3b29ca753e8d07
+          created: 1710174336391
+          modified: 1751393788510
+          isPrivate: false
+          description: ""
+          sortKey: -1751393761639
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/2023.5.8
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: https://dev-apis.copa.s4n.co/mytrips/loyalty/customer/009401083/vouchers
+        name: New Request
+        meta:
+          id: req_7f94b183e73e4f7887fc47bb812f95ed
+          created: 1710174341210
+          modified: 1751393776225
+          isPrivate: false
+          description: ""
+          sortKey: -1751393761539
+        method: GET
+        body:
+          mimeType: application/json
+        headers:
+          - name: authority
+            value: dev-apis.copa.s4n.co
+          - name: accept
+            value: "*/*"
+          - name: accept-language
+            value: en-US
+          - name: channel
+            value: WEB
+          - name: content-type
+            value: application/json
+          - name: origin
+            value: https://mytrips-dev.copa.s4n.co
+          - name: referer
+            value: https://mytrips-dev.copa.s4n.co/
+          - name: sec-ch-ua
+            value: '"Not A(Brand";v="99", "Google Chrome";v="121", "Chromium";v="121"'
+          - name: sec-ch-ua-mobile
+            value: ?0
+          - name: sec-ch-ua-platform
+            value: '"macOS"'
+          - name: sec-fetch-dest
+            value: empty
+          - name: sec-fetch-mode
+            value: cors
+          - name: sec-fetch-site
+            value: same-site
+          - name: token
+            value: eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IkdUN3J5WnRKcE1DcDI2X3czcV9qWSJ9.eyJodHRwczovL2FwaS1kZXYuY29wYS5jb20vQ3VzdG9tZXJJRCI6IjUxNzAwMTciLCJodHRwczovL2FwaS1kZXYuY29wYS5jb20vQWNjb3VudElEIjoiNTE2ODk2NyIsImh0dHBzOi8vYXBpLWRldi5jb3BhLmNvbS9mZm4iOiIyNzc4MTUzNDYiLCJpc3MiOiJodHRwczovL2xvZ2luLWRldi5jb3BhYWlyLmNvbS8iLCJzdWIiOiJhdXRoMHwyNzc4MTUzNDYiLCJhdWQiOlsiaHR0cHM6Ly9hcGktZGV2LmNvcGEuY29tIiwiaHR0cHM6Ly9jbS1kZXYtY2lhbS51cy5hdXRoMC5jb20vdXNlcmluZm8iXSwiaWF0IjoxNzEwMTczNzQzLCJleHAiOjE3MTAxNzU1NDMsImF6cCI6IlVwT2JIc09TRHMxdVQ1QXVSVURwcmN1T2pjaUwyMVlaIiwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCJ9.nEgYY-U0MCHa2hGl8OpgrafuJLju3zJD0ZKy4qg0mk7yDQJMVevrKNzH7MkmguBLSIwx55CndQoLqhjRlJvUH2bOabjCFxZ0_zxZSDH6xVPE8_qFOqsxC_FigKVypiMHaW8mdKBY_QhnJd1Ox1A0RWAN1i6ifTXej0aS4d0Ts4QQNvOP9ltBR1rRXdikhybiSaMYi4ifW5ln7x_7EgNTlCQRDnQdEhy190WulctnhptuFKXKAAz1O-QICAf_GhSh2bF75cgtFu4KIWvJGVlwacI9Z7pQM5ZcI-Fc8_L_jN5Zim1L3z3GMHOfLE3maBZjEkVOztVMBNWCIO1-JINWwA
+          - name: user-agent
+            value: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36
+              (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: ""
+        name: New Request
+        meta:
+          id: req_d55e15200f0c402cad85ab8270283883
+          created: 1713913460333
+          modified: 1751393773489
+          isPrivate: false
+          description: ""
+          sortKey: -1751393761439
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/2023.5.8
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: https://login-dev.copaair.com/oauth/token
+        name: New Request
+        meta:
+          id: req_edbd0adbaf3a4611894d0fc3aea6d9c3
+          created: 1713913463616
+          modified: 1751393771008
+          isPrivate: false
+          description: ""
+          sortKey: -1751393761339
+        method: POST
+        body:
+          mimeType: application/json
+          text: "{\r
+
+            \  \"client_id\": \"**************\",\r
+
+            \  \"client_secret\": \"**************\",\r
+
+            \  \"audience\": \"https://api-uat.copa.com\",\r
+
+            \  \"username\": \"\"**************\",\r
+
+            \  \"password\": \"\"**************\",\r
+
+            \  \"grant_type\":
+            \"http://auth0.com/oauth/grant-type/password-realm\",\r
+
+            \  \"scope\": \"email\",\r
+
+            \  \"realm\":\"LoyaltyDB\"\r
+
+            }"
+        headers:
+          - name: content-type
+            value: application/json
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: ""
+        name: New Request
+        meta:
+          id: req_353aaba4d3dc4186a3e1fbfd7a08a1d1
+          created: 1713913497454
+          modified: 1751393768125
+          isPrivate: false
+          description: ""
+          sortKey: -1751393761239
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/2023.5.8
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: https://qa-apis.copa.s4n.co/backendfac/loyalty/customer/%7BcustomerId%7D/vouchers
+        name: New Request
+        meta:
+          id: req_8194f4a5e0e3452987b185b648f92942
+          created: 1713913500211
+          modified: 1751393765601
+          isPrivate: false
+          description: ""
+          sortKey: -1751393761139
+        method: GET
+        headers:
+          - name: Accept-Language
+            value: en-US
+          - name: Channel
+            value: MYACC
+          - name: Token
+            value: eyJhb********
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: ""
+        name: New Request
+        meta:
+          id: req_7e264589a3854f65b5f494d6df3d16eb
+          created: 1714774629319
+          modified: 1751393763369
+          isPrivate: false
+          description: ""
+          sortKey: -1751393761039
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/2023.5.8
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8081/members/vouchers
+        name: pago con voucher
+        meta:
+          id: req_97645714aaa04f7b81822d8b89f60af5
+          created: 1714774633360
+          modified: 1751393760974
+          isPrivate: false
+          description: ""
+          sortKey: -1751393760939
+        method: GET
+        parameters:
+          - name: page
+            value: "1"
+            disabled: false
+          - name: pageSize
+            value: "10"
+            disabled: false
+          - name: voucherType
+            value: P
+            disabled: false
+        headers:
+          - name: Accept
+            value: application/json, text/plain, */*
+          - name: Accept-Language
+            value: en-US,en;q=0.5
+          - name: Accept-Encoding
+            value: gzip, deflate, br
+          - name: X-Requested-With
+            value: XMLHttpRequest
+          - name: currentLang
+            value: es
+          - name: Authorization
+            value: Basic YWRtaW46Ujk4ZFIyQzh5NXZReDc4Wg==
+          - name: Connection
+            value: keep-alive
+          - name: Referer
+            value: https://merge-prep.copaair.com/es/web/co/requestmiles
+          - name: Cookie
+            value: __ssds=2; recordID=17574591-3501-4508-bd6a-172b11a19366;
+              __ssuzjsr2=a9be0cd8e;
+              __uzmaj2=c84bd039-f10d-4bf5-a9f5-87dafc7ee4a4;
+              __uzmbj2=1634328789; __uzmcj2=1721216936115; __uzmdj2=1650469290;
+              _hjid=9703da70-301d-4d3c-b43c-29cbac172a4a;
+              _ga=GA1.2.366481470.1634328790;
+              _fbp=fb.1.1634328806242.2039206784;
+              _gac_UA-26727407-1=1.1650469363.Cj0KCQjw3v6SBhCsARIsACyrRAlOLY41E6pPXtBZ7KSAqddb6OgawY5RsAAsxe37trY4HUwXd53WhjwaAq0EEALw_wcB;
+              _gcl_aw=GCL.1650469292.Cj0KCQjw3v6SBhCsARIsACyrRAlOLY41E6pPXtBZ7KSAqddb6OgawY5RsAAsxe37trY4HUwXd53WhjwaAq0EEALw_wcB;
+              gdprcm=true;
+              _hjSessionUser_1855154=eyJpZCI6IjJjODM0YTc1LWU1ZTYtNTY5Ni05ZGY2LTIyNTg0YzY4ZWYzYiIsImNyZWF0ZWQiOjE2MzczMzI1MjY2NDQsImV4aXN0aW5nIjp0cnVlfQ==;
+              emcid=T-0bEUORGGF; GUEST_LANGUAGE_ID=es_ES; COOKIE_SUPPORT=true;
+              current_PoS=CMRED;
+              _ga_HST07SB03E=GS1.1.1646666763.2.0.1646666772.0;
+              _ga_XT7DLK33SZ=GS1.1.1646666763.2.0.1646666772.0;
+              _ga_R4PMF3F8Y8=GS1.1.1646666763.2.0.1646666772.0;
+              _ga_4Z7XTPJ9ZT=GS1.1.1646666772.2.0.1646666772.0; lang=es;
+              AWSALB=p5OFnXwH7WLrcZmEvcyQJetoa+JbO80h8U5zbq+v0wuY0dKR3nkkKmzFbNfKjolWSjJO9QU33cgPYabVlhqcvhEslLeEYfPxCAa3uJm6ctbqfue78QLe5I9ejewp;
+              AWSALBCORS=p5OFnXwH7WLrcZmEvcyQJetoa+JbO80h8U5zbq+v0wuY0dKR3nkkKmzFbNfKjolWSjJO9QU33cgPYabVlhqcvhEslLeEYfPxCAa3uJm6ctbqfue78QLe5I9ejewp;
+              JSESSIONID=5019D13CAD61D19A2CAF352D56223D6A.node8143;
+              _gcl_au=1.1.1243733612.1651091760;
+              LFR_SESSION_STATE_20159=1651091799333;
+              dmSessionID=1f950ef9-3edd-49ea-adff-56dc738cc0e7;
+              _gid=GA1.2.1814594216.1651091761; ats-cid-AM-141585-sid=86758669;
+              currentLang=es; currentPos=CMco;
+              QSI_HistorySession=https%3A%2F%2Fmerge-prep.copaair.com%2Fes%2Fweb%2Fco%2Fhome~1651091764644%7Chttps%3A%2F%2Fmerge-prep.copaair.com%2Fes%2Fweb%2Fco%2Fhub~1651091806220;
+              masterSessionId=831C9EDCA71CC2F2C5CC1F105091178FE80EF776;
+              lp_ffn=230033674; lp_firstname=Natalia; lp_lastname=Rodriguez;
+              lp_level=Presidential; lp_miles=1005894; logged=true;
+              currentState=%2FupgradeCertificates; _uetsid=_uet3ea3d1cc;
+              _gat_UA-26727407-1=1; lp_ffn=230033674; lp_firstname=Natalia;
+              lp_lastname=Rodriguez; lp_level=Presidential; lp_miles=1005894;
+              masterSessionId=831C9EDCA71CC2F2C5CC1F105091178FE80EF776
+          - name: Sec-Fetch-Dest
+            value: empty
+          - name: Sec-Fetch-Mode
+            value: cors
+          - name: Sec-Fetch-Site
+            value: same-origin
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_624ca6e5f1c1400fb78f19619fd174d2
+    created: 1693516369213
+    modified: 1763571947648
+  cookies:
+    - id: 9e6e1774-f3a0-4244-971d-1b47cc2c33ee
+      key: nlbi_2847275
+      value: viqCbe4uEDNC2D7EM0wWFwAAAAAO3Kj/3Ki8XrVUP5pPkCdw
+      domain: copa.com
+      path: /
+      secure: false
+      httpOnly: true
+      hostOnly: false
+    - id: d7290cec-ddc8-426c-a7ba-48824fffcf92
+      key: visid_incap_2847275
+      value: H034aci6RW6MqgpxdnxWpwoxkWgAAAAAQkIPAAAAAAD3AlxKZ24LKw8Tw11QNeDj
+      domain: copa.com
+      path: /
+      secure: false
+      httpOnly: true
+      hostOnly: false
+    - id: 865616fb-933e-4465-83bf-6660a13a23a3
+      key: incap_ses_1310_2847275
+      value: a
+      domain: copa.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: false
+    - id: 01dec8e5-3331-495e-99df-fc35f6785fd2
+      key: incap_ses_1603_2847275
+      value: a
+      domain: copa.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: false
+    - id: b34d1c8c-c5fd-4c6a-be19-91677430fc86
+      key: visid_incap_2875442
+      value: HXeYt/KMTKWmmLsjNcwdpHhs+2QAAAAAQUIPAAAAAADmWbE5D16zEzj011OYQXc3
+      domain: copa.com
+      path: /
+      secure: false
+      httpOnly: true
+      hostOnly: false
+    - id: 869bd68d-a2a9-4098-8e45-a724be9fa956
+      key: nlbi_2875442
+      value: YuriClKzhA92HR4ipdx5ZQAAAABBgQ8HoCTeetWprUCZ40d0
+      domain: copa.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: false
+    - id: 2c2669ed-df24-4ddc-b1cb-74d9525d1659
+      key: incap_ses_1603_2875442
+      value: a
+      domain: copa.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: false
+    - id: 9c5e3ed6-52ca-4490-a3a3-8ef1936b330a
+      key: did
+      value: s%3Av0%3A88e5eb70-7363-11ee-9128-b5cdf06250be.dwIWlf53C%2BnronChA740zujEVQcQa%2F%2BaZ6YVZoMajyQ
+      domain: login-dev.copaair.com
+      path: /
+      secure: true
+      httpOnly: true
+      hostOnly: true
+    - id: d363a016-4d14-4e3b-9bb5-1bca4176e9b4
+      key: did_compat
+      value: s%3Av0%3A88e5eb70-7363-11ee-9128-b5cdf06250be.dwIWlf53C%2BnronChA740zujEVQcQa%2F%2BaZ6YVZoMajyQ
+      domain: login-dev.copaair.com
+      path: /
+      secure: true
+      httpOnly: true
+      hostOnly: true
+    - id: c5247935-6e27-4599-978a-bc55f54f11fb
+      key: did
+      value: s%3Av0%3Ab5980e10-7de6-4100-bab0-3cea8836016f.aDNc280zA1jl%2FnU9Tm9P2vL3aI9QdQVaHWA%2BFBK7Pe0
+      domain: login-uat.copaair.com
+      path: /
+      secure: true
+      httpOnly: true
+      hostOnly: true
+    - id: fee73fe5-2475-4d28-99dc-8518a6c83a6f
+      key: did_compat
+      value: s%3Av0%3Ab5980e10-7de6-4100-bab0-3cea8836016f.aDNc280zA1jl%2FnU9Tm9P2vL3aI9QdQVaHWA%2BFBK7Pe0
+      domain: login-uat.copaair.com
+      path: /
+      secure: true
+      httpOnly: true
+      hostOnly: true
+    - id: 0fedda80-bebe-432a-a680-800cd5d7dce7
+      key: incap_ses_1310_2894058
+      value: a
+      domain: copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: false
+    - id: b7d25361-70d0-4e14-b852-cb228cab27bc
+      key: visid_incap_2894058
+      value: mUYTdnpbTNqHZkKrOdESmqJVHWYAAAAAQUIPAAAAAACSsCX2s/PHFv3psXZ9yRmZ
+      domain: copaair.com
+      path: /
+      secure: false
+      httpOnly: true
+      hostOnly: false
+    - id: 25f9e76f-fd8a-4c30-8994-01b106c8e4f8
+      key: incap_ses_1605_2894058
+      value: a
+      domain: copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: false
+    - id: 6eab16fb-b105-459f-953d-41c68cc4529d
+      key: incap_ses_1310_2875442
+      value: a
+      domain: copa.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: false
+    - id: 83e87c35-a858-45d8-a21e-b6ba908ba38f
+      key: incap_ses_1605_2847275
+      value: a
+      domain: copa.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: false
+    - id: 24a872f0-ac99-4a01-bbd9-a4bfcf1fdac6
+      key: incap_ses_1596_2894058
+      value: a
+      domain: copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: false
+    - id: 5783b49a-62f2-44b6-a9dd-7169abf2b76f
+      key: incap_ses_1596_2847275
+      value: a
+      domain: copa.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: false
+    - id: 8a842ff5-9c58-495a-9331-ebc7a7e79c6e
+      key: incap_ses_1606_2894058
+      value: a
+      domain: copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: false
+    - id: a63ee06a-fab8-4d05-9b07-bfb7f6fb078a
+      key: incap_ses_994_2894058
+      value: a
+      domain: copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: false
+    - id: 3713dd45-b887-481b-8a86-9c87d01a5e19
+      key: incap_ses_8079_2894058
+      value: a
+      domain: copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: false
+    - id: b5e7b5c7-a1a9-447b-a5db-b529656c51cb
+      key: incap_ses_8079_2847275
+      value: a
+      domain: copa.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: false
+    - id: 2f11da9a-cc2a-42c8-86fa-68527c219a61
+      key: incap_ses_1606_2847275
+      value: a
+      domain: copa.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: false
+    - id: 10fb8c59-e6d4-4c4d-a356-3a17ef499909
+      key: incap_ses_223_2847275
+      value: a
+      domain: copa.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: false
+    - id: 352d2ada-df0e-4379-a4e7-b8af045af71e
+      key: incap_ses_988_2894058
+      value: a
+      domain: copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: false
+    - id: 8a897e1d-0033-4a3f-b3ef-403653352378
+      key: incap_ses_1602_2847275
+      value: a
+      domain: copa.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: false
+    - id: 05a1e65a-8940-4ca0-b4c9-cf711655aab5
+      key: incap_ses_1602_2894058
+      value: a
+      domain: copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: false
+    - id: 2a5e31fe-09a7-4d06-9d8e-95cc0de7431f
+      key: incap_ses_1605_2842481
+      value: a
+      domain: copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: false
+    - id: 1df7b034-addd-4fd1-aa02-41a56de0d5d3
+      key: nlbi_2842481
+      value: dJYqS55OWw0FezOwC2ZXnAAAAACTAu6ByAuWfsgkbkfJU8GD
+      domain: copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: false
+    - id: 9e0e22d6-f488-4af6-b0a2-8bc18d9e105e
+      key: incap_ses_1597_2894058
+      value: a
+      domain: copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: false
+    - id: 8eddcc28-4d1a-4b13-a1d0-907dcfe9bb65
+      key: incap_ses_8079_2858083
+      value: a
+      domain: copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: false
+    - id: d52a17fb-10af-4647-a03a-d8bb70e0cd32
+      key: incap_ses_8079_2847270
+      value: a
+      domain: copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: false
+    - id: bfa5024e-5e1a-4fa8-97e2-bdeae61d5549
+      key: incap_ses_1605_2842471
+      value: a
+      domain: copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: false
+    - id: 3c672c2b-ba85-4145-aed6-0132cc569bf2
+      key: incap_ses_1605_2844274
+      value: a
+      domain: copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: false
+    - id: dc1318e9-74f8-4da2-86a5-a7113e1ffe54
+      key: incap_ses_1605_2844268
+      value: a
+      domain: copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: false
+    - id: f584a306-cdf8-4954-9d76-4da763a2850c
+      key: incap_ses_1605_2844261
+      value: a
+      domain: copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: false
+    - id: 65cad756-d194-450b-aa0f-237d0f928aa0
+      key: incap_ses_9219_2842481
+      value: a
+      domain: copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: false
+    - id: 392e0a3b-6629-4ded-99dc-e10a3e4254c8
+      key: incap_ses_1605_2847270
+      value: a
+      domain: copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: false
+    - id: a41bce19-c58a-4bee-8d27-162c96e502f5
+      key: incap_ses_995_2894058
+      value: a
+      domain: copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: false
+    - id: de786044-4aa4-45cb-9edb-80faee6276fa
+      key: incap_ses_1602_2842481
+      value: a
+      domain: copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: false
+    - id: 849c5fe6-a7bc-41a8-a881-8e5482c1b110
+      key: incap_ses_1602_2844261
+      value: a
+      domain: copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: false
+    - id: 68058883-248f-4cfe-bf0b-d01487e4f4de
+      key: incap_ses_1602_2842487
+      value: a
+      domain: copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: false
+    - id: f298432a-898b-461a-aa80-170d03a86ce2
+      key: incap_ses_1602_2844274
+      value: a
+      domain: copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: false
+    - id: a2e2d247-a6f0-49ec-9198-a80d6f8261b5
+      key: incap_ses_1602_2844268
+      value: a
+      domain: copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: false
+    - id: 3e1774c3-94af-46d4-80b4-61821e61e0b4
+      key: incap_ses_1602_2847270
+      value: a
+      domain: copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: false
+    - id: 7bdc1834-9ed9-46c1-b9ba-7ba7eb824764
+      key: incap_ses_1602_2891441
+      value: a
+      domain: copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: false
+    - id: 8d991d2d-5d15-4c4b-b8b6-51d2b6a49600
+      key: incap_ses_7222_2842481
+      value: a
+      domain: copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: false
+    - id: 695fc41a-be02-46be-b2ac-524091e17523
+      key: incap_ses_7222_2894058
+      value: a
+      domain: copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: false
+    - id: 5ea6cd46-44f7-4f80-9776-fef57d355c1b
+      key: incap_ses_7222_2847275
+      value: a
+      domain: copa.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: false
+    - id: 1d4b0b2f-59a6-4a88-b705-d2d8467fb0a5
+      key: incap_ses_1375_2894058
+      value: a
+      domain: copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: false
+    - id: 3ae812bf-9487-4af7-9a62-c31b9d6be023
+      key: incap_ses_1375_2847275
+      value: a
+      domain: copa.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: false
+    - id: 8165bd99-2dcb-4c6e-a8ef-d01f69a110c1
+      key: incap_ses_1604_2894058
+      value: a
+      domain: copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: false
+    - id: 1509e099-5fdd-443c-ba48-9d111175b13f
+      key: incap_ses_1604_2847275
+      value: a
+      domain: copa.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: false
+    - id: 54865bf5-87be-4a34-9117-09e4eb9bb30e
+      key: incap_ses_1596_2875442
+      value: a
+      domain: copa.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: false
+    - id: 56822456-7421-4c2f-86c7-21fabfc3c338
+      key: incap_ses_1478_2894058
+      value: a
+      domain: copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: false
+    - id: 2422955c-8102-4983-9fa9-02744bff7a42
+      key: incap_ses_1478_2847275
+      value: a
+      domain: copa.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: false
+    - id: 7b5b651e-c572-40f9-b74b-ee088786d961
+      key: incap_ses_1600_2894058
+      value: a
+      domain: copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: false
+    - id: 53e09b68-0974-425d-b81e-7ffca6592331
+      key: incap_ses_1600_2847275
+      value: a
+      domain: copa.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: false
+    - id: 2d4b1c11-c39e-4a9d-9c19-41ec520ef428
+      key: nlbi_2894058
+      value: X/icDznyI0dwfUH5yv1i1QAAAAAJ6k6wfV+jj5bQXxW0KF4X
+      domain: copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: false
+    - id: d1e7d52a-3733-45c8-b948-2f41fc836f9e
+      key: incap_ses_168_2894058
+      value: a
+      domain: copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: false
+    - id: 7ea4fa64-a22a-4729-8f48-f7a668072233
+      key: incap_ses_168_2847275
+      value: a
+      domain: copa.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: false
+    - id: b02fbf8a-7748-44c8-b407-843170772721
+      key: incap_ses_1430_2894058
+      value: a
+      domain: copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: false
+    - id: 2a63524c-f462-4984-8875-a9238e5c00c4
+      key: incap_ses_1430_2847275
+      value: a
+      domain: copa.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: false
+    - id: 8f15e485-6246-41b4-9430-c4e798d1cb8a
+      key: incap_ses_1431_2894058
+      value: a
+      domain: copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: false
+    - id: 51fc8a6f-7419-4684-8723-bb45190e4d55
+      key: incap_ses_1431_2847275
+      value: a
+      domain: copa.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: false
+    - id: 07b7c997-6837-4adc-96be-1c96a8dcc53b
+      key: incap_ses_222_2894058
+      value: a
+      domain: copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: false
+    - id: 6efe1cd6-22a0-4780-adc3-fa6698067a11
+      key: incap_ses_222_2847275
+      value: a
+      domain: copa.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: false
+    - id: bee8ae36-ffd4-462b-8f98-b3495ea44de7
+      key: incap_ses_7230_2894058
+      value: a
+      domain: copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: false
+    - id: 2ea09c7d-66ad-4e0e-ac4d-258634470179
+      key: incap_ses_7230_2847275
+      value: a
+      domain: copa.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: false
+    - id: d1797906-e1f0-4968-a60f-d907faee040c
+      key: incap_ses_996_2894058
+      value: lqWIQeTbCG7v8HAJzoDSDehkc2YAAAAAxzgGOaarVhsW0CoeoySSyQ==
+      domain: copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: false
+    - id: 301de7fb-6d47-4cb5-ba6d-ac39edb11886
+      key: incap_ses_996_2847275
+      value: a
+      domain: copa.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: false
+    - id: de72fff1-9fbf-433b-8ec7-379261ac4c35
+      key: incap_ses_1310_2894058
+      value: a
+      domain: login-uat.copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: true
+    - id: 7dfe260c-36a2-41f2-af71-80559a139a12
+      key: incap_ses_996_2894058
+      value: a
+      domain: login-uat.copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: true
+    - id: 23b2bfa5-76ed-400e-9c63-c24e190ce844
+      key: incap_ses_1695_2894058
+      value: a
+      domain: login-uat.copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: true
+    - id: 017ece24-4667-45a8-9e4d-6e2ea82dde0a
+      key: incap_ses_1695_2847275
+      value: a
+      domain: copa.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: false
+    - id: d696d341-fea2-4320-8820-db745804e198
+      key: visid_incap_2894058
+      value: PhnN3XIcQ2GofeM6hDNNEZ/ZrWgAAAAAQUIPAAAAAADKQrU6v/ytz1SzJF4HwXv+
+      domain: login-uat.copaair.com
+      path: /
+      secure: false
+      httpOnly: true
+      hostOnly: true
+    - id: 9f689e58-f5a9-467b-9668-750cbc969d25
+      key: incap_ses_1601_2894058
+      value: a
+      domain: login-uat.copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: true
+    - id: b9edf1cf-d2c4-4c08-949a-6a37304477bf
+      key: incap_ses_1697_2847275
+      value: a
+      domain: copa.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: false
+    - id: d0f7faa1-320b-4b29-90b8-d5be9b981fa9
+      key: incap_ses_1601_2847275
+      value: a
+      domain: copa.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: false
+    - id: 88ff5ba7-11ba-4402-a762-440c31f20dba
+      key: incap_ses_622_2894058
+      value: LRRsF6lB7FFzyTorD8qhCIf4HWkAAAAAvcfpjJQvWMZWSq6l/WEwyA==
+      domain: login-uat.copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: true
+    - id: 585e7bb8-caff-4d3e-98bf-7efac7b04a1e
+      key: incap_ses_622_2847275
+      value: UM3GGe0nw1dM5TorD8qhCJr4HWkAAAAAimt+ApLqmRIf7twsA6eTmA==
+      domain: copa.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: false
+    - id: d9c318c0-3d53-487e-8496-eec4c2b73649
+      key: nlbi_2894058
+      value: DkRGG86BJU/nCNNHyv1i1QAAAAAWZqmpUPu4rR+vzQHf76ft
+      domain: login-uat.copaair.com
+      path: /
+      secure: false
+      httpOnly: true
+      hostOnly: true
+    - id: 32075675-8a26-4819-b310-2e7ba00ba308
+      key: incap_ses_1698_2847275
+      value: hZ9TboJoJke+Lq17RIKQF0dIFmkAAAAAbserzbNa0UJYzxySQ06zyQ==
+      domain: copa.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: false
+environments:
+  name: Base Environment
+  meta:
+    id: env_acac296d7fcc47e288547c386e924746
+    created: 1693516369212
+    modified: 1693516369212
+    isPrivate: false

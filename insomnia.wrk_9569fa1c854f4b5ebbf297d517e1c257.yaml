@@ -1,0 +1,157 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: Perf MiServicio
+meta:
+  id: wrk_9569fa1c854f4b5ebbf297d517e1c257
+  created: 1758729015967
+  modified: 1758729015967
+  description: ""
+collection:
+  - name: Perf - MiServicio
+    meta:
+      id: fld_74f3fe08defe4446a8fc0be6fbfb1953
+      created: 1758731543106
+      modified: 1758731838100
+      sortKey: -1758731543106
+      description: ""
+    children:
+      - url: https://api-uat.copaair.com/mytrips/reservation/instant-upgrade/eligible/ARLXWH
+        name: INST elegibility
+        meta:
+          id: req_95e0407ae82c49b6b9a8fd31d787f50e
+          created: 1758729091019
+          modified: 1758731810037
+          isPrivate: false
+          description: ""
+          sortKey: -1758731550354
+        method: GET
+        parameters:
+          - name: Surname
+            value: LOPEZ
+            disabled: false
+        headers:
+          - name: accept
+            value: "*/*"
+          - name: accept-language
+            value: es-PA
+          - name: cache-control
+            value: no-cache
+          - name: consumer-id
+            value: mytrips
+          - name: content-type
+            value: application/json
+          - name: origin
+            value: https://mytrips-uat.copaair.com
+          - name: pragma
+            value: no-cache
+          - name: priority
+            value: u=1, i
+          - name: sec-ch-ua
+            value: '"Chromium";v="140", "Not=A?Brand";v="24", "Brave";v="140"'
+          - name: sec-ch-ua-mobile
+            value: ?0
+          - name: sec-ch-ua-platform
+            value: '"Windows"'
+          - name: sec-fetch-dest
+            value: empty
+          - name: sec-fetch-mode
+            value: cors
+          - name: sec-fetch-site
+            value: same-site
+          - name: sec-gpc
+            value: "1"
+          - name: user-agent
+            value: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like
+              Gecko) Chrome/140.0.0.0 Safari/537.36
+          - name: Cookie
+            value: nlbi_2819721=yEFzYmRQhlTomvshKqYZMAAAAAAI9bHkWgsHOPVWyO9OOxeU;
+              nlbi_2842481=%2F%2BgZeKLErBPVWGv4C2ZXnAAAAABrvISaa0GxJDQaHCDshNC9;
+              nlbi_2802554=65wpdW0HDDCKvJ91du1mUgAAAADYXyvb5UP%2FpMALc3Qb3zry;
+              incap_ses_1603_2842481=DLkfcOOFhUMz6iAQGQA%2FFgtYjGYAAAAA4V9nMxYzCm259kjA8BqqJw%3D%3D;
+              incap_ses_996_2842481=7y4RJ68B9yzdtclj0IDSDduujmYAAAAAeT%2B3ht1D%2FJ923kuLMuw1Fw%3D%3D;
+              nlbi_2842481=bCoNLOnc8ljCA6aOC2ZXnAAAAABM5KphXqK2joDEKuRLrf8i;
+              visid_incap_2842481=%2Fw8VuqnrQh6VoBojHjIhQjKCzGgAAAAAQUIPAAAAAABdXBeLvk0zCB7b2UxaeiDJ;
+              incap_ses_622_2842481=%2FVHwSPMJ7g26Z3feBcqhCD12zGgAAAAAnJ97OA7HZCoEWgYqiR6x2Q%3D%3D;
+              incap_ses_1617_2842481=UX4TNviHPwP64YbmWb1wFkyCzGgAAAAAzZaboQy81%2Be405BMHJJq5g%3D%3D;
+              incap_ses_1621_2842481=kWuraqx3DlMOZKkoUvN%2BFpAwzGgAAAAAHRY14Q19nK7uL80Q9MZS4Q%3D%3D
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+    scripts:
+      preRequest: >+
+        // Inicializa variables de performance sólo en la primera iteración
+
+        if (insomnia.info && insomnia.info.iteration === 0) {
+            insomnia.environment.set("times", JSON.stringify([]));      // arreglo con todos los tiempos (ms)
+            insomnia.environment.set("times_sum", "0");                 // suma acumulada
+            insomnia.environment.set("times_min", "");                  // min
+            insomnia.environment.set("times_max", "");                  // max
+            insomnia.environment.set("times_count", "0");               // conteo
+            insomnia.environment.set("avg_response_time", "0");         // promedio actualizado
+            insomnia.environment.set("median_response_time", "0");
+            insomnia.environment.set("p90_response_time", "0");
+            insomnia.environment.set("p95_response_time", "0");
+            console.log("Variables de performance inicializadas para la corrida.");
+        }
+
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_1d0fd98ffe650a1d7724f64d50cf11cb5a07ce5a
+    created: 1758729016003
+    modified: 1758731848326
+  cookies:
+    - id: 6070e6f6-7489-4863-b471-1dd96a36753c
+      key: incap_ses_996_2842481
+      value: a
+      domain: api-uat.copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: true
+    - id: 139f01bf-e687-4a97-baf7-711d5df5bf10
+      key: visid_incap_2842481
+      value: HUgRTZV6Sfan2ALliNq+9CYe1GgAAAAAQUIPAAAAAABVbqTTGQ6iRP2JqXtP8tPs
+      domain: api-uat.copaair.com
+      path: /
+      secure: false
+      httpOnly: true
+      hostOnly: true
+    - id: 0d807a11-a4df-4892-86df-895e1025b633
+      key: nlbi_2842481
+      value: EE6OU+ob9hkRQDfOC2ZXnAAAAAAUmRB0yUZljKwdNYUsKdxT
+      domain: api-uat.copaair.com
+      path: /
+      secure: false
+      httpOnly: true
+      hostOnly: true
+    - id: 982cbd91-b316-4272-943e-f2ffc51b3c8a
+      key: incap_ses_622_2842481
+      value: r7QTL+0R3VVvBoPkBcqhCCse1GgAAAAAHMK8QG6fyum3+5fjWOmJPg==
+      domain: api-uat.copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: true
+    - id: 9dd720ba-8b00-4e15-9737-68510309d7cd
+      key: incap_ses_1617_2842481
+      value: GGzARcVMWl5B2MPpWb1wFhAY1GgAAAAAEJ/3zI0nGNDNxphBMJ1dOQ==
+      domain: api-uat.copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: true
+environments:
+  name: PerfTest
+  meta:
+    id: env_1d0fd98ffe650a1d7724f64d50cf11cb5a07ce5a
+    created: 1758729015995
+    modified: 1758731838097
+    isPrivate: false
+  data:
+    "": ""

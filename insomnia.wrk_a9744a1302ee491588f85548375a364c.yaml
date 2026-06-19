@@ -1,0 +1,716 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: SDC pay Purchase
+meta:
+  id: wrk_a9744a1302ee491588f85548375a364c
+  created: 1737582534124
+  modified: 1739891622464
+  description: ""
+collection:
+  - name: Para Kenny SDC Purchase
+    meta:
+      id: fld_206cca34c5f54db5ae63f14d822803f5
+      created: 1737582534127
+      modified: 1737582534127
+      sortKey: -1737582532937
+      description: ""
+    children:
+      - name: Para Kenny
+        meta:
+          id: fld_ad1f6cf2823f4659991ef60c51d54fd2
+          created: 1737582534130
+          modified: 1737582534130
+          sortKey: -1737582532936
+          description: ""
+        children:
+          - url: https://{{_['env-apim']}}/{{_['env-api']}}/reservation/{{_['v-reserv']}}/read/BIQHZ4
+            name: Get Reservation
+            meta:
+              id: req_f84b927cd9504a6ebe200b0d6b0d2d77
+              created: 1737582534135
+              modified: 1740517121252
+              isPrivate: false
+              description: ""
+              sortKey: -1737582532935
+            method: GET
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: Authorization
+                value: Test
+              - name: Copa-Channel-ID
+                value: WEBIBE
+              - name: Language
+                value: en-US
+              - name: X-Point-Of-Sale
+                value: GS
+              - name: X-Currency
+                value: USD
+              - name: X-OCS-Cache-Control
+                value: noCache
+              - name: Ocp-Apim-Subscription-Key
+                value: "{{_['env-apim-subscription']}}"
+            scripts:
+              afterResponse: >-
+                var responseBody = {};
+
+                var schema = {};
+
+
+
+                // Validate Schema
+
+                schema = insomnia.globals.get("g-schema-reservation");   
+
+
+                insomnia.test('Schema Validation', function() {
+
+                    var result=tv4.validateResult(responseBody, schema, false, true);
+                 
+                    if(!result.valid){
+                        console.log(result);
+                    }
+
+                    insomnia.expect(result.valid).to.be.true;
+                });
+
+
+
+                var jsonData = insomnia.response.json();
+
+                var counter =
+                insomnia.globals.get("g-displayres-timeoutcounter");
+
+                var maxTimeOut =
+                parseInt(insomnia.globals.get("g-displayres-timeoutmax"));
+
+                var ticketsBodyExists = false, documentsBodyExists = false;
+
+
+                if(insomnia.globals.get("g-purchasedflight") == true)
+
+                {
+                    if(jsonData.Tickets == undefined || jsonData.Tickets.Tickets == undefined)
+                    {
+                        if(counter < maxTimeOut)
+                        {
+                            counter++
+                            insomnia.globals.set("g-displayres-timeoutcounter", counter);
+                            postman.setNextRequest(insomnia.info.requestId);
+                        }
+                        else{
+                            insomnia.test("Tickets timed out", function(){
+                                insomnia.expect(counter).to.be.below(maxTimeOut);
+                            })
+                        }
+                    }
+                    else ticketsBodyExists = true;
+                }
+
+                if(ticketsBodyExists == true)
+
+                {
+                    insomnia.test("Tickets Returned: " + jsonData.Confirmations[0].ConfirmationId, function(){
+                        insomnia.expect(jsonData.Tickets.Tickets[0].Number).to.be.a("string");
+                    })
+
+                    insomnia.globals.set("g-pnrdata", JSON.stringify(jsonData));
+                }
+
+                if(insomnia.globals.get("g-purchasedseats") == true)
+
+                {
+                    if(jsonData.ValueDocuments == undefined || jsonData.ValueDocuments.ValueDocuments == undefined)
+                    {
+                        if(counter < maxTimeOut)
+                        {
+                            counter++
+                            insomnia.globals.set("g-displayres-timeoutcounter", counter);
+                            postman.setNextRequest(insomnia.info.requestId);
+                        }
+                        else{
+                            insomnia.test("Tickets timed out", function(){
+                                insomnia.expect(counter).to.be.below(maxTimeOut);
+                            })
+                        }
+                    }
+                    else documentsBodyExists = true;
+                }
+
+
+                if(ticketsBodyExists == true)
+
+                {
+                    insomnia.test("Tickets Returned: " + jsonData.Confirmations[0].ConfirmationId, function(){
+                        insomnia.expect(jsonData.Tickets.Tickets[0].Number).to.be.a("string");
+                    })
+                }
+
+
+                if(documentsBodyExists == true)
+
+                {
+                     insomnia.test("Value Documents Returned: " + jsonData.Confirmations[0].ConfirmationId, function(){
+                        insomnia.expect(jsonData.ValueDocuments.ValueDocuments[0].Person.FirstName).to.be.a("string");
+                    }) 
+
+                    insomnia.globals.set("g-accountnumber", jsonData.ValueDocuments.ValueDocuments[0].Document.Number);
+                }
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://{{_['env-apim']}}/{{_['env-api']}}/reservationchange/v1/create/reservation
+            name: SDC CreateSession
+            meta:
+              id: req_42d6f4ad72234786b679076eba401436
+              created: 1737582534139
+              modified: 1737582534139
+              isPrivate: false
+              description: ""
+              sortKey: -1737582532934
+            method: PUT
+            body:
+              mimeType: text/plain
+              text: |-
+                {
+                    "Confirmations": [
+                        {
+                            "AirlineConfirmation": {
+                                "Code": "CM"
+                            },
+                            "ConfirmationId": "BIQHZ4",
+                            "Code": "R",
+                            "TypeCode": "UID"
+                        }
+                    ],
+                    "FlightSegmentsItinerary": [
+                        {
+                            "Flights": {
+                                "FlightSegments": [
+                                    {
+                                        "Key": "2",
+                                        "AirlineMarketing": {
+                                            "Code": "CM"
+                                        },
+                                        "FlightNumber": "416",
+                                        "ScheduledDepart": {
+                                            "Date": "2025-04-19",
+                                            "Time": "11:52:00"
+                                        },
+                                        "ScheduledArrive": {
+                                            "Date": "2025-04-19",
+                                            "Time": "13:37:00"
+                                        },
+                                        "LocationDepart": {
+                                            "Code": "BOG"
+                                        },
+                                        "LocationArrive": {
+                                            "Code": "PTY"
+                                        },
+                                        "ClassOfService": {
+                                            "Code": "H",
+                                            "Key": "2",
+                                            "TypeCode": "C"
+                                        },
+                                        "Status": {
+                                            "Code": "HK"
+                                        }
+                                    },
+                                    {
+                                        "Key": "2",
+                                        "AirlineMarketing": {
+                                            "Code": "CM"
+                                        },
+                                        "FlightNumber": "416",
+                                        "ScheduledDepart": {
+                                            "Date": "2025-04-25",
+                                            "Time": "11:52:00"
+                                        },
+                                        "ScheduledArrive": {
+                                            "Date": "2025-04-25",
+                                            "Time": "13:37:00"
+                                        },
+                                        "LocationDepart": {
+                                            "Code": "BOG"
+                                        },
+                                        "LocationArrive": {
+                                            "Code": "PTY"
+                                        },
+                                        "ClassOfService": {
+                                            "Code": "H",
+                                            "Key": "2",
+                                            "TypeCode": "C"
+                                        },
+                                        "Status": {
+                                            "Code": "NN"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "Code": "InstantUpgrade",
+                    "TypeCode": "SDC"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: Authorization
+                value: Test
+              - name: Copa-Channel-ID
+                value: WEBMMB
+              - name: Language
+                value: en-US
+              - name: X-Point-Of-Sale
+                value: GS
+              - name: X-Currency
+                value: USD
+              - name: X-OCS-Cache-Control
+                value: Cache
+              - name: Ocp-Apim-Subscription-Key
+                value: "{{_['env-apim-subscription']}}"
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://{{_['env-apim']}}/{{_['env-api']}}/reservation/{{_['v-reserv']}}/create/product/purchase/reservation
+            name: SDC Purchase_Clear CC
+            meta:
+              id: req_9307edcb839f4503a09722b100e3835a
+              created: 1737582534140
+              modified: 1737585396422
+              isPrivate: false
+              description: ""
+              sortKey: -1737582532933
+            method: PUT
+            body:
+              mimeType: text/plain
+              text: >-
+                {
+                    "Confirmations": [
+                        {
+                            "AirlineConfirmation": {
+                                "Code": "CM"
+                            },
+                            "ConfirmationId": "BIQHZ4",
+                            "Code": "R",
+                            "TypeCode": "UID"
+                        }
+                    ],
+                    "Products": {
+                        "Products": [
+                            {
+                                "Prices": {
+                                    "Prices": [
+                                        {
+                                            "BaseAmount": {
+                                                "Currency": {
+                                                    "Code": "USD",
+                                                    "TypeCode": "BASE"
+                                                },
+                                                "Value": 75.0,
+                                                "TypeCode": "BASE"
+                                            },
+                                            "Charges": [
+                                                {
+                                                    "Currency": {
+                                                        "Code": "USD"
+                                                    },
+                                                    "Value": 5.25,
+                                                    "Code": "PA",
+                                                    "Description": "Panama Fees",
+                                                    "TypeCode": "TAX"
+                                                }
+                                            ],
+                                            "TotalAmount": {
+                                                "Currency": {
+                                                    "Code": "USD"
+                                                },
+                                                "Value": 80.25,
+                                                "TypeCode": "TOTAL"
+                                            },
+                                            "Description": "Traveler 1 SAME DAY CHANGE FEE"
+                                        }
+                                    ]
+                                },
+                                "Messages": {
+                                    "Messages": [
+                                        {
+                                            "Subject": "SAME DAY CHANGE FEE",
+                                            "Description": "SDC FEE - Non Member - Paid Basic"
+                                        }
+                                    ]
+                                },
+                                "Attributes": {
+                                    "AttributeItems": [
+                                        {
+                                            "Code": "API",
+                                            "TypeCode": "BOOKINGINSTR"
+                                        },
+                                        {
+                                            "Code": "EA",
+                                            "TypeCode": "METHOD"
+                                        },
+                                        {
+                                            "Code": "A",
+                                            "TypeCode": "REASONCODE"
+                                        },
+                                        {
+                                            "Code": "Surcharge",
+                                            "TypeCode": "TYPE"
+                                        },
+                                        {
+                                            "Code": "F",
+                                            "TypeCode": "SERVICETYPE"
+                                        },
+                                        {
+                                            "Code": "CM",
+                                            "TypeCode": "ValidatingCarrier"
+                                        },
+                                        {
+                                            "Code": "2",
+                                            "TypeCode": "FlightSegmentKey"
+                                        },
+                                        {
+                                            "Code": "1",
+                                            "TypeCode": "TravelerKey"
+                                        }
+                                    ]
+                                },
+                                "Code": "OC",
+                                "SubCode": "PSD",
+                                "Description": "SAME DAY CHANGE FEE",
+                                "TypeCode": "PRODUCT"
+                            }
+                        ]
+                    },
+                    "FlightSegmentsItinerary": [
+                        {
+                            "Flights": {
+                                "FlightSegments": [
+                                    {
+                                        "Key": "2",
+                                        "AirlineMarketing": {
+                                            "Code": "CM"
+                                        },
+                                        "FlightNumber": "416",
+                                        "ScheduledDepart": {
+                                            "Date": "2025-04-25",
+                                            "Time": "11:52:00"
+                                        },
+                                        "ScheduledArrive": {
+                                            "Date": "2025-04-25",
+                                            "Time": "13:37:00"
+                                        },
+                                        "LocationDepart": {
+                                            "Code": "BOG"
+                                        },
+                                        "LocationArrive": {
+                                            "Code": "PTY"
+                                        },
+                                        "ClassOfService": {
+                                            "Code": "H",
+                                            "Key": "2",
+                                            "TypeCode": "C"
+                                        },
+                                        "Status": {
+                                            "Code": "NN"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "PaymentInfo": {
+                        "PaymentCards": {
+                            "PaymentCards": [
+                                {
+                                    "CardNumber": "4444333322221111",
+                                    "DateTimeExpiration": {
+                                        "Date": "07/2027"
+                                    },
+                                    "CardHolder": {
+                                        "FirstName": "Card",
+                                        "MiddleName": "Test",
+                                        "Surname": "Case"
+                                    },
+                                    "SecurityCode": "123",
+                                    "Amount": {
+                                        "Value": 0,
+                                        "Currency": {
+                                            "Code": "USD"
+                                        }
+                                    },
+                                    "Address": {
+                                        "Lines": [
+                                            {
+                                                "Line": "Address1"
+                                            }
+                                        ],
+                                        "CityName": "Panama City",
+                                        "RegionState": {
+                                            "Description": "PC",
+                                            "Code": "PC"
+                                        },
+                                        "Country": {
+                                            "Description": "Panama",
+                                            "Code": "PA"
+                                        },
+                                        "TypeCode": "Billing"
+                                    },
+                                    "Email": {
+                                        "EmailAddress": "test@gmail.com"
+                                    },
+                                    "Phone": {
+                                        "AreaCode": "123",
+                                        "Number": "4567890"
+                                    },
+                                    "Code": "VI"
+                                }
+                            ]
+                        },
+                        "TypeCode": "CC"
+                    },
+                    "TypeCode": "SDC"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: Authorization
+                value: Test
+              - name: Language
+                value: en-US
+              - name: X-Point-Of-Sale
+                value: GS
+              - name: X-Currency
+                value: USD
+              - name: X-Session-Identifier
+                value: "{{_['g-session-id']}}"
+              - name: X-OCS-Cache-Control
+                value: Cache
+                disabled: true
+              - name: Ocp-Apim-Subscription-Key
+                value: "{{_['env-apim-subscription']}}"
+              - name: Copa-Channel-ID
+                value: WCI
+              - name: X-Correlation-Id
+                value: ray_thurs-010
+                disabled: true
+            scripts:
+              afterResponse: >+
+                var responseBody = {};
+
+                //var schema = {};
+
+
+                // Check HTTP Response
+
+                insomnia.test("Status code is 200", function () {
+                    insomnia.response.to.have.status(200);
+                    responseBody = JSON.stringify(insomnia.response.json());
+                });
+
+
+                // Validate Schema
+
+                schema = insomnia.globals.get("g-schema-productlist");   
+
+
+                insomnia.test('Schema Validation', function() {
+
+                    var result=tv4.validateResult(JSON.parse(responseBody), JSON.parse(schema), false, true);
+                 
+                    if(!result.valid){
+                        console.log(result);
+                    }
+
+                    insomnia.expect(result.valid).to.be.true;
+                });
+
+
+                // Data Specific Checks
+
+                var jsonData = insomnia.response.json();
+
+
+                insomnia.test ("Products returned", function() {
+                    var productsCount = jsonData.Products.length;
+                    insomnia.globals.set("g-paymentoptions-count", jsonData.Products.length);
+                });
+
+
+                insomnia.test("1 day pricelock", function () {
+                    insomnia.expect(insomnia.response.text()).to.include("Pricelock 1 day");
+                });
+
+
+                insomnia.test("1 day pricelock code", function () {
+                    insomnia.expect(insomnia.response.text()).to.include("FG0");
+                });
+
+
+                insomnia.test("1 day pricelock", function () {
+                    insomnia.expect(insomnia.response.text()).to.include("Pricelock 1 day");
+                });
+
+
+                insomnia.test("1 day Traveler 1", function () {
+                    insomnia.expect(insomnia.response.text()).to.include("Traveler 1 Pricelock 1 day");
+                });
+
+
+                //Component ID
+
+                //should not be provided but response should match to the domain
+                and version you are testing
+
+                insomnia.test("Component ID check", function () {
+                    insomnia.response.to.have.header("x-component-id");
+                });
+
+
+                //CorrelationID
+
+                //Always needs to be present, if provided in request it should
+                match, if not provided new one will be returned
+
+                insomnia.test("CorrelationID check", function () {
+                    insomnia.response.to.have.header("x-correlation-id");
+                });
+
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://{{_['env-apim']}}/{{_['env-api']}}/reservation/{{_['v-reserv']}}/delete/{{_['g-reservation-confirmationid']}}
+            name: Cancel Res
+            meta:
+              id: req_1c82be8ba8544728b6a496ac1601211b
+              created: 1737582534142
+              modified: 1737582534142
+              isPrivate: false
+              description: ""
+              sortKey: -1737582532932
+            method: DELETE
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: Authorization
+                value: Test
+              - name: Language
+                value: en-US
+              - name: X-Point-Of-Sale
+                value: US
+              - name: X-Currency
+                value: USD
+              - name: X-Session-Identifier
+                value: "{{_['g-session-id']}}"
+              - name: X-OCS-Cache-Control
+                value: Cache
+              - name: Ocp-Apim-Subscription-Key
+                value: "{{_['env-apim-internal-subscription']}}"
+              - name: Ocp-Apim-Subscription-Key
+                value: "{{_['env-apim-subscription']}}"
+                disabled: true
+            scripts:
+              afterResponse: >
+                var responseBody = {};
+
+                //var schema = {};
+
+
+                // Check HTTP Response
+
+                insomnia.test("Status code is 200", function () {
+                    insomnia.response.to.have.status(200);
+                    responseBody = JSON.stringify(insomnia.response.json());
+                });
+
+
+                // Validate Schema
+
+                schema = insomnia.globals.get("g-schema-reservation");   
+
+
+                insomnia.test('Schema Validation', function() {
+
+                    var result=tv4.validateResult(JSON.parse(responseBody), JSON.parse(schema), false, true);
+                 
+                    if(!result.valid){
+                        console.log(result);
+                    }
+
+                    insomnia.expect(result.valid).to.be.true;
+                });
+
+
+
+                // Data Specific Checks
+
+                var jsonData = insomnia.response.json();
+
+
+                insomnia.test("ConfirmationId exists", function () {
+                    var confirmationId = jsonData.Confirmations[0].ConfirmationId;
+
+                    if (confirmationId !== "") { 
+                        insomnia.globals.set("g-reservation-confirmationid", confirmationId);
+                        return true; 
+                    } else {
+                        return false;
+                    }
+                });
+
+
+                //Component ID
+
+                //should not be provided but response should match to the domain
+                and version you are testing
+
+                insomnia.test("Component ID check", function () {
+                    insomnia.response.to.have.header("x-component-id");
+                });
+
+
+                //CorrelationID
+
+                //Always needs to be present, if provided in request it should
+                match, if not provided new one will be returned
+
+                insomnia.test("CorrelationID check", function () {
+                    insomnia.response.to.have.header("x-correlation-id");
+                });
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_4497c611d56c440ef760e303cad20ebdfa6be4b1
+    created: 1737582536448
+    modified: 1737582536448
+environments:
+  name: Base Environment
+  meta:
+    id: env_4497c611d56c440ef760e303cad20ebdfa6be4b1
+    created: 1737582536443
+    modified: 1737583981502
+    isPrivate: false
