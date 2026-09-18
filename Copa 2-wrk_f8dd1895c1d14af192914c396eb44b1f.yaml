@@ -154,6 +154,226 @@ collection:
         send: true
         store: true
       rebuildPath: true
+  - url: https://api-uat.copa.com/checkin/v1.0/message-list/120/2026-07-29/PTY/AWI4U2
+    name: https://api-uat.copa.com/checkin/v1.0/message-list/150/2026-08-07/PTY/AUYOUY
+    meta:
+      id: req_e65618c5bf7f4c119c7c2b605071363d
+      created: 1785267457340
+      modified: 1785335203496
+      isPrivate: false
+      description: ""
+      sortKey: -1785267457340
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"GivenName": "CARLOS",
+        	"Surname": "LOPEZ",
+        	"Text": "POSSIBLE ATTEMPT TO PURCHASE BAGS IN WCI"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: Copa-Channel-ID
+        value: web
+      - name: Ocp-Apim-Subscription-Key
+        value: 1f606db6b3e94e1bbada68fb46bdb1dc
+      - name: Cookie
+        value: ApplicationGatewayAffinity=ccd99ec07fef0399e8435b83a4f99ed7;
+          visid_incap_2847275=aMZUHXvZQRu3oSt5MKPD938a6GgAAAAAQUIPAAAAAADq28W1mxhLTE7n88rI54Im;
+          nlbi_2847275=4mEqDGZl9xd64C1sM0wWFwAAAAAkRjdOIFSeBqjU7%2BJpZr%2Bc;
+          visid_incap_2875442=c0mGW0fzTOSbZWsEZMtYx0aw52gAAAAAQUIPAAAAAACx77MCtv5PXtKip1aOXpL6;
+          nlbi_2875442=YHISEfhZ3i%2BXhM24pdx5ZQAAAAAdviDyxzSXppKbytViC1eX;
+          nlbi_2802616=3wCpM9lbtCNgux9%2F1KWtQwAAAADL7xoC40klgaCAQgGUhYUO;
+          visid_incap_2802616=249e%2B8j%2BR8mI8ZwMIJVZ68cuzWkAAAAAQUIPAAAAAABZiHotZbAQPhAjCUzZF4zm;
+          visid_incap_2875446=Ei0RKbtQTuuc%2FgkxepKNr%2FPFDGkAAAAAQUIPAAAAAAA10%2Bxk34%2FL1jqeK3Cv39ad;
+          nlbi_2875446=nWCmWOBn5SGR8xOsOycnRAAAAADrwaLSnxpTkpbkXCoQzTm2;
+          incap_ses_1620_2847275=Bt3WEUegHkSMo28FF2Z7Fq2KZ2oAAAAAE6Ylyr1JNFD9QPc7KEEpuQ%3D%3D;
+          incap_ses_1620_2875442=k7lPUl5yeGcUX3wGF2Z7FnTMaGoAAAAAIPsRQHbug7nkeHCS2A%2FQlQ%3D%3D;
+          dtCookie=v_4_srv_5_sn_5E6CB29479B14B1D8124593BD3D48C1A_perc_100000_ol_0_mul_1_app-3Aea7c4b59f27d43eb_1_rcs-3Acss_0;
+          incap_ses_765_2847275=ny1AeYZBJ3D8ChB%2BANSdCqfEYGoAAAAA8svqxIj2ADBLBAzshsnIdw%3D%3D;
+          incap_ses_765_2875442=tJRGWjS47Ds5hxx%2BANSdCkbMYGoAAAAAKLI31se1wj5EiH4UYeJOew%3D%3D;
+          incap_ses_910_2847275=g8mLasmmG0Ppjt1bQPigDHGGZ2oAAAAAbMCcP8DSrTRoH6a3l0Z%2FyA%3D%3D;
+          incap_ses_910_2875442=snODN6TgUh%2Fr2aqvQvigDIXLaGoAAAAA7o0u1PA9QBGfY3stBzW0Hw%3D%3D
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: https://api.copa.com/checkin/v1.0/message-list/120/2026-08-10/PTY/AZC2EG
+    name: message-list PROD
+    meta:
+      id: req_e4aac82a8ea44878a575833eeaf133ac
+      created: 1785276050373
+      modified: 1785276483267
+      isPrivate: false
+      description: ""
+      sortKey: -1785008351367.5
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"GivenName": "CARLOS",
+        	"Surname": "LOPEZ",
+        	"Text": "PRUEBA DE PREPAID MYTRIPS"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: Copa-Channel-ID
+        value: web
+      - name: Copa-Consumer-ID
+        value: mytrips
+      - name: Ocp-Apim-Subscription-Key
+        value: eff52fa547d242b695d88bf1931d1f41
+      - name: Cookie
+        value: ApplicationGatewayAffinity=ccd99ec07fef0399e8435b83a4f99ed7;
+          visid_incap_2847275=aMZUHXvZQRu3oSt5MKPD938a6GgAAAAAQUIPAAAAAADq28W1mxhLTE7n88rI54Im;
+          nlbi_2847275=4mEqDGZl9xd64C1sM0wWFwAAAAAkRjdOIFSeBqjU7%2BJpZr%2Bc;
+          visid_incap_2875442=c0mGW0fzTOSbZWsEZMtYx0aw52gAAAAAQUIPAAAAAACx77MCtv5PXtKip1aOXpL6;
+          nlbi_2875442=YHISEfhZ3i%2BXhM24pdx5ZQAAAAAdviDyxzSXppKbytViC1eX;
+          nlbi_2802616=3wCpM9lbtCNgux9%2F1KWtQwAAAADL7xoC40klgaCAQgGUhYUO;
+          visid_incap_2802616=249e%2B8j%2BR8mI8ZwMIJVZ68cuzWkAAAAAQUIPAAAAAABZiHotZbAQPhAjCUzZF4zm;
+          visid_incap_2875446=Ei0RKbtQTuuc%2FgkxepKNr%2FPFDGkAAAAAQUIPAAAAAAA10%2Bxk34%2FL1jqeK3Cv39ad;
+          nlbi_2875446=nWCmWOBn5SGR8xOsOycnRAAAAADrwaLSnxpTkpbkXCoQzTm2;
+          incap_ses_1620_2847275=Bt3WEUegHkSMo28FF2Z7Fq2KZ2oAAAAAE6Ylyr1JNFD9QPc7KEEpuQ%3D%3D;
+          incap_ses_1620_2875442=k7lPUl5yeGcUX3wGF2Z7FnTMaGoAAAAAIPsRQHbug7nkeHCS2A%2FQlQ%3D%3D;
+          dtCookie=v_4_srv_5_sn_5E6CB29479B14B1D8124593BD3D48C1A_perc_100000_ol_0_mul_1_app-3Aea7c4b59f27d43eb_1_rcs-3Acss_0;
+          incap_ses_765_2847275=ny1AeYZBJ3D8ChB%2BANSdCqfEYGoAAAAA8svqxIj2ADBLBAzshsnIdw%3D%3D;
+          incap_ses_765_2875442=tJRGWjS47Ds5hxx%2BANSdCkbMYGoAAAAAKLI31se1wj5EiH4UYeJOew%3D%3D;
+          incap_ses_910_2847275=g8mLasmmG0Ppjt1bQPigDHGGZ2oAAAAAbMCcP8DSrTRoH6a3l0Z%2FyA%3D%3D;
+          incap_ses_910_2875442=snODN6TgUh%2Fr2aqvQvigDIXLaGoAAAAA7o0u1PA9QBGfY3stBzW0Hw%3D%3D
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: https://api.copaair.com/mytrips/loyalty/createProfile
+    name: https://api.copaair.com/mytrips/loyalty/createProfile
+    meta:
+      id: req_320310b45c4544bb9d227040125b7964
+      created: 1785446875882
+      modified: 1785446880241
+      isPrivate: false
+      description: ""
+      sortKey: -1785446875882
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"address": {
+        		"countryIso2": "PA"
+        	},
+        	"birthDate": "1970-11-19",
+        	"email": "LENAL34491@BARUMART.COM",
+        	"firstName": "MARA ",
+        	"gender": "Female",
+        	"nationality": {
+        		"name": "Colombia",
+        		"iso2": "CO",
+        		"iso3": "COL",
+        		"phonesCodes": [
+        			57
+        		],
+        		"challenge": false,
+        		"idRequired": true,
+        		"phoneRegex": "[0-9]{10,10}"
+        	},
+        	"passport": {
+        		"expirationDate": "2044-02-19",
+        		"issueCountry": {
+        			"name": "Panamá",
+        			"iso2": "PA",
+        			"iso3": "PAN",
+        			"phonesCodes": [
+        				507
+        			],
+        			"challenge": false,
+        			"idRequired": false,
+        			"phoneRegex": "[0-9]{3,8}"
+        		},
+        		"number": "ASSSSS",
+        		"docTypeName": "PASSPORT"
+        	},
+        	"pnr": "APNDCI",
+        	"pnrFirstName": "MARA",
+        	"pnrSurname": "MUNOZ",
+        	"surname": "MUNOZ",
+        	"travelerKey": "1.1"
+        }
+    headers:
+      - name: sec-ch-ua-platform
+        value: '"Windows"'
+      - name: new-version
+        value: "true"
+      - name: Accept-Language
+        value: es-PA
+      - name: sec-ch-ua
+        value: '"Not;A=Brand";v="8", "Chromium";v="150", "Google Chrome";v="150"'
+      - name: sec-ch-ua-mobile
+        value: ?0
+      - name: error-handler
+        value: "false"
+      - name: User-Agent
+        value: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like
+          Gecko) Chrome/150.0.0.0 Safari/537.36
+      - name: Accept
+        value: application/json, text/plain, */*
+      - name: Content-Type
+        value: application/json
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: https://api-uat.copa.com/reservation/v1.2/AY2WI2/messages
+    name: https://api-uat.copa.com/reservation/v1.2/AY2WI2/messages
+    meta:
+      id: req_4be65d79017648949622fbc258dcb954
+      created: 1785946209438
+      modified: 1785946216117
+      isPrivate: false
+      description: ""
+      sortKey: -1785946209438
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        [
+        	{
+        		"Code": "RMRK",
+        		"Description": "VALIDFORSRT-ADVANCEOVS-04AUG26"
+        	},
+        	{
+        		"Code": "RMRK",
+        		"Description": "01 REMARKS ADDED BY WEB SU SV 04AUG 1432Z D11000"
+        	}
+        ]
+    headers:
+      - name: Ocp-Apim-Subscription-Key
+        value: 995c4adaeb1246c4a291565725f333dd
+      - name: Content-Type
+        value: application/json; charset=UTF-8
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
   - name: Add Remarks
     meta:
       id: fld_0fda1bc0071143a396e2a0593116ece5
@@ -393,12 +613,12 @@ collection:
             send: true
             store: true
           rebuildPath: true
-      - url: https://api-uat.copa.com/reservation/v1.2/AHGAMF/messages
+      - url: https://api-uat.copa.com/reservation/v1.2/APQTYV/messages
         name: Add remark Major02
         meta:
           id: req_269f73c2bcdd41d8ade428c5f14bc28b
           created: 1677596791469
-          modified: 1726164668965
+          modified: 1785444659864
           isPrivate: false
           description: ""
           sortKey: -1677596791469
@@ -421,7 +641,7 @@ collection:
             ]
         headers:
           - name: Ocp-Apim-Subscription-Key
-            value: 3b46ccf664ff4cd6b86ab95891580e80
+            value: 5ac1ee8f507e4423b80538a1a6a220b0
           - name: Content-Type
             value: application/json
         settings:
@@ -432,12 +652,12 @@ collection:
             send: true
             store: true
           rebuildPath: true
-      - url: https://api-uat.copa.com/reservation/v1.1/BS3OYY/messages
+      - url: https://api-uat.copa.com/reservation/v1.1/AYXKXI/messages
         name: Add remark Major01
         meta:
           id: req_a665f250c31d463e8d4020c9f1d2d435
           created: 1677596791530
-          modified: 1784228646867
+          modified: 1785856558664
           isPrivate: false
           description: ""
           sortKey: -1677596791477.5781
@@ -460,7 +680,7 @@ collection:
             ]
         headers:
           - name: Ocp-Apim-Subscription-Key
-            value: 3b46ccf664ff4cd6b86ab95891580e80
+            value: 995c4adaeb1246c4a291565725f333dd
           - name: Content-Type
             value: application/json
           - name: User-Agent
@@ -666,12 +886,12 @@ collection:
             send: true
             store: true
           rebuildPath: true
-      - url: https://api.copa.com/reservation/v1.2/ASALFM/messages
+      - url: https://api.copa.com/reservation/v1.2/AATKMM/messages
         name: Add remark Major01 PROD
         meta:
           id: req_31ebd2ac1856497c99698b0af0e0e15a
           created: 1681921047464
-          modified: 1784822864579
+          modified: 1785365564305
           isPrivate: false
           description: ""
           sortKey: -1677596791462.625
@@ -705,12 +925,12 @@ collection:
             send: true
             store: true
           rebuildPath: true
-      - url: https://api.copa.com/reservation/v1.2/ASCRF5/messages
+      - url: https://api.copa.com/reservation/v1.2/AO42D2/messages
         name: Add remark Major02 PROD
         meta:
           id: req_6dd3796427be4b5e91b2112b8f3a1635
           created: 1681921068911
-          modified: 1784823046072
+          modified: 1785445979386
           isPrivate: false
           description: ""
           sortKey: -1677596791460.5
@@ -1002,12 +1222,12 @@ collection:
             send: true
             store: true
           rebuildPath: true
-      - url: https://api.copa.com/reservation/v1.2/ALFUOU/messages
+      - url: https://api.copa.com/reservation/v1.2/BMLIM2/messages
         name: Add remark OVS PROD
         meta:
           id: req_be0139fcfe544f2a94a2dc8c7646bf59
           created: 1705011882626
-          modified: 1779895712344
+          modified: 1785353590437
           isPrivate: false
           description: ""
           sortKey: -1677596791462.6914
@@ -1018,12 +1238,12 @@ collection:
             [    
                 {
                   "Code": "RMRK",
-                  "Description": "VALIDFORSRT-ADVANCEOVS-28AUG24",
+                  "Description": "VALIDFORSRT-ADVANCEOVS-01AUG26",
                   "TypeCode": "RMRK"
                 },
                 {
                   "Code": "RMRK",
-                  "Description": "01 REMARKS ADDED BY CRC SU RO 28AUG 1432Z D11000",      
+                  "Description": "01 REMARKS ADDED BY CRC SU RO 01AUG 1432Z D11000",      
                 "TypeCode": "RMRK"
                 }
             ]
@@ -1040,12 +1260,12 @@ collection:
             send: true
             store: true
           rebuildPath: true
-      - url: https://api.copa.com/reservation/v1.2/AIVMA1/messages
+      - url: https://api.copa.com/reservation/v1.2/BKYHAY/messages
         name: Add remark ADHOC PROD
         meta:
           id: req_397b90e6c5c94572a65d88cf43ae57fe
           created: 1706634226667
-          modified: 1780415517282
+          modified: 1785344285450
           isPrivate: false
           description: ""
           sortKey: -1677596791462.6582
@@ -2446,38 +2666,56 @@ collection:
             send: true
             store: true
           rebuildPath: true
-      - url: https://api-uat.copa.com/flights/v2.0/airinventoryservice
+      - url: https://api-uat.copa.com/flights/v3.0/airinventoryservice
         name: Flight Inventori OSL decopling
         meta:
           id: req_7da5eeccfe8f471b8ef90f4cf71dd53c
           created: 1731444488087
-          modified: 1731444535967
+          modified: 1786054293226
           isPrivate: false
           description: ""
           sortKey: -1697646925610
         method: POST
         body:
           mimeType: application/json
-          text: "[\r     {\r         \"OperatingAirline\":
-            \"CM\",\r         \"FlightNumber\": \"243\",\r         \"Origin\":
-            \"PTY\",\r         \"Destination\":
-            \"BOG\",\r         \"DepartureDate\":
-            \"2024-05-05\"\r     },\r     {\r         \"OperatingAirline\":
-            \"CM\",\r         \"FlightNumber\": \"188\",\r         \"Origin\":
-            \"PTY\",\r         \"Destination\":
-            \"MEX\",\r         \"DepartureDate\":
-            \"2024-04-04\"\r     },\r     {\r         \"OperatingAirline\":
-            \"CM\",\r         \"FlightNumber\": \"226\",\r         \"Origin\":
-            \"PTY\",\r         \"Destination\":
-            \"MIA\",\r         \"DepartureDate\":
-            \"2024-04-05\"\r     },\r     {\r         \"OperatingAirline\":
-            \"CM\",\r         \"FlightNumber\": \"419\",\r         \"Origin\":
-            \"PTY\",\r         \"Destination\":
-            \"MIA\",\r         \"DepartureDate\":
-            \"2024-04-05\"\r     },\r     {\r         \"OperatingAirline\":
-            \"CM\",\r         \"FlightNumber\": \"114\",\r         \"Origin\":
-            \"CUN\",\r         \"Destination\":
-            \"PTY\",\r         \"DepartureDate\": \"2024-09-13\"\r     }\r ]"
+          text: |-
+            [
+                 {
+                     "OperatingAirline": "CM",
+                     "FlightNumber": "243",
+                     "Origin": "PTY",
+                     "Destination": "BOG",
+                     "DepartureDate": "2026-05-05"
+                 },
+                 {
+                     "OperatingAirline": "CM",
+                     "FlightNumber": "188",
+                     "Origin": "PTY",
+                     "Destination": "MEX",
+                     "DepartureDate": "2026-04-04"
+                 },
+                 {
+                     "OperatingAirline": "CM",
+                     "FlightNumber": "226",
+                     "Origin": "PTY",
+                     "Destination": "MIA",
+                     "DepartureDate": "2026-04-05"
+                 },
+                 {
+                     "OperatingAirline": "CM",
+                     "FlightNumber": "419",
+                     "Origin": "PTY",
+                     "Destination": "MIA",
+                     "DepartureDate": "2026-04-05"
+                 },
+                 {
+                     "OperatingAirline": "CM",
+                     "FlightNumber": "114",
+                     "Origin": "CUN",
+                     "Destination": "PTY",
+                     "DepartureDate": "2026-09-13"
+                 }
+             ]
         headers:
           - name: Content-Type
             value: application/json
@@ -8017,19 +8255,19 @@ collection:
                         send: true
                         store: true
                       rebuildPath: true
-                  - url: "{{ _.OSL1 }}booking/{{ _.V3 }}/reservation/AR4XVC"
+                  - url: "{{ _.OSL1 }}booking/{{ _.V3 }}/reservation/BIB5YH"
                     name: Booking Api by PNR 3.0
                     meta:
                       id: req_96967826ab004bd4864005ae4ff713f6
                       created: 1656532139412
-                      modified: 1784825514292
+                      modified: 1787155750806
                       isPrivate: false
                       description: ""
                       sortKey: -1781883046957
                     method: GET
                     parameters:
                       - name: LastName
-                        value: LOPEZ
+                        value: ALVESDEFARIA
                     headers:
                       - name: Copa-Channel-ID
                         value: WEB
@@ -8211,7 +8449,7 @@ collection:
                     meta:
                       id: req_87c6eea1260f48919343693439ca05ff
                       created: 1697653345446
-                      modified: 1781883206952
+                      modified: 1785360869694
                       isPrivate: false
                       description: ""
                       sortKey: -1781883046933.3672
@@ -8220,8 +8458,8 @@ collection:
                       mimeType: application/json
                       text: |-
                         {
-                        	"pnrOrTicket": "BS1AEC",
-                        	"surname": "ALEGRE",
+                        	"pnrOrTicket": "BMLIM2",
+                        	"surname": "lopez",
                         	"getAdditionalInfo": true
                         }
                     headers:
@@ -8701,19 +8939,19 @@ collection:
                         send: true
                         store: true
                       rebuildPath: true
-                  - url: https://api.copa.com/booking/{{ _.V3 }}/reservation/AR4XVC
+                  - url: https://api.copa.com/booking/{{ _.V3 }}/reservation/ADOPXO
                     name: Booking Api by PNR 3.0 PROD
                     meta:
                       id: req_db38602be5864ad6af91989e9ddd780a
                       created: 1780412890655
-                      modified: 1784825557259
+                      modified: 1785361371024
                       isPrivate: false
                       description: ""
                       sortKey: -1781883046944.5
                     method: GET
                     parameters:
                       - name: LastName
-                        value: LOPEZ
+                        value: ACUNA
                     headers:
                       - name: Copa-Channel-ID
                         value: WEB
@@ -8740,7 +8978,7 @@ collection:
                     meta:
                       id: req_b7c229d1b7464be394234afab82c7526
                       created: 1781902203043
-                      modified: 1784152021212
+                      modified: 1787154857620
                       isPrivate: false
                       description: ""
                       sortKey: -1781883046932.537
@@ -8749,8 +8987,8 @@ collection:
                       mimeType: application/json
                       text: |-
                         {
-                          "pnrOrTicket": "ARAZDM",
-                        		"surname": "POK",
+                          "pnrOrTicket": "BKCNPU",
+                        		"surname": "ABOITIZSARO",
                           "getAdditionalInfo": true
                         }
                     headers:
@@ -10325,12 +10563,13 @@ collection:
       sortKey: -1685648562037.9062
       description: ""
     children:
-      - url: "{{ _.OSL1 }}bags/bagsallowance/{{ _.V2 }}/baggageallowance/PHAHEKEF/ADT"
+      - url: "{{ _.OSL1 }}bags/bagsallowance/{{ _.V2
+          }}/baggageallowance/A3WSOM/ADT?TravelerPrepaidBags=true"
         name: Baggage Allowance
         meta:
           id: req_e07e8308f81a45c1853bd13bf40a5bdf
           created: 1598487545903
-          modified: 1784299396352
+          modified: 1787237978488
           isPrivate: false
           description: ""
           sortKey: -1781883611874
@@ -11452,7 +11691,7 @@ collection:
         meta:
           id: req_aa95f5e43caa425c89e136e9177c0634
           created: 1781128898108
-          modified: 1784056119876
+          modified: 1787672925825
           isPrivate: false
           description: ""
           sortKey: -1781902135056
@@ -12023,9 +12262,9 @@ cookieJar:
   meta:
     id: jar_22c874bfc57645adbff6fa57b847ac20
     created: 1598487354649
-    modified: 1784825568957
+    modified: 1787252376185
   cookies:
-    - id: 1afea4b2-131e-4151-9770-e95624d87750
+    - id: 0c9a0681-4f52-448f-85e3-bb3ec75d9789
       key: visid_incap_2875442
       value: ki7FHyNRTKaT171tEtuDYUQ2YWoAAAAAQUIPAAAAAAA8z6L5bTZ1rjEiX/2U54sj
       domain: copa.com
@@ -12033,7 +12272,7 @@ cookieJar:
       secure: false
       httpOnly: true
       hostOnly: false
-    - id: a7d60ae5-b386-49d7-b293-f5749240c7f6
+    - id: d49fa42c-e377-4c16-8457-d2954d7a3207
       key: nlbi_2875442
       value: HDTCX2KH1wx+wUAgpdx5ZQAAAADt02VpCsXKp/3/qSsHFyEb
       domain: copa.com
@@ -12041,30 +12280,534 @@ cookieJar:
       secure: false
       httpOnly: true
       hostOnly: false
-    - id: 2e06ddde-fdfd-4e1a-ac41-6e0fc51bc808
+    - id: 3780b5a3-1bb5-432b-89b9-e7bb3987b2fd
       key: incap_ses_765_2875442
-      value: SYebIe2BcSsGRM5+ANSdCkQ2YWoAAAAARrRENxQ3x9+Uc0jbDbwXbA==
+      value: a
       domain: copa.com
       path: /
       secure: false
       httpOnly: false
       hostOnly: false
-    - id: 52bb6ec7-a38b-4467-a1ae-a93d2eff554e
+    - id: 416fad02-ef66-4ffa-83cc-c1c1719c20f7
       key: incap_ses_1620_2875442
-      value: 1VMzchx2ujFzoICxFGZ7FlM8YmoAAAAAasMoD93/9B1kJceXy4ogpA==
+      value: a
       domain: copa.com
       path: /
       secure: false
       httpOnly: false
       hostOnly: false
-    - id: 4226a4fb-7d72-4070-bf64-b7ebf2944487
+    - id: 43e349d9-a0cb-4bfa-bb47-f28d4fc9e12b
       key: incap_ses_910_2875442
-      value: u+V5eclfEhIkXzQ0PvigDABGYmoAAAAALCw2Buob3YykgJLU8LJMRA==
+      value: a
       domain: copa.com
       path: /
       secure: false
       httpOnly: false
       hostOnly: false
+    - id: b0697d59-136e-4022-8342-df57390e7f88
+      key: visid_incap_2847275
+      value: OxLg1IJnRQaokvwvK3ZcamSTYmoAAAAAQUIPAAAAAAA7ArW16Nnvt/aEx+iFMabT
+      domain: copa.com
+      path: /
+      secure: true
+      httpOnly: true
+      hostOnly: false
+    - id: 0166e04f-eab9-4b68-8c2c-4908973a7b12
+      key: nlbi_2847275
+      value: 5IFmTDO3HgpSJ222M0wWFwAAAAB6S69deibUoyzfklzhfabg
+      domain: copa.com
+      path: /
+      secure: true
+      httpOnly: true
+      hostOnly: false
+    - id: a9f49772-624a-4632-ae8b-bd08c682ee19
+      key: incap_ses_910_2847275
+      value: hd0BYcnfXBzBl/Y4RfigDNw6hmoAAAAAlW64WccRVhGKsT8gBKN+DQ==
+      domain: copa.com
+      path: /
+      secure: true
+      httpOnly: false
+      hostOnly: false
+    - id: d52b8df5-aa12-4ca4-a78d-035da2e5ff4c
+      key: incap_ses_1620_2847275
+      value: a
+      domain: copa.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: false
+    - id: 0604f4e0-27e3-42ef-aff8-0107e08308c2
+      key: nlbi_2819721
+      value: hn2pIiOt5QExvUVYbzwYTAAAAABYFMRhPfXK8qSD5cZBNYwl
+      domain: api.copaair.com
+      path: /
+      secure: true
+      httpOnly: true
+      hostOnly: true
+    - id: 09f1fe53-dde6-49d0-969a-41e40c9d80b4
+      key: incap_ses_1310_2819721
+      value: a
+      domain: api.copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: true
+    - id: 3b828b87-df4c-44fe-bc5f-0bf85417dfd2
+      key: incap_ses_1310_2854162
+      value: a
+      domain: api.copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: true
+    - id: a8b1407e-3e40-448c-9abf-829f64ef85cb
+      key: incap_ses_1310_2842481
+      value: a
+      domain: api.copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: true
+    - id: 1b0923cb-fff5-423a-8c77-b87a359d17ff
+      key: incap_ses_1310_2894058
+      value: a
+      domain: api.copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: true
+    - id: 728ec6bd-4bf5-4fa6-8304-432e0ce26566
+      key: incap_ses_1310_2844261
+      value: a
+      domain: api.copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: true
+    - id: 3b3d5ec7-5aad-47d9-8b4a-ee08c8c40839
+      key: incap_ses_1431_2842481
+      value: a
+      domain: api.copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: true
+    - id: 7be7a578-3026-4227-9aad-fa11f53fb73d
+      key: incap_ses_1431_2894058
+      value: a
+      domain: api.copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: true
+    - id: 53ce8d6b-e4ed-4bc3-9c2c-1bebd7a3c535
+      key: incap_ses_1431_2844261
+      value: a
+      domain: api.copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: true
+    - id: 216f544d-3a3c-4eea-a01a-9b12a5fccfe9
+      key: incap_ses_545_2847270
+      value: a
+      domain: api.copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: true
+    - id: 00ae994f-fd5e-45ad-af74-8bd8ec9e649c
+      key: incap_ses_1431_2847270
+      value: a
+      domain: api.copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: true
+    - id: 109f43c9-2f49-4773-bdb5-1c75087c23ad
+      key: incap_ses_1431_2842487
+      value: a
+      domain: api.copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: true
+    - id: fcf1359a-72c7-4c88-909b-270d6f4fde2b
+      key: incap_ses_1431_2844274
+      value: a
+      domain: api.copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: true
+    - id: 706bfbda-d9cc-4ff6-8824-b71714219521
+      key: incap_ses_1431_2844268
+      value: a
+      domain: api.copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: true
+    - id: a5a78992-e2d4-4b9b-be02-fb0fa80a6443
+      key: incap_ses_1431_2858083
+      value: a
+      domain: api.copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: true
+    - id: f8bb47ad-04d4-4e6b-a3ac-6582068a6a3c
+      key: incap_ses_1604_2844261
+      value: a
+      domain: api.copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: true
+    - id: adaec9e4-7c20-4ec8-92f2-acb2bfe47531
+      key: incap_ses_1431_2854162
+      value: a
+      domain: api.copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: true
+    - id: 9f8143f6-fa38-4344-8894-f426c7558c65
+      key: incap_ses_7230_2844261
+      value: a
+      domain: api.copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: true
+    - id: 30e15854-a8a5-4373-9b9a-2d10ef653571
+      key: incap_ses_7230_2842481
+      value: a
+      domain: api.copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: true
+    - id: d626154e-3774-4bd4-8f95-ac63e10c13ab
+      key: incap_ses_7230_2842487
+      value: a
+      domain: api.copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: true
+    - id: a15aadc4-5e2c-4b2d-8de1-0f95afaa3b3c
+      key: incap_ses_7230_2854162
+      value: a
+      domain: api.copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: true
+    - id: 1bd60485-143b-4d9a-b20e-9ffcf1b52d08
+      key: incap_ses_7230_2844274
+      value: a
+      domain: api.copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: true
+    - id: 0ee65c32-1378-4a0d-b89f-b840579619f8
+      key: incap_ses_7230_2844268
+      value: a
+      domain: api.copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: true
+    - id: 57d5f072-cda7-4843-b2ca-9bfd07c3650c
+      key: incap_ses_7230_2819721
+      value: a
+      domain: api.copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: true
+    - id: f33a5df2-ba61-42bf-8f9b-b67de9ab9132
+      key: incap_ses_7230_2849399
+      value: a
+      domain: api.copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: true
+    - id: de74c42f-604a-4c4e-b755-007b72c94628
+      key: incap_ses_7230_2844278
+      value: a
+      domain: api.copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: true
+    - id: 5952daee-d117-41bb-8fed-85c02fd618ca
+      key: incap_ses_1705_2851261
+      value: a
+      domain: api.copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: true
+    - id: 8d6b6823-75fe-47cc-858b-c273bbd63a0f
+      key: incap_ses_1705_2854162
+      value: a
+      domain: api.copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: true
+    - id: 611e8952-43ad-4c84-add0-313399f796aa
+      key: incap_ses_223_2854162
+      value: a
+      domain: api.copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: true
+    - id: a7e8e2b8-78d6-45c4-b8ca-06429f0f12ae
+      key: incap_ses_1600_2842481
+      value: a
+      domain: api.copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: true
+    - id: 1558fdc6-0274-4773-9e37-3ddbd592ab22
+      key: incap_ses_1600_2844261
+      value: a
+      domain: api.copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: true
+    - id: eaa46d80-b7c9-409e-98da-2a6268f94113
+      key: incap_ses_1600_2854162
+      value: a
+      domain: api.copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: true
+    - id: 386d4fb7-baaf-478a-8ffa-6c3fb25ca6de
+      key: incap_ses_1600_2802554
+      value: a
+      domain: api.copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: true
+    - id: b34286af-aad3-43e0-a40a-22358ac2871f
+      key: incap_ses_1600_2847192
+      value: a
+      domain: api.copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: true
+    - id: 598b6435-0f7c-48c8-b83d-ae5fc5bd6a09
+      key: incap_ses_1600_2842487
+      value: a
+      domain: api.copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: true
+    - id: 24ba35e9-d0ff-4edc-b954-1c259372dc19
+      key: incap_ses_1600_2819721
+      value: a
+      domain: api.copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: true
+    - id: 3dc9464f-b13f-4300-8627-a4510ea99360
+      key: incap_ses_1600_2847188
+      value: a
+      domain: api.copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: true
+    - id: d41e21dc-8a05-470f-9bf0-ba94bc214655
+      key: incap_ses_1600_2847189
+      value: a
+      domain: api.copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: true
+    - id: 22ac4863-65e5-4a2d-9af2-36cbfa734aca
+      key: incap_ses_1600_2810706
+      value: a
+      domain: api.copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: true
+    - id: d03dcad0-1371-4afd-8922-24e02295d3aa
+      key: incap_ses_1600_2844268
+      value: a
+      domain: api.copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: true
+    - id: 896e4fdf-1837-429f-b287-36eb68dc6d66
+      key: incap_ses_1600_2844274
+      value: a
+      domain: api.copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: true
+    - id: a5708a6b-06b0-4f50-a803-43e955b4ca87
+      key: incap_ses_1600_2842471
+      value: a
+      domain: api.copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: true
+    - id: 5fa792d0-f78c-4742-8019-78bf290c8b91
+      key: incap_ses_1431_2847192
+      value: a
+      domain: api.copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: true
+    - id: 480f2578-1f19-4882-8d42-101217958898
+      key: incap_ses_1431_2802554
+      value: a
+      domain: api.copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: true
+    - id: d73e2c6b-4c99-4b1e-88e6-e996b1d5c5d5
+      key: incap_ses_1431_2847189
+      value: a
+      domain: api.copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: true
+    - id: 01e5dc79-bc58-48a5-9d6d-19aeb5062774
+      key: incap_ses_1431_2847188
+      value: a
+      domain: api.copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: true
+    - id: a97ed91c-c864-462a-8042-8cd59618814d
+      key: incap_ses_1431_2819721
+      value: a
+      domain: api.copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: true
+    - id: ef1e1c83-0217-4508-8459-6335788805b1
+      key: incap_ses_1374_2819721
+      value: a
+      domain: api.copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: true
+    - id: 056e19e1-bdc1-4c89-8088-b58c01b3afac
+      key: incap_ses_1431_2819718
+      value: a
+      domain: api.copaair.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: true
+    - id: 41cbe4d2-af4e-4cf7-bbb1-8801cfa10956
+      key: visid_incap_2819721
+      value: AXWp+cIiSV2dXlPGPeU5q+lxamoAAAAAQUIPAAAAAABXQy4HMinN/H5nSNRdhoQu
+      domain: api.copaair.com
+      path: /
+      secure: true
+      httpOnly: true
+      hostOnly: true
+    - id: 3d70e9de-a141-4af3-a2cb-d19be3c48987
+      key: incap_ses_910_2819721
+      value: 0zPaalJGcx4ZACLAQvigDOfBa2oAAAAA3maIB2CFlgpubGbIPYWJag==
+      domain: api.copaair.com
+      path: /
+      secure: true
+      httpOnly: false
+      hostOnly: true
+    - id: 09c92689-0658-420e-b331-795554d9a04d
+      key: incap_ses_991_2847275
+      value: iz6SKv2tQQzzLrBcV73ADWgWh2oAAAAAAiX2B93puYYChcMLU/gFuw==
+      domain: copa.com
+      path: /
+      secure: true
+      httpOnly: false
+      hostOnly: false
+    - id: 99d328d8-6e29-49f6-ade8-b969b0a78ba0
+      key: visid_incap_2875446
+      value: z5qQE+j/SAatiibL7smGJdWbc2oAAAAAQUIPAAAAAAAMCpJnA64g+e4qe2jlHZC4
+      domain: copa.com
+      path: /
+      secure: false
+      httpOnly: true
+      hostOnly: false
+    - id: a044b6d5-ecc0-4e0f-a748-b9bccf94ad6c
+      key: nlbi_2875446
+      value: RrRwJU9plBPJBvHnOycnRAAAAABTTvlMfkYBbqpHAak62bdi
+      domain: copa.com
+      path: /
+      secure: false
+      httpOnly: true
+      hostOnly: false
+    - id: b4c2bad4-ddf7-412c-84f8-e4c26b38430d
+      key: incap_ses_910_2875446
+      value: a
+      domain: copa.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: false
+    - id: 1bdc2596-0ef0-4d1b-803f-a1a0cbab8681
+      key: incap_ses_1598_2847275
+      value: a
+      domain: copa.com
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: false
+    - id: c2ed4ef0-7a4d-47e1-b204-afe007def23e
+      key: visid_incap_2842481
+      value: 8DKpxvngTGydVpSKmFBY7UfRhWoAAAAAQUIPAAAAAAA3RW1g1o8cYCYiKQNV7Auc
+      domain: api-uat.copaair.com
+      path: /
+      secure: true
+      httpOnly: true
+      hostOnly: true
+    - id: bf5666f0-a8c2-4db7-a091-8f394c5dd6d2
+      key: nlbi_2842481
+      value: SKM+eq/x1zg76RdMC2ZXnAAAAACBBOXPxgekeyRK2bYVR3Kv
+      domain: api-uat.copaair.com
+      path: /
+      secure: true
+      httpOnly: true
+      hostOnly: true
+    - id: b350c623-06fd-4af8-a5f8-dcf48b4da38f
+      key: incap_ses_910_2842481
+      value: +Qp6THikUwqJGlY+RfigDJhOh2oAAAAAZVyvSfRO+GyidoTPzvT33Q==
+      domain: api-uat.copaair.com
+      path: /
+      secure: true
+      httpOnly: false
+      hostOnly: true
 environments:
   name: Base Environment
   meta:
